@@ -25,8 +25,14 @@ typedef struct TailFixtureEvent {
     bool terminated_byte;
 } TailFixtureEvent;
 
+/* Align forged overlap arguments for the concrete types used by the tests. */
+typedef union TailFixtureAlignment {
+    SerializedFileMetadataTail output;
+    SerializedFileMetadataTailLimits limits;
+} TailFixtureAlignment;
+
 typedef struct TailFixture {
-    alignas(max_align_t) uint8_t bytes[TAIL_FIXTURE_CAPACITY];
+    alignas(TailFixtureAlignment) uint8_t bytes[TAIL_FIXTURE_CAPACITY];
     size_t end;
     uint64_t logical_size;
     bool big_endian;

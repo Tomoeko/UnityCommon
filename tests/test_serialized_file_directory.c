@@ -386,7 +386,7 @@ static bool opaque_trees_and_dependencies(void) {
         /* No byte swapping of opaque node/hash/dependency storage is permitted,
      * including the unresolved final eight bytes of each node. */
         CHECK(first->tree.nodes_source.data[24U] == (uint8_t)(124U ^ 0xa5U) &&
-            second->tree.nodes_source.data[63U] == (uint8_t)(257U ^ 0x5aU));
+            second->tree.nodes_source.data[63U] == (uint8_t)((257U ^ 0x5aU) & UINT8_MAX));
         serialized_file_directory_dispose(&guarded.value);
     }
     return true;
@@ -1329,7 +1329,8 @@ static bool arguments_aliases_and_lifetimes(void) {
     CHECK(!guarded.value.implementation && !serialized_file_directory_view(&guarded.value));
 
     union AlignedInput {
-        max_align_t alignment;
+        SerializedFileDirectory output_alignment;
+        SerializedFileDirectoryLimits limits_alignment;
         uint8_t bytes[DIRECTORY_FIXTURE_SIZE];
     } input;
 

@@ -120,12 +120,10 @@ int main(void) {
     CHECK(expect_match("[^^]", "^", false));
 
     /* Byte matching is independent of locale and does not decode UTF-8. */
-    const char utf8_e_acute[] = {(char)0xc3, (char)0xa9, '\0'};
+    const char utf8_e_acute[] = "\xc3\xa9";
     CHECK(expect_match("??", utf8_e_acute, true));
-    const char high_byte[] = {(char)0xe9, '\0'};
-    const char high_range[] = {
-        '[', (char)0x80, '-', (char)0xff, ']', '\0'
-    };
+    const char high_byte[] = "\xe9";
+    const char high_range[] = "[\x80-\xff]";
     CHECK(expect_match(high_range, high_byte, true));
 
     CHECK(expect_malformed("["));

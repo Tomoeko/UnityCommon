@@ -605,7 +605,7 @@ int main(void) {
     CHECK(common_file_view_close(&view) == COMMON_FILE_OK);
     CHECK(delete_utf8_file(unicode_path));
 
-    static const char invalid_utf8[] = {(char)0xc3, '(', '\0'};
+    static const char invalid_utf8[] = "\xc3(";
     CHECK(common_file_read_regular(invalid_utf8, SIZE_MAX, &bytes) ==
           COMMON_FILE_INVALID_ARGUMENT);
     CHECK(bytes.data == NULL && bytes.size == 0U);

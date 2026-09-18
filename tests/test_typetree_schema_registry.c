@@ -718,7 +718,7 @@ static bool verify_atomic_file_rewrite_and_restrictions(void) {
     CHECK(registry_has_schema(&loaded, &second, "2022.3.0f1"));
     CHECK(registry_test_delete_utf8(unicode_registry_path));
 
-    static const char invalid_utf8[] = {(char)0xc3, '(', '\0'};
+    static const char invalid_utf8[] = "\xc3(";
     CHECK(typetree_schema_registry_export_file(
               &second_registry, invalid_utf8) ==
           TYPETREE_SCHEMA_INVALID_ARGUMENT);

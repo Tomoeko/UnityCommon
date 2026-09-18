@@ -605,7 +605,7 @@ int main(void) {
           result.count == before_invalid_input_count);
     CHECK(result.paths[0].path == before_invalid_input_first);
 #ifdef _WIN32
-    static const char invalid_utf8[] = {(char)0xc3, '(', '\0'};
+    static const char invalid_utf8[] = "\xc3(";
     const char* invalid_utf8_input[] = {invalid_utf8};
     CHECK(common_path_discover(invalid_utf8_input, 1U, NULL, &result) ==
           COMMON_PATH_DISCOVERY_INVALID_ARGUMENT);
