@@ -5,6 +5,7 @@
 /recovered*/
 /failed_shaders/
 /shader_includes/
+/AGENTS.md
 *.log
 *.dSYM/
 *.profraw
