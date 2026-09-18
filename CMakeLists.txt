@@ -5,7 +5,20 @@ if(CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
     include(CTest)
 endif()
 
+add_library(unity_common_language_options INTERFACE)
+target_compile_features(unity_common_language_options INTERFACE c_std_11)
+if(MSVC)
+    target_compile_options(unity_common_language_options INTERFACE /utf-8)
+endif()
+if(CMAKE_C_COMPILER_ID STREQUAL "MSVC")
+    # common.h exposes C11 atomic types and inline operations to consumers.
+    target_compile_options(unity_common_language_options INTERFACE
+        "$<$<COMPILE_LANGUAGE:C>:/experimental:c11atomics>")
+endif()
+
 add_library(unity_common_build_options INTERFACE)
+target_link_libraries(unity_common_build_options INTERFACE
+    unity_common_language_options)
 if(MSVC)
     target_compile_options(unity_common_build_options INTERFACE /W4 /WX)
 else()
@@ -34,7 +47,9 @@ add_library(UnityCommon::base ALIAS unity_common_base)
 target_include_directories(unity_common_base
     PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include"
     PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/src")
-target_link_libraries(unity_common_base PRIVATE unity_common_build_options)
+target_link_libraries(unity_common_base
+    PUBLIC unity_common_language_options
+    PRIVATE unity_common_build_options)
 set_target_properties(unity_common_base PROPERTIES
     C_STANDARD 11
     C_STANDARD_REQUIRED ON
