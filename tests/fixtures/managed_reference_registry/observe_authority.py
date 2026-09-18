@@ -62,7 +62,8 @@ def main():
                 raise RuntimeError("Addressed instruction extent is incomplete")
         path = arguments.output / (name + ".asm.txt")
         path.write_text("\n".join(retained) + "\n")
-        report["selections"].append({"name": name, "command": command,
+        report["selections"].append({"name": name, "command": [arguments.objdump.name, "--disassemble-symbols=" + symbol,
+                                                              "--no-show-raw-insn", arguments.converter.name],
                                      "full_symbol_disassembly_bytes": len(result.stdout),
                                      "full_symbol_disassembly_sha256": hashlib.sha256(result.stdout).hexdigest(),
                                      "retained": {"file": path.name, "bytes": path.stat().st_size,
