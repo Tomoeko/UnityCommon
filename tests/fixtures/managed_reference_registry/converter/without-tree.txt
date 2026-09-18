@@ -1,0 +1,13 @@
+External References
+path(1): "managed-reference-scripts.assets" GUID: 00000000000000000000000000000000 Type: 0
+
+
+Object #0 (ClassID: 114) at byte 4096 without type tree
+Object #1 (ClassID: 114) at byte 4192 without type tree
+Object #2 (ClassID: 114) at byte 4400 without type tree
+Object #3 (ClassID: 114) at byte 4632 without type tree
+Object #4 (ClassID: 114) at byte 4960 without type tree
+Object #5 (ClassID: 114) at byte 5264 without type tree
+Object #6 (ClassID: 114) at byte 5480 without type tree
+Object #7 (ClassID: 114) at byte 5768 without type tree
+Object #8 (ClassID: 114) at byte 5992 without type tree

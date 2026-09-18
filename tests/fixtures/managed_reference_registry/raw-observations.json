@@ -1,0 +1,6048 @@
+{
+  "scope": "Controlled exact35 LE registry-v2 writer outputs only; no malformed Unity execution",
+  "common_string_authority": {
+    "scope": "Pinned exact35 converter buffer observation; no Unity execution or product parser imports",
+    "source": {
+      "path": "binary2text",
+      "bytes": 311672,
+      "sha256": "d9a9938a39a81d476c42e5dd0a4b5532b43572f63f6e3471236ea791a26b2f22"
+    },
+    "named_boundaries": [
+      {
+        "symbol": "__ZN5Unity12CommonString11BufferBeginE",
+        "address": "0x1000244c8",
+        "file_offset": 148680,
+        "pointer_hex": "8c12020001000000",
+        "pointer": "0x10002128c"
+      },
+      {
+        "symbol": "__ZN5Unity12CommonString9BufferEndE",
+        "address": "0x1000244d0",
+        "file_offset": 148688,
+        "pointer_hex": "1e17020001000000",
+        "pointer": "0x10002171e"
+      }
+    ],
+    "buffer": {
+      "symbol": "__ZN5Unity12CommonStringL13gStringBufferE",
+      "begin": "0x10002128c",
+      "end": "0x10002171e",
+      "file_offset": 135820,
+      "bytes": 1170,
+      "sha256": "4a6ece766a82003fcb86398159b54e5ae84de95b33752950c89b34ea6465444e",
+      "string_starts_including_final_empty": 110,
+      "final_empty_offset": 1169
+    },
+    "constructor": {
+      "symbol": "__ZN17CommonStringTableC2E10MemLabelId",
+      "address": "0x100006c28",
+      "instructions": [
+        {
+          "address": "0x100006dac",
+          "file_offset": 28076,
+          "bytes_hex": "14270d10",
+          "assembly": "adr x20, 0x10002128c"
+        },
+        {
+          "address": "0x100006dbc",
+          "file_offset": 28092,
+          "bytes_hex": "e00314aa",
+          "assembly": "mov x0, x20"
+        },
+        {
+          "address": "0x100006dc0",
+          "file_offset": 28096,
+          "bytes_hex": "7d660094",
+          "assembly": "bl 0x1000207b4"
+        },
+        {
+          "address": "0x100006e74",
+          "file_offset": 28276,
+          "bytes_hex": "140500f9",
+          "assembly": "str x20, [x8, #0x8]"
+        },
+        {
+          "address": "0x100006e78",
+          "file_offset": 28280,
+          "bytes_hex": "e802148b",
+          "assembly": "add x8, x23, x20"
+        },
+        {
+          "address": "0x100006e7c",
+          "file_offset": 28284,
+          "bytes_hex": "14050091",
+          "assembly": "add x20, x8, #0x1"
+        },
+        {
+          "address": "0x100006e80",
+          "file_offset": 28288,
+          "bytes_hex": "e8440d50",
+          "assembly": "adr x8, 0x10002171e"
+        },
+        {
+          "address": "0x100006e88",
+          "file_offset": 28296,
+          "bytes_hex": "9f0208eb",
+          "assembly": "cmp x20, x8"
+        },
+        {
+          "address": "0x100006e8c",
+          "file_offset": 28300,
+          "bytes_hex": "83f9ff54",
+          "assembly": "b.lo 0x100006dbc"
+        }
+      ]
+    },
+    "fixture": {
+      "file": "exact35.bin",
+      "bytes": 1170,
+      "sha256": "4a6ece766a82003fcb86398159b54e5ae84de95b33752950c89b34ea6465444e",
+      "complete_buffer_equal": true
+    },
+    "extractor": {
+      "file": "extract_verify.py",
+      "sha256": "958166ac62fa48f08b402d536b95b5b0e31740fa0f90b71a04fe9a5d94c28f14"
+    },
+    "limits": {
+      "source_bytes": 1048576,
+      "fixture_bytes": 1170,
+      "receipt_bytes": 16384,
+      "scratch_bytes": 0
+    },
+    "binary_ninja": "Existing addressed observation was closed; this script opens no view or database"
+  },
+  "variants": [
+    {
+      "metadata_size": 4377,
+      "data_origin": 4432,
+      "tree_flag": 1,
+      "ordinary_types": [
+        {
+          "ordinal": 0,
+          "offset": 69,
+          "class_id": 114,
+          "stripped": 0,
+          "script_index": 0,
+          "script_hash": "986307c8e04a70d102a89dff2301a26a",
+          "type_hash": "867493dafb6a59026061d71f4f5894df",
+          "nodes": [
+            {
+              "ordinal": 0,
+              "offset": 116,
+              "version": 1,
+              "level": 0,
+              "type_flags": 0,
+              "byte_size": -1,
+              "index": 0,
+              "meta_flags": 32768,
+              "tail8_hex": "0000000000000000",
+              "type": "MonoBehaviour",
+              "name": "Base"
+            },
+            {
+              "ordinal": 1,
+              "offset": 148,
+              "version": 1,
+              "level": 1,
+              "type_flags": 0,
+              "byte_size": 12,
+              "index": 1,
+              "meta_flags": 65,
+              "tail8_hex": "0000000000000000",
+              "type": "PPtr<GameObject>",
+              "name": "m_GameObject"
+            },
+            {
+              "ordinal": 2,
+              "offset": 180,
+              "version": 1,
+              "level": 2,
+              "type_flags": 0,
+              "byte_size": 4,
+              "index": 2,
+              "meta_flags": 65,
+              "tail8_hex": "0000000000000000",
+              "type": "int",
+              "name": "m_FileID"
+            },
+            {
+              "ordinal": 3,
+              "offset": 212,
+              "version": 1,
+              "level": 2,
+              "type_flags": 0,
+              "byte_size": 8,
+              "index": 3,
+              "meta_flags": 65,
+              "tail8_hex": "0000000000000000",
+              "type": "SInt64",
+              "name": "m_PathID"
+            },
+            {
+              "ordinal": 4,
+              "offset": 244,
+              "version": 1,
+              "level": 1,
+              "type_flags": 0,
+              "byte_size": 1,
+              "index": 4,
+              "meta_flags": 16641,
+              "tail8_hex": "0000000000000000",
+              "type": "UInt8",
+              "name": "m_Enabled"
+            },
+            {
+              "ordinal": 5,
+              "offset": 276,
+              "version": 1,
+              "level": 1,
+              "type_flags": 0,
+              "byte_size": 12,
+              "index": 5,
+              "meta_flags": 0,
+              "tail8_hex": "0000000000000000",
+              "type": "PPtr<MonoScript>",
+              "name": "m_Script"
+            },
+            {
+              "ordinal": 6,
+              "offset": 308,
+              "version": 1,
+              "level": 2,
+              "type_flags": 0,
+              "byte_size": 4,
+              "index": 6,
+              "meta_flags": 8388609,
+              "tail8_hex": "0000000000000000",
+              "type": "int",
+              "name": "m_FileID"
+            },
+            {
+              "ordinal": 7,
+              "offset": 340,
+              "version": 1,
+              "level": 2,
+              "type_flags": 0,
+              "byte_size": 8,
+              "index": 7,
+              "meta_flags": 8388609,
+              "tail8_hex": "0000000000000000",
+              "type": "SInt64",
+              "name": "m_PathID"
+            },
+            {
+              "ordinal": 8,
+              "offset": 372,
+              "version": 1,
+              "level": 1,
+              "type_flags": 0,
+              "byte_size": -1,
+              "index": 8,
+              "meta_flags": 557057,
+              "tail8_hex": "0000000000000000",
+              "type": "string",
+              "name": "m_Name"
+            },
+            {
+              "ordinal": 9,
+              "offset": 404,
+              "version": 1,
+              "level": 2,
+              "type_flags": 1,
+              "byte_size": -1,
+              "index": 9,
+              "meta_flags": 540673,
+              "tail8_hex": "0000000000000000",
+              "type": "Array",
+              "name": "Array"
+            },
+            {
+              "ordinal": 10,
+              "offset": 436,
+              "version": 1,
+              "level": 3,
+              "type_flags": 0,
+              "byte_size": 4,
+              "index": 10,
+              "meta_flags": 524289,
+              "tail8_hex": "0000000000000000",
+              "type": "int",
+              "name": "size"
+            },
+            {
+              "ordinal": 11,
+              "offset": 468,
+              "version": 1,
+              "level": 3,
+              "type_flags": 0,
+              "byte_size": 1,
+              "index": 11,
+              "meta_flags": 524289,
+              "tail8_hex": "0000000000000000",
+              "type": "char",
+              "name": "data"
+            },
+            {
+              "ordinal": 12,
+              "offset": 500,
+              "version": 1,
+              "level": 1,
+              "type_flags": 0,
+              "byte_size": -1,
+              "index": 12,
+              "meta_flags": 32768,
+              "tail8_hex": "0000000000000000",
+              "type": "string",
+              "name": "caseTag"
+            },
+            {
+              "ordinal": 13,
+              "offset": 532,
+              "version": 1,
+              "level": 2,
+              "type_flags": 1,
+              "byte_size": -1,
+              "index": 13,
+              "meta_flags": 16385,
+              "tail8_hex": "0000000000000000",
+              "type": "Array",
+              "name": "Array"
+            },
+            {
+              "ordinal": 14,
+              "offset": 564,
+              "version": 1,
+              "level": 3,
+              "type_flags": 0,
+              "byte_size": 4,
+              "index": 14,
+              "meta_flags": 1,
+              "tail8_hex": "0000000000000000",
+              "type": "int",
+              "name": "size"
+            },
+            {
+              "ordinal": 15,
+              "offset": 596,
+              "version": 1,
+              "level": 3,
+              "type_flags": 0,
+              "byte_size": 1,
+              "index": 15,
+              "meta_flags": 1,
+              "tail8_hex": "0000000000000000",
+              "type": "char",
+              "name": "data"
+            },
+            {
+              "ordinal": 16,
+              "offset": 628,
+              "version": 1,
+              "level": 1,
+              "type_flags": 2,
+              "byte_size": 8,
+              "index": 16,
+              "meta_flags": 0,
+              "tail8_hex": "0000000000000000",
+              "type": "managedReference",
+              "name": "first"
+            },
+            {
+              "ordinal": 17,
+              "offset": 660,
+              "version": 1,
+              "level": 2,
+              "type_flags": 0,
+              "byte_size": 8,
+              "index": 17,
+              "meta_flags": 0,
+              "tail8_hex": "0000000000000000",
+              "type": "SInt64",
+              "name": "rid"
+            },
+            {
+              "ordinal": 18,
+              "offset": 692,
+              "version": 1,
+              "level": 1,
+              "type_flags": 2,
+              "byte_size": 8,
+              "index": 18,
+              "meta_flags": 0,
+              "tail8_hex": "0000000000000000",
+              "type": "managedReference",
+              "name": "second"
+            },
+            {
+              "ordinal": 19,
+              "offset": 724,
+              "version": 1,
+              "level": 2,
+              "type_flags": 0,
+              "byte_size": 8,
+              "index": 19,
+              "meta_flags": 0,
+              "tail8_hex": "0000000000000000",
+              "type": "SInt64",
+              "name": "rid"
+            },
+            {
+              "ordinal": 20,
+              "offset": 756,
+              "version": 1,
+              "level": 1,
+              "type_flags": 8,
+              "byte_size": -1,
+              "index": 20,
+              "meta_flags": 0,
+              "tail8_hex": "0000000000000000",
+              "type": "Object",
+              "name": "items"
+            },
+            {
+              "ordinal": 21,
+              "offset": 788,
+              "version": 1,
+              "level": 2,
+              "type_flags": 1,
+              "byte_size": -1,
+              "index": 21,
+              "meta_flags": 0,
+              "tail8_hex": "0000000000000000",
+              "type": "Array",
+              "name": "Array"
+            },
+            {
+              "ordinal": 22,
+              "offset": 820,
+              "version": 1,
+              "level": 3,
+              "type_flags": 0,
+              "byte_size": 4,
+              "index": 22,
+              "meta_flags": 0,
+              "tail8_hex": "0000000000000000",
+              "type": "int",
+              "name": "size"
+            },
+            {
+              "ordinal": 23,
+              "offset": 852,
+              "version": 1,
+              "level": 3,
+              "type_flags": 2,
+              "byte_size": 8,
+              "index": 23,
+              "meta_flags": 0,
+              "tail8_hex": "0000000000000000",
+              "type": "managedRefArrayItem",
+              "name": "data"
+            },
+            {
+              "ordinal": 24,
+              "offset": 884,
+              "version": 1,
+              "level": 4,
+              "type_flags": 0,
+              "byte_size": 8,
+              "index": 24,
+              "meta_flags": 0,
+              "tail8_hex": "0000000000000000",
+              "type": "SInt64",
+              "name": "rid"
+            },
+            {
+              "ordinal": 25,
+              "offset": 916,
+              "version": 1,
+              "level": 1,
+              "type_flags": 4,
+              "byte_size": -1,
+              "index": 25,
+              "meta_flags": 32769,
+              "tail8_hex": "0000000000000000",
+              "type": "ManagedReferencesRegistry",
+              "name": "references"
+            },
+            {
+              "ordinal": 26,
+              "offset": 948,
+              "version": 1,
+              "level": 2,
+              "type_flags": 0,
+              "byte_size": 4,
+              "index": 26,
+              "meta_flags": 1,
+              "tail8_hex": "0000000000000000",
+              "type": "int",
+              "name": "version"
+            },
+            {
+              "ordinal": 27,
+              "offset": 980,
+              "version": 1,
+              "level": 2,
+              "type_flags": 0,
+              "byte_size": -1,
+              "index": 27,
+              "meta_flags": 32769,
+              "tail8_hex": "0000000000000000",
+              "type": "vector",
+              "name": "RefIds"
+            },
+            {
+              "ordinal": 28,
+              "offset": 1012,
+              "version": 1,
+              "level": 3,
+              "type_flags": 1,
+              "byte_size": -1,
+              "index": 28,
+              "meta_flags": 49153,
+              "tail8_hex": "0000000000000000",
+              "type": "Array",
+              "name": "Array"
+            },
+            {
+              "ordinal": 29,
+              "offset": 1044,
+              "version": 1,
+              "level": 4,
+              "type_flags": 0,
+              "byte_size": 4,
+              "index": 29,
+              "meta_flags": 1,
+              "tail8_hex": "0000000000000000",
+              "type": "int",
+              "name": "size"
+            },
+            {
+              "ordinal": 30,
+              "offset": 1076,
+              "version": 1,
+              "level": 4,
+              "type_flags": 0,
+              "byte_size": -1,
+              "index": 30,
+              "meta_flags": 32769,
+              "tail8_hex": "0000000000000000",
+              "type": "ReferencedObject",
+              "name": "data"
+            },
+            {
+              "ordinal": 31,
+              "offset": 1108,
+              "version": 1,
+              "level": 5,
+              "type_flags": 0,
+              "byte_size": 8,
+              "index": 31,
+              "meta_flags": 1,
+              "tail8_hex": "0000000000000000",
+              "type": "SInt64",
+              "name": "rid"
+            },
+            {
+              "ordinal": 32,
+              "offset": 1140,
+              "version": 1,
+              "level": 5,
+              "type_flags": 0,
+              "byte_size": -1,
+              "index": 32,
+              "meta_flags": 2129921,
+              "tail8_hex": "0000000000000000",
+              "type": "ReferencedManagedType",
+              "name": "type"
+            },
+            {
+              "ordinal": 33,
+              "offset": 1172,
+              "version": 1,
+              "level": 6,
+              "type_flags": 0,
+              "byte_size": -1,
+              "index": 33,
+              "meta_flags": 2129921,
+              "tail8_hex": "0000000000000000",
+              "type": "string",
+              "name": "class"
+            },
+            {
+              "ordinal": 34,
+              "offset": 1204,
+              "version": 1,
+              "level": 7,
+              "type_flags": 1,
+              "byte_size": -1,
+              "index": 34,
+              "meta_flags": 2113537,
+              "tail8_hex": "0000000000000000",
+              "type": "Array",
+              "name": "Array"
+            },
+            {
+              "ordinal": 35,
+              "offset": 1236,
+              "version": 1,
+              "level": 8,
+              "type_flags": 0,
+              "byte_size": 4,
+              "index": 35,
+              "meta_flags": 2097153,
+              "tail8_hex": "0000000000000000",
+              "type": "int",
+              "name": "size"
+            },
+            {
+              "ordinal": 36,
+              "offset": 1268,
+              "version": 1,
+              "level": 8,
+              "type_flags": 0,
+              "byte_size": 1,
+              "index": 36,
+              "meta_flags": 2097153,
+              "tail8_hex": "0000000000000000",
+              "type": "char",
+              "name": "data"
+            },
+            {
+              "ordinal": 37,
+              "offset": 1300,
+              "version": 1,
+              "level": 6,
+              "type_flags": 0,
+              "byte_size": -1,
+              "index": 37,
+              "meta_flags": 2129921,
+              "tail8_hex": "0000000000000000",
+              "type": "string",
+              "name": "ns"
+            },
+            {
+              "ordinal": 38,
+              "offset": 1332,
+              "version": 1,
+              "level": 7,
+              "type_flags": 1,
+              "byte_size": -1,
+              "index": 38,
+              "meta_flags": 2113537,
+              "tail8_hex": "0000000000000000",
+              "type": "Array",
+              "name": "Array"
+            },
+            {
+              "ordinal": 39,
+              "offset": 1364,
+              "version": 1,
+              "level": 8,
+              "type_flags": 0,
+              "byte_size": 4,
+              "index": 39,
+              "meta_flags": 2097153,
+              "tail8_hex": "0000000000000000",
+              "type": "int",
+              "name": "size"
+            },
+            {
+              "ordinal": 40,
+              "offset": 1396,
+              "version": 1,
+              "level": 8,
+              "type_flags": 0,
+              "byte_size": 1,
+              "index": 40,
+              "meta_flags": 2097153,
+              "tail8_hex": "0000000000000000",
+              "type": "char",
+              "name": "data"
+            },
+            {
+              "ordinal": 41,
+              "offset": 1428,
+              "version": 1,
+              "level": 6,
+              "type_flags": 0,
+              "byte_size": -1,
+              "index": 41,
+              "meta_flags": 2129921,
+              "tail8_hex": "0000000000000000",
+              "type": "string",
+              "name": "asm"
+            },
+            {
+              "ordinal": 42,
+              "offset": 1460,
+              "version": 1,
+              "level": 7,
+              "type_flags": 1,
+              "byte_size": -1,
+              "index": 42,
+              "meta_flags": 2113537,
+              "tail8_hex": "0000000000000000",
+              "type": "Array",
+              "name": "Array"
+            },
+            {
+              "ordinal": 43,
+              "offset": 1492,
+              "version": 1,
+              "level": 8,
+              "type_flags": 0,
+              "byte_size": 4,
+              "index": 43,
+              "meta_flags": 2097153,
+              "tail8_hex": "0000000000000000",
+              "type": "int",
+              "name": "size"
+            },
+            {
+              "ordinal": 44,
+              "offset": 1524,
+              "version": 1,
+              "level": 8,
+              "type_flags": 0,
+              "byte_size": 1,
+              "index": 44,
+              "meta_flags": 2097153,
+              "tail8_hex": "0000000000000000",
+              "type": "char",
+              "name": "data"
+            },
+            {
+              "ordinal": 45,
+              "offset": 1556,
+              "version": 1,
+              "level": 5,
+              "type_flags": 0,
+              "byte_size": 0,
+              "index": 45,
+              "meta_flags": 1,
+              "tail8_hex": "0000000000000000",
+              "type": "ReferencedObjectData",
+              "name": "data"
+            }
+          ],
+          "strings_offset": 1588,
+          "strings_hex": "6d5f46696c654944006d5f5061746849440063617365546167006d616e616765645265666572656e636500726964006974656d73006d616e6167656452656641727261794974656d004d616e616765645265666572656e6365735265676973747279007265666572656e6365730076657273696f6e00526566496473005265666572656e6365644f626a656374005265666572656e6365644d616e6167656454797065007479706500636c617373006e730061736d005265666572656e6365644f626a6563744461746100",
+          "dependencies": [
+            0,
+            1
+          ],
+          "size": 1734
+        }
+      ],
+      "reference_types": [
+        {
+          "ordinal": 0,
+          "offset": 2102,
+          "class_id": -1,
+          "stripped": 0,
+          "script_index": 0,
+          "script_hash": "00000000000000000000000000000000",
+          "type_hash": "00000000000000000000000000000000",
+          "nodes": [
+            {
+              "ordinal": 0,
+              "offset": 2149,
+              "version": 1,
+              "level": 0,
+              "type_flags": 0,
+              "byte_size": -1,
+              "index": 0,
+              "meta_flags": 32768,
+              "tail8_hex": "0000000000000000",
+              "type": "Payload",
+              "name": "Base"
+            },
+            {
+              "ordinal": 1,
+              "offset": 2181,
+              "version": 1,
+              "level": 1,
+              "type_flags": 0,
+              "byte_size": 4,
+              "index": 1,
+              "meta_flags": 0,
+              "tail8_hex": "0000000000000000",
+              "type": "int",
+              "name": "marker"
+            },
+            {
+              "ordinal": 2,
+              "offset": 2213,
+              "version": 1,
+              "level": 1,
+              "type_flags": 0,
+              "byte_size": -1,
+              "index": 2,
+              "meta_flags": 32768,
+              "tail8_hex": "0000000000000000",
+              "type": "string",
+              "name": "label"
+            },
+            {
+              "ordinal": 3,
+              "offset": 2245,
+              "version": 1,
+              "level": 2,
+              "type_flags": 1,
+              "byte_size": -1,
+              "index": 3,
+              "meta_flags": 16385,
+              "tail8_hex": "0000000000000000",
+              "type": "Array",
+              "name": "Array"
+            },
+            {
+              "ordinal": 4,
+              "offset": 2277,
+              "version": 1,
+              "level": 3,
+              "type_flags": 0,
+              "byte_size": 4,
+              "index": 4,
+              "meta_flags": 1,
+              "tail8_hex": "0000000000000000",
+              "type": "int",
+              "name": "size"
+            },
+            {
+              "ordinal": 5,
+              "offset": 2309,
+              "version": 1,
+              "level": 3,
+              "type_flags": 0,
+              "byte_size": 1,
+              "index": 5,
+              "meta_flags": 1,
+              "tail8_hex": "0000000000000000",
+              "type": "char",
+              "name": "data"
+            },
+            {
+              "ordinal": 6,
+              "offset": 2341,
+              "version": 1,
+              "level": 1,
+              "type_flags": 2,
+              "byte_size": 8,
+              "index": 6,
+              "meta_flags": 0,
+              "tail8_hex": "0000000000000000",
+              "type": "managedReference",
+              "name": "next"
+            },
+            {
+              "ordinal": 7,
+              "offset": 2373,
+              "version": 1,
+              "level": 2,
+              "type_flags": 0,
+              "byte_size": 8,
+              "index": 7,
+              "meta_flags": 0,
+              "tail8_hex": "0000000000000000",
+              "type": "SInt64",
+              "name": "rid"
+            },
+            {
+              "ordinal": 8,
+              "offset": 2405,
+              "version": 1,
+              "level": 1,
+              "type_flags": 4,
+              "byte_size": -1,
+              "index": 8,
+              "meta_flags": 32769,
+              "tail8_hex": "0000000000000000",
+              "type": "ManagedReferencesRegistry",
+              "name": "references"
+            },
+            {
+              "ordinal": 9,
+              "offset": 2437,
+              "version": 1,
+              "level": 2,
+              "type_flags": 0,
+              "byte_size": 4,
+              "index": 9,
+              "meta_flags": 1,
+              "tail8_hex": "0000000000000000",
+              "type": "int",
+              "name": "version"
+            },
+            {
+              "ordinal": 10,
+              "offset": 2469,
+              "version": 1,
+              "level": 2,
+              "type_flags": 0,
+              "byte_size": -1,
+              "index": 10,
+              "meta_flags": 32769,
+              "tail8_hex": "0000000000000000",
+              "type": "vector",
+              "name": "RefIds"
+            },
+            {
+              "ordinal": 11,
+              "offset": 2501,
+              "version": 1,
+              "level": 3,
+              "type_flags": 1,
+              "byte_size": -1,
+              "index": 11,
+              "meta_flags": 49153,
+              "tail8_hex": "0000000000000000",
+              "type": "Array",
+              "name": "Array"
+            },
+            {
+              "ordinal": 12,
+              "offset": 2533,
+              "version": 1,
+              "level": 4,
+              "type_flags": 0,
+              "byte_size": 4,
+              "index": 12,
+              "meta_flags": 1,
+              "tail8_hex": "0000000000000000",
+              "type": "int",
+              "name": "size"
+            },
+            {
+              "ordinal": 13,
+              "offset": 2565,
+              "version": 1,
+              "level": 4,
+              "type_flags": 0,
+              "byte_size": -1,
+              "index": 13,
+              "meta_flags": 32769,
+              "tail8_hex": "0000000000000000",
+              "type": "ReferencedObject",
+              "name": "data"
+            },
+            {
+              "ordinal": 14,
+              "offset": 2597,
+              "version": 1,
+              "level": 5,
+              "type_flags": 0,
+              "byte_size": 8,
+              "index": 14,
+              "meta_flags": 1,
+              "tail8_hex": "0000000000000000",
+              "type": "SInt64",
+              "name": "rid"
+            },
+            {
+              "ordinal": 15,
+              "offset": 2629,
+              "version": 1,
+              "level": 5,
+              "type_flags": 0,
+              "byte_size": -1,
+              "index": 15,
+              "meta_flags": 2129921,
+              "tail8_hex": "0000000000000000",
+              "type": "ReferencedManagedType",
+              "name": "type"
+            },
+            {
+              "ordinal": 16,
+              "offset": 2661,
+              "version": 1,
+              "level": 6,
+              "type_flags": 0,
+              "byte_size": -1,
+              "index": 16,
+              "meta_flags": 2129921,
+              "tail8_hex": "0000000000000000",
+              "type": "string",
+              "name": "class"
+            },
+            {
+              "ordinal": 17,
+              "offset": 2693,
+              "version": 1,
+              "level": 7,
+              "type_flags": 1,
+              "byte_size": -1,
+              "index": 17,
+              "meta_flags": 2113537,
+              "tail8_hex": "0000000000000000",
+              "type": "Array",
+              "name": "Array"
+            },
+            {
+              "ordinal": 18,
+              "offset": 2725,
+              "version": 1,
+              "level": 8,
+              "type_flags": 0,
+              "byte_size": 4,
+              "index": 18,
+              "meta_flags": 2097153,
+              "tail8_hex": "0000000000000000",
+              "type": "int",
+              "name": "size"
+            },
+            {
+              "ordinal": 19,
+              "offset": 2757,
+              "version": 1,
+              "level": 8,
+              "type_flags": 0,
+              "byte_size": 1,
+              "index": 19,
+              "meta_flags": 2097153,
+              "tail8_hex": "0000000000000000",
+              "type": "char",
+              "name": "data"
+            },
+            {
+              "ordinal": 20,
+              "offset": 2789,
+              "version": 1,
+              "level": 6,
+              "type_flags": 0,
+              "byte_size": -1,
+              "index": 20,
+              "meta_flags": 2129921,
+              "tail8_hex": "0000000000000000",
+              "type": "string",
+              "name": "ns"
+            },
+            {
+              "ordinal": 21,
+              "offset": 2821,
+              "version": 1,
+              "level": 7,
+              "type_flags": 1,
+              "byte_size": -1,
+              "index": 21,
+              "meta_flags": 2113537,
+              "tail8_hex": "0000000000000000",
+              "type": "Array",
+              "name": "Array"
+            },
+            {
+              "ordinal": 22,
+              "offset": 2853,
+              "version": 1,
+              "level": 8,
+              "type_flags": 0,
+              "byte_size": 4,
+              "index": 22,
+              "meta_flags": 2097153,
+              "tail8_hex": "0000000000000000",
+              "type": "int",
+              "name": "size"
+            },
+            {
+              "ordinal": 23,
+              "offset": 2885,
+              "version": 1,
+              "level": 8,
+              "type_flags": 0,
+              "byte_size": 1,
+              "index": 23,
+              "meta_flags": 2097153,
+              "tail8_hex": "0000000000000000",
+              "type": "char",
+              "name": "data"
+            },
+            {
+              "ordinal": 24,
+              "offset": 2917,
+              "version": 1,
+              "level": 6,
+              "type_flags": 0,
+              "byte_size": -1,
+              "index": 24,
+              "meta_flags": 2129921,
+              "tail8_hex": "0000000000000000",
+              "type": "string",
+              "name": "asm"
+            },
+            {
+              "ordinal": 25,
+              "offset": 2949,
+              "version": 1,
+              "level": 7,
+              "type_flags": 1,
+              "byte_size": -1,
+              "index": 25,
+              "meta_flags": 2113537,
+              "tail8_hex": "0000000000000000",
+              "type": "Array",
+              "name": "Array"
+            },
+            {
+              "ordinal": 26,
+              "offset": 2981,
+              "version": 1,
+              "level": 8,
+              "type_flags": 0,
+              "byte_size": 4,
+              "index": 26,
+              "meta_flags": 2097153,
+              "tail8_hex": "0000000000000000",
+              "type": "int",
+              "name": "size"
+            },
+            {
+              "ordinal": 27,
+              "offset": 3013,
+              "version": 1,
+              "level": 8,
+              "type_flags": 0,
+              "byte_size": 1,
+              "index": 27,
+              "meta_flags": 2097153,
+              "tail8_hex": "0000000000000000",
+              "type": "char",
+              "name": "data"
+            },
+            {
+              "ordinal": 28,
+              "offset": 3045,
+              "version": 1,
+              "level": 5,
+              "type_flags": 0,
+              "byte_size": 0,
+              "index": 28,
+              "meta_flags": 1,
+              "tail8_hex": "0000000000000000",
+              "type": "ReferencedObjectData",
+              "name": "data"
+            }
+          ],
+          "strings_offset": 3077,
+          "strings_hex": "5061796c6f6164006d61726b6572006c6162656c006d616e616765645265666572656e6365006e65787400726964004d616e616765645265666572656e6365735265676973747279007265666572656e6365730076657273696f6e00526566496473005265666572656e6365644f626a656374005265666572656e6365644d616e6167656454797065007479706500636c617373006e730061736d005265666572656e6365644f626a6563744461746100",
+          "identity": [
+            "Payload",
+            "UnityRecoverManagedFixture.Alpha",
+            "Assembly-CSharp"
+          ],
+          "size": 1209
+        },
+        {
+          "ordinal": 1,
+          "offset": 3311,
+          "class_id": -1,
+          "stripped": 0,
+          "script_index": 1,
+          "script_hash": "00000000000000000000000000000000",
+          "type_hash": "00000000000000000000000000000000",
+          "nodes": [
+            {
+              "ordinal": 0,
+              "offset": 3358,
+              "version": 1,
+              "level": 0,
+              "type_flags": 0,
+              "byte_size": -1,
+              "index": 0,
+              "meta_flags": 32768,
+              "tail8_hex": "0000000000000000",
+              "type": "Payload",
+              "name": "Base"
+            },
+            {
+              "ordinal": 1,
+              "offset": 3390,
+              "version": 1,
+              "level": 1,
+              "type_flags": 0,
+              "byte_size": 4,
+              "index": 1,
+              "meta_flags": 0,
+              "tail8_hex": "0000000000000000",
+              "type": "int",
+              "name": "marker"
+            },
+            {
+              "ordinal": 2,
+              "offset": 3422,
+              "version": 1,
+              "level": 1,
+              "type_flags": 0,
+              "byte_size": 4,
+              "index": 2,
+              "meta_flags": 0,
+              "tail8_hex": "0000000000000000",
+              "type": "float",
+              "name": "amount"
+            },
+            {
+              "ordinal": 3,
+              "offset": 3454,
+              "version": 1,
+              "level": 1,
+              "type_flags": 2,
+              "byte_size": 8,
+              "index": 3,
+              "meta_flags": 0,
+              "tail8_hex": "0000000000000000",
+              "type": "managedReference",
+              "name": "next"
+            },
+            {
+              "ordinal": 4,
+              "offset": 3486,
+              "version": 1,
+              "level": 2,
+              "type_flags": 0,
+              "byte_size": 8,
+              "index": 4,
+              "meta_flags": 0,
+              "tail8_hex": "0000000000000000",
+              "type": "SInt64",
+              "name": "rid"
+            },
+            {
+              "ordinal": 5,
+              "offset": 3518,
+              "version": 1,
+              "level": 1,
+              "type_flags": 4,
+              "byte_size": -1,
+              "index": 5,
+              "meta_flags": 32769,
+              "tail8_hex": "0000000000000000",
+              "type": "ManagedReferencesRegistry",
+              "name": "references"
+            },
+            {
+              "ordinal": 6,
+              "offset": 3550,
+              "version": 1,
+              "level": 2,
+              "type_flags": 0,
+              "byte_size": 4,
+              "index": 6,
+              "meta_flags": 1,
+              "tail8_hex": "0000000000000000",
+              "type": "int",
+              "name": "version"
+            },
+            {
+              "ordinal": 7,
+              "offset": 3582,
+              "version": 1,
+              "level": 2,
+              "type_flags": 0,
+              "byte_size": -1,
+              "index": 7,
+              "meta_flags": 32769,
+              "tail8_hex": "0000000000000000",
+              "type": "vector",
+              "name": "RefIds"
+            },
+            {
+              "ordinal": 8,
+              "offset": 3614,
+              "version": 1,
+              "level": 3,
+              "type_flags": 1,
+              "byte_size": -1,
+              "index": 8,
+              "meta_flags": 49153,
+              "tail8_hex": "0000000000000000",
+              "type": "Array",
+              "name": "Array"
+            },
+            {
+              "ordinal": 9,
+              "offset": 3646,
+              "version": 1,
+              "level": 4,
+              "type_flags": 0,
+              "byte_size": 4,
+              "index": 9,
+              "meta_flags": 1,
+              "tail8_hex": "0000000000000000",
+              "type": "int",
+              "name": "size"
+            },
+            {
+              "ordinal": 10,
+              "offset": 3678,
+              "version": 1,
+              "level": 4,
+              "type_flags": 0,
+              "byte_size": -1,
+              "index": 10,
+              "meta_flags": 32769,
+              "tail8_hex": "0000000000000000",
+              "type": "ReferencedObject",
+              "name": "data"
+            },
+            {
+              "ordinal": 11,
+              "offset": 3710,
+              "version": 1,
+              "level": 5,
+              "type_flags": 0,
+              "byte_size": 8,
+              "index": 11,
+              "meta_flags": 1,
+              "tail8_hex": "0000000000000000",
+              "type": "SInt64",
+              "name": "rid"
+            },
+            {
+              "ordinal": 12,
+              "offset": 3742,
+              "version": 1,
+              "level": 5,
+              "type_flags": 0,
+              "byte_size": -1,
+              "index": 12,
+              "meta_flags": 2129921,
+              "tail8_hex": "0000000000000000",
+              "type": "ReferencedManagedType",
+              "name": "type"
+            },
+            {
+              "ordinal": 13,
+              "offset": 3774,
+              "version": 1,
+              "level": 6,
+              "type_flags": 0,
+              "byte_size": -1,
+              "index": 13,
+              "meta_flags": 2129921,
+              "tail8_hex": "0000000000000000",
+              "type": "string",
+              "name": "class"
+            },
+            {
+              "ordinal": 14,
+              "offset": 3806,
+              "version": 1,
+              "level": 7,
+              "type_flags": 1,
+              "byte_size": -1,
+              "index": 14,
+              "meta_flags": 2113537,
+              "tail8_hex": "0000000000000000",
+              "type": "Array",
+              "name": "Array"
+            },
+            {
+              "ordinal": 15,
+              "offset": 3838,
+              "version": 1,
+              "level": 8,
+              "type_flags": 0,
+              "byte_size": 4,
+              "index": 15,
+              "meta_flags": 2097153,
+              "tail8_hex": "0000000000000000",
+              "type": "int",
+              "name": "size"
+            },
+            {
+              "ordinal": 16,
+              "offset": 3870,
+              "version": 1,
+              "level": 8,
+              "type_flags": 0,
+              "byte_size": 1,
+              "index": 16,
+              "meta_flags": 2097153,
+              "tail8_hex": "0000000000000000",
+              "type": "char",
+              "name": "data"
+            },
+            {
+              "ordinal": 17,
+              "offset": 3902,
+              "version": 1,
+              "level": 6,
+              "type_flags": 0,
+              "byte_size": -1,
+              "index": 17,
+              "meta_flags": 2129921,
+              "tail8_hex": "0000000000000000",
+              "type": "string",
+              "name": "ns"
+            },
+            {
+              "ordinal": 18,
+              "offset": 3934,
+              "version": 1,
+              "level": 7,
+              "type_flags": 1,
+              "byte_size": -1,
+              "index": 18,
+              "meta_flags": 2113537,
+              "tail8_hex": "0000000000000000",
+              "type": "Array",
+              "name": "Array"
+            },
+            {
+              "ordinal": 19,
+              "offset": 3966,
+              "version": 1,
+              "level": 8,
+              "type_flags": 0,
+              "byte_size": 4,
+              "index": 19,
+              "meta_flags": 2097153,
+              "tail8_hex": "0000000000000000",
+              "type": "int",
+              "name": "size"
+            },
+            {
+              "ordinal": 20,
+              "offset": 3998,
+              "version": 1,
+              "level": 8,
+              "type_flags": 0,
+              "byte_size": 1,
+              "index": 20,
+              "meta_flags": 2097153,
+              "tail8_hex": "0000000000000000",
+              "type": "char",
+              "name": "data"
+            },
+            {
+              "ordinal": 21,
+              "offset": 4030,
+              "version": 1,
+              "level": 6,
+              "type_flags": 0,
+              "byte_size": -1,
+              "index": 21,
+              "meta_flags": 2129921,
+              "tail8_hex": "0000000000000000",
+              "type": "string",
+              "name": "asm"
+            },
+            {
+              "ordinal": 22,
+              "offset": 4062,
+              "version": 1,
+              "level": 7,
+              "type_flags": 1,
+              "byte_size": -1,
+              "index": 22,
+              "meta_flags": 2113537,
+              "tail8_hex": "0000000000000000",
+              "type": "Array",
+              "name": "Array"
+            },
+            {
+              "ordinal": 23,
+              "offset": 4094,
+              "version": 1,
+              "level": 8,
+              "type_flags": 0,
+              "byte_size": 4,
+              "index": 23,
+              "meta_flags": 2097153,
+              "tail8_hex": "0000000000000000",
+              "type": "int",
+              "name": "size"
+            },
+            {
+              "ordinal": 24,
+              "offset": 4126,
+              "version": 1,
+              "level": 8,
+              "type_flags": 0,
+              "byte_size": 1,
+              "index": 24,
+              "meta_flags": 2097153,
+              "tail8_hex": "0000000000000000",
+              "type": "char",
+              "name": "data"
+            },
+            {
+              "ordinal": 25,
+              "offset": 4158,
+              "version": 1,
+              "level": 5,
+              "type_flags": 0,
+              "byte_size": 0,
+              "index": 25,
+              "meta_flags": 1,
+              "tail8_hex": "0000000000000000",
+              "type": "ReferencedObjectData",
+              "name": "data"
+            }
+          ],
+          "strings_offset": 4190,
+          "strings_hex": "5061796c6f6164006d61726b657200616d6f756e74006d616e616765645265666572656e6365006e65787400726964004d616e616765645265666572656e6365735265676973747279007265666572656e6365730076657273696f6e00526566496473005265666572656e6365644f626a656374005265666572656e6365644d616e6167656454797065007479706500636c617373006e730061736d005265666572656e6365644f626a6563744461746100",
+          "identity": [
+            "Payload",
+            "UnityRecoverManagedFixture.Beta",
+            "Assembly-CSharp"
+          ],
+          "size": 1113
+        }
+      ],
+      "objects": [
+        {
+          "ordinal": 0,
+          "source_offset": 1808,
+          "path_id": 1001,
+          "offset": 4432,
+          "size": 92,
+          "type_ordinal": 0
+        },
+        {
+          "ordinal": 1,
+          "source_offset": 1832,
+          "path_id": 1003,
+          "offset": 4528,
+          "size": 208,
+          "type_ordinal": 0
+        },
+        {
+          "ordinal": 2,
+          "source_offset": 1856,
+          "path_id": 1005,
+          "offset": 4736,
+          "size": 232,
+          "type_ordinal": 0
+        },
+        {
+          "ordinal": 3,
+          "source_offset": 1880,
+          "path_id": 1007,
+          "offset": 4968,
+          "size": 324,
+          "type_ordinal": 0
+        },
+        {
+          "ordinal": 4,
+          "source_offset": 1904,
+          "path_id": 1009,
+          "offset": 5296,
+          "size": 300,
+          "type_ordinal": 0
+        },
+        {
+          "ordinal": 5,
+          "source_offset": 1928,
+          "path_id": 1011,
+          "offset": 5600,
+          "size": 216,
+          "type_ordinal": 0
+        },
+        {
+          "ordinal": 6,
+          "source_offset": 1952,
+          "path_id": 1013,
+          "offset": 5816,
+          "size": 288,
+          "type_ordinal": 0
+        },
+        {
+          "ordinal": 7,
+          "source_offset": 1976,
+          "path_id": 1015,
+          "offset": 6104,
+          "size": 220,
+          "type_ordinal": 0
+        },
+        {
+          "ordinal": 8,
+          "source_offset": 2000,
+          "path_id": 1017,
+          "offset": 6328,
+          "size": 200,
+          "type_ordinal": 0
+        }
+      ],
+      "metadata_fields": [
+        {
+          "field": "engine_version",
+          "offset": 48,
+          "size": 12,
+          "value": "2021.3.35f1",
+          "hex": "323032312e332e3335663100"
+        },
+        {
+          "field": "target",
+          "offset": 60,
+          "size": 4,
+          "value": 19,
+          "hex": "13000000"
+        },
+        {
+          "field": "tree_flag",
+          "offset": 64,
+          "size": 1,
+          "value": 1,
+          "hex": "01"
+        },
+        {
+          "field": "type_count",
+          "offset": 65,
+          "size": 4,
+          "value": 1,
+          "hex": "01000000"
+        },
+        {
+          "field": "class_id",
+          "offset": 69,
+          "size": 4,
+          "value": 114,
+          "hex": "72000000"
+        },
+        {
+          "field": "stripped",
+          "offset": 73,
+          "size": 1,
+          "value": 0,
+          "hex": "00"
+        },
+        {
+          "field": "script_index",
+          "offset": 74,
+          "size": 2,
+          "value": 0,
+          "hex": "0000"
+        },
+        {
+          "field": "node_count",
+          "offset": 108,
+          "size": 4,
+          "value": 46,
+          "hex": "2e000000"
+        },
+        {
+          "field": "string_byte_count",
+          "offset": 112,
+          "size": 4,
+          "value": 203,
+          "hex": "cb000000"
+        },
+        {
+          "field": "dependency_count",
+          "offset": 1791,
+          "size": 4,
+          "value": 2,
+          "hex": "02000000"
+        },
+        {
+          "field": "dependency",
+          "offset": 1795,
+          "size": 4,
+          "value": 0,
+          "hex": "00000000"
+        },
+        {
+          "field": "dependency",
+          "offset": 1799,
+          "size": 4,
+          "value": 1,
+          "hex": "01000000"
+        },
+        {
+          "field": "object_count",
+          "offset": 1803,
+          "size": 4,
+          "value": 9,
+          "hex": "09000000"
+        },
+        {
+          "field": "object_alignment",
+          "offset": 1807,
+          "size": 1,
+          "hex": "00"
+        },
+        {
+          "field": "path_id",
+          "offset": 1808,
+          "size": 8,
+          "value": 1001,
+          "hex": "e903000000000000"
+        },
+        {
+          "field": "relative_offset",
+          "offset": 1816,
+          "size": 8,
+          "value": 0,
+          "hex": "0000000000000000"
+        },
+        {
+          "field": "object_size",
+          "offset": 1824,
+          "size": 4,
+          "value": 92,
+          "hex": "5c000000"
+        },
+        {
+          "field": "type_ordinal",
+          "offset": 1828,
+          "size": 4,
+          "value": 0,
+          "hex": "00000000"
+        },
+        {
+          "field": "object_alignment",
+          "offset": 1832,
+          "size": 0,
+          "hex": ""
+        },
+        {
+          "field": "path_id",
+          "offset": 1832,
+          "size": 8,
+          "value": 1003,
+          "hex": "eb03000000000000"
+        },
+        {
+          "field": "relative_offset",
+          "offset": 1840,
+          "size": 8,
+          "value": 96,
+          "hex": "6000000000000000"
+        },
+        {
+          "field": "object_size",
+          "offset": 1848,
+          "size": 4,
+          "value": 208,
+          "hex": "d0000000"
+        },
+        {
+          "field": "type_ordinal",
+          "offset": 1852,
+          "size": 4,
+          "value": 0,
+          "hex": "00000000"
+        },
+        {
+          "field": "object_alignment",
+          "offset": 1856,
+          "size": 0,
+          "hex": ""
+        },
+        {
+          "field": "path_id",
+          "offset": 1856,
+          "size": 8,
+          "value": 1005,
+          "hex": "ed03000000000000"
+        },
+        {
+          "field": "relative_offset",
+          "offset": 1864,
+          "size": 8,
+          "value": 304,
+          "hex": "3001000000000000"
+        },
+        {
+          "field": "object_size",
+          "offset": 1872,
+          "size": 4,
+          "value": 232,
+          "hex": "e8000000"
+        },
+        {
+          "field": "type_ordinal",
+          "offset": 1876,
+          "size": 4,
+          "value": 0,
+          "hex": "00000000"
+        },
+        {
+          "field": "object_alignment",
+          "offset": 1880,
+          "size": 0,
+          "hex": ""
+        },
+        {
+          "field": "path_id",
+          "offset": 1880,
+          "size": 8,
+          "value": 1007,
+          "hex": "ef03000000000000"
+        },
+        {
+          "field": "relative_offset",
+          "offset": 1888,
+          "size": 8,
+          "value": 536,
+          "hex": "1802000000000000"
+        },
+        {
+          "field": "object_size",
+          "offset": 1896,
+          "size": 4,
+          "value": 324,
+          "hex": "44010000"
+        },
+        {
+          "field": "type_ordinal",
+          "offset": 1900,
+          "size": 4,
+          "value": 0,
+          "hex": "00000000"
+        },
+        {
+          "field": "object_alignment",
+          "offset": 1904,
+          "size": 0,
+          "hex": ""
+        },
+        {
+          "field": "path_id",
+          "offset": 1904,
+          "size": 8,
+          "value": 1009,
+          "hex": "f103000000000000"
+        },
+        {
+          "field": "relative_offset",
+          "offset": 1912,
+          "size": 8,
+          "value": 864,
+          "hex": "6003000000000000"
+        },
+        {
+          "field": "object_size",
+          "offset": 1920,
+          "size": 4,
+          "value": 300,
+          "hex": "2c010000"
+        },
+        {
+          "field": "type_ordinal",
+          "offset": 1924,
+          "size": 4,
+          "value": 0,
+          "hex": "00000000"
+        },
+        {
+          "field": "object_alignment",
+          "offset": 1928,
+          "size": 0,
+          "hex": ""
+        },
+        {
+          "field": "path_id",
+          "offset": 1928,
+          "size": 8,
+          "value": 1011,
+          "hex": "f303000000000000"
+        },
+        {
+          "field": "relative_offset",
+          "offset": 1936,
+          "size": 8,
+          "value": 1168,
+          "hex": "9004000000000000"
+        },
+        {
+          "field": "object_size",
+          "offset": 1944,
+          "size": 4,
+          "value": 216,
+          "hex": "d8000000"
+        },
+        {
+          "field": "type_ordinal",
+          "offset": 1948,
+          "size": 4,
+          "value": 0,
+          "hex": "00000000"
+        },
+        {
+          "field": "object_alignment",
+          "offset": 1952,
+          "size": 0,
+          "hex": ""
+        },
+        {
+          "field": "path_id",
+          "offset": 1952,
+          "size": 8,
+          "value": 1013,
+          "hex": "f503000000000000"
+        },
+        {
+          "field": "relative_offset",
+          "offset": 1960,
+          "size": 8,
+          "value": 1384,
+          "hex": "6805000000000000"
+        },
+        {
+          "field": "object_size",
+          "offset": 1968,
+          "size": 4,
+          "value": 288,
+          "hex": "20010000"
+        },
+        {
+          "field": "type_ordinal",
+          "offset": 1972,
+          "size": 4,
+          "value": 0,
+          "hex": "00000000"
+        },
+        {
+          "field": "object_alignment",
+          "offset": 1976,
+          "size": 0,
+          "hex": ""
+        },
+        {
+          "field": "path_id",
+          "offset": 1976,
+          "size": 8,
+          "value": 1015,
+          "hex": "f703000000000000"
+        },
+        {
+          "field": "relative_offset",
+          "offset": 1984,
+          "size": 8,
+          "value": 1672,
+          "hex": "8806000000000000"
+        },
+        {
+          "field": "object_size",
+          "offset": 1992,
+          "size": 4,
+          "value": 220,
+          "hex": "dc000000"
+        },
+        {
+          "field": "type_ordinal",
+          "offset": 1996,
+          "size": 4,
+          "value": 0,
+          "hex": "00000000"
+        },
+        {
+          "field": "object_alignment",
+          "offset": 2000,
+          "size": 0,
+          "hex": ""
+        },
+        {
+          "field": "path_id",
+          "offset": 2000,
+          "size": 8,
+          "value": 1017,
+          "hex": "f903000000000000"
+        },
+        {
+          "field": "relative_offset",
+          "offset": 2008,
+          "size": 8,
+          "value": 1896,
+          "hex": "6807000000000000"
+        },
+        {
+          "field": "object_size",
+          "offset": 2016,
+          "size": 4,
+          "value": 200,
+          "hex": "c8000000"
+        },
+        {
+          "field": "type_ordinal",
+          "offset": 2020,
+          "size": 4,
+          "value": 0,
+          "hex": "00000000"
+        },
+        {
+          "field": "script_count",
+          "offset": 2024,
+          "size": 4,
+          "value": 1,
+          "hex": "01000000"
+        },
+        {
+          "field": "script_file",
+          "offset": 2028,
+          "size": 4,
+          "value": 1,
+          "hex": "01000000"
+        },
+        {
+          "field": "script_alignment",
+          "offset": 2032,
+          "size": 0,
+          "hex": ""
+        },
+        {
+          "field": "script_path",
+          "offset": 2032,
+          "size": 8,
+          "value": 9001,
+          "hex": "2923000000000000"
+        },
+        {
+          "field": "external_count",
+          "offset": 2040,
+          "size": 4,
+          "value": 1,
+          "hex": "01000000"
+        },
+        {
+          "field": "external_leading",
+          "offset": 2044,
+          "size": 1,
+          "value": "",
+          "hex": "00"
+        },
+        {
+          "field": "external_type",
+          "offset": 2061,
+          "size": 4,
+          "value": 0,
+          "hex": "00000000"
+        },
+        {
+          "field": "external_path",
+          "offset": 2065,
+          "size": 33,
+          "value": "managed-reference-scripts.assets",
+          "hex": "6d616e616765642d7265666572656e63652d736372697074732e61737365747300"
+        },
+        {
+          "field": "reference_type_count",
+          "offset": 2098,
+          "size": 4,
+          "value": 2,
+          "hex": "02000000"
+        },
+        {
+          "field": "class_id",
+          "offset": 2102,
+          "size": 4,
+          "value": -1,
+          "hex": "ffffffff"
+        },
+        {
+          "field": "stripped",
+          "offset": 2106,
+          "size": 1,
+          "value": 0,
+          "hex": "00"
+        },
+        {
+          "field": "script_index",
+          "offset": 2107,
+          "size": 2,
+          "value": 0,
+          "hex": "0000"
+        },
+        {
+          "field": "node_count",
+          "offset": 2141,
+          "size": 4,
+          "value": 29,
+          "hex": "1d000000"
+        },
+        {
+          "field": "string_byte_count",
+          "offset": 2145,
+          "size": 4,
+          "value": 177,
+          "hex": "b1000000"
+        },
+        {
+          "field": "class",
+          "offset": 3254,
+          "size": 8,
+          "value": "Payload",
+          "hex": "5061796c6f616400"
+        },
+        {
+          "field": "namespace",
+          "offset": 3262,
+          "size": 33,
+          "value": "UnityRecoverManagedFixture.Alpha",
+          "hex": "556e6974795265636f7665724d616e61676564466978747572652e416c70686100"
+        },
+        {
+          "field": "assembly",
+          "offset": 3295,
+          "size": 16,
+          "value": "Assembly-CSharp",
+          "hex": "417373656d626c792d43536861727000"
+        },
+        {
+          "field": "class_id",
+          "offset": 3311,
+          "size": 4,
+          "value": -1,
+          "hex": "ffffffff"
+        },
+        {
+          "field": "stripped",
+          "offset": 3315,
+          "size": 1,
+          "value": 0,
+          "hex": "00"
+        },
+        {
+          "field": "script_index",
+          "offset": 3316,
+          "size": 2,
+          "value": 1,
+          "hex": "0100"
+        },
+        {
+          "field": "node_count",
+          "offset": 3350,
+          "size": 4,
+          "value": 26,
+          "hex": "1a000000"
+        },
+        {
+          "field": "string_byte_count",
+          "offset": 3354,
+          "size": 4,
+          "value": 178,
+          "hex": "b2000000"
+        },
+        {
+          "field": "class",
+          "offset": 4368,
+          "size": 8,
+          "value": "Payload",
+          "hex": "5061796c6f616400"
+        },
+        {
+          "field": "namespace",
+          "offset": 4376,
+          "size": 32,
+          "value": "UnityRecoverManagedFixture.Beta",
+          "hex": "556e6974795265636f7665724d616e61676564466978747572652e4265746100"
+        },
+        {
+          "field": "assembly",
+          "offset": 4408,
+          "size": 16,
+          "value": "Assembly-CSharp",
+          "hex": "417373656d626c792d43536861727000"
+        },
+        {
+          "field": "user_information",
+          "offset": 4424,
+          "size": 1,
+          "value": "",
+          "hex": "00"
+        }
+      ],
+      "variant": "with-tree",
+      "bytes": 6528,
+      "sha256": "0165c78b5ad8bbc458db995641964ae915adc61fa29e2de83709f29c9094d191",
+      "values": [
+        {
+          "path_id": 1001,
+          "offset": 4432,
+          "size": 92,
+          "case": "null",
+          "first_id": -2,
+          "second_id": -2,
+          "item_ids": [],
+          "registry_offset": 4496,
+          "registry_size": 28,
+          "registry_version": 2,
+          "registry": [
+            {
+              "ordinal": 0,
+              "offset": 4504,
+              "rid": -2,
+              "identity": [
+                "",
+                "",
+                ""
+              ],
+              "payload_offset": 4524,
+              "selection": "null",
+              "payload_size": 0,
+              "size": 20
+            }
+          ],
+          "fields": [
+            {
+              "field": "game_object.file_id",
+              "offset": 4432,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "game_object.path_id",
+              "offset": 4436,
+              "size": 8,
+              "value": 0,
+              "hex": "0000000000000000"
+            },
+            {
+              "field": "enabled",
+              "offset": 4444,
+              "size": 1,
+              "value": 1,
+              "hex": "01"
+            },
+            {
+              "field": "enabled.padding",
+              "offset": 4445,
+              "size": 3,
+              "hex": "000000"
+            },
+            {
+              "field": "script.file_id",
+              "offset": 4448,
+              "size": 4,
+              "value": 1,
+              "hex": "01000000"
+            },
+            {
+              "field": "script.path_id",
+              "offset": 4452,
+              "size": 8,
+              "value": 9001,
+              "hex": "2923000000000000"
+            },
+            {
+              "field": "name.length",
+              "offset": 4460,
+              "size": 4,
+              "value": 4,
+              "hex": "04000000"
+            },
+            {
+              "field": "name",
+              "offset": 4464,
+              "size": 4,
+              "value": "null",
+              "hex": "6e756c6c"
+            },
+            {
+              "field": "name.padding",
+              "offset": 4468,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "case_tag.length",
+              "offset": 4468,
+              "size": 4,
+              "value": 4,
+              "hex": "04000000"
+            },
+            {
+              "field": "case_tag",
+              "offset": 4472,
+              "size": 4,
+              "value": "null",
+              "hex": "6e756c6c"
+            },
+            {
+              "field": "case_tag.padding",
+              "offset": 4476,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "first.rid",
+              "offset": 4476,
+              "size": 8,
+              "value": -2,
+              "hex": "feffffffffffffff"
+            },
+            {
+              "field": "second.rid",
+              "offset": 4484,
+              "size": 8,
+              "value": -2,
+              "hex": "feffffffffffffff"
+            },
+            {
+              "field": "items.count",
+              "offset": 4492,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "items.padding",
+              "offset": 4496,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.version",
+              "offset": 4496,
+              "size": 4,
+              "value": 2,
+              "hex": "02000000"
+            },
+            {
+              "field": "registry.count",
+              "offset": 4500,
+              "size": 4,
+              "value": 1,
+              "hex": "01000000"
+            },
+            {
+              "field": "registry.rid",
+              "offset": 4504,
+              "size": 8,
+              "value": -2,
+              "hex": "feffffffffffffff"
+            },
+            {
+              "field": "registry.class.length",
+              "offset": 4512,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "registry.class",
+              "offset": 4516,
+              "size": 0,
+              "value": "",
+              "hex": ""
+            },
+            {
+              "field": "registry.class.padding",
+              "offset": 4516,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.namespace.length",
+              "offset": 4516,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "registry.namespace",
+              "offset": 4520,
+              "size": 0,
+              "value": "",
+              "hex": ""
+            },
+            {
+              "field": "registry.namespace.padding",
+              "offset": 4520,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.assembly.length",
+              "offset": 4520,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "registry.assembly",
+              "offset": 4524,
+              "size": 0,
+              "value": "",
+              "hex": ""
+            },
+            {
+              "field": "registry.assembly.padding",
+              "offset": 4524,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.padding",
+              "offset": 4524,
+              "size": 0,
+              "hex": ""
+            }
+          ]
+        },
+        {
+          "path_id": 1003,
+          "offset": 4528,
+          "size": 208,
+          "case": "single",
+          "first_id": 6441160360502231040,
+          "second_id": -2,
+          "item_ids": [],
+          "registry_offset": 4600,
+          "registry_size": 136,
+          "registry_version": 2,
+          "registry": [
+            {
+              "ordinal": 0,
+              "offset": 4608,
+              "rid": -2,
+              "identity": [
+                "",
+                "",
+                ""
+              ],
+              "payload_offset": 4628,
+              "selection": "null",
+              "payload_size": 0,
+              "size": 20
+            },
+            {
+              "ordinal": 1,
+              "offset": 4628,
+              "rid": 6441160360502231040,
+              "identity": [
+                "Payload",
+                "UnityRecoverManagedFixture.Alpha",
+                "Assembly-CSharp"
+              ],
+              "payload_offset": 4704,
+              "selection": "unique_reference_row",
+              "reference_type_ordinal": 0,
+              "marker": 1011,
+              "label": "alpha payload",
+              "next_id": -2,
+              "payload_size": 32,
+              "size": 108
+            }
+          ],
+          "fields": [
+            {
+              "field": "game_object.file_id",
+              "offset": 4528,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "game_object.path_id",
+              "offset": 4532,
+              "size": 8,
+              "value": 0,
+              "hex": "0000000000000000"
+            },
+            {
+              "field": "enabled",
+              "offset": 4540,
+              "size": 1,
+              "value": 1,
+              "hex": "01"
+            },
+            {
+              "field": "enabled.padding",
+              "offset": 4541,
+              "size": 3,
+              "hex": "000000"
+            },
+            {
+              "field": "script.file_id",
+              "offset": 4544,
+              "size": 4,
+              "value": 1,
+              "hex": "01000000"
+            },
+            {
+              "field": "script.path_id",
+              "offset": 4548,
+              "size": 8,
+              "value": 9001,
+              "hex": "2923000000000000"
+            },
+            {
+              "field": "name.length",
+              "offset": 4556,
+              "size": 4,
+              "value": 6,
+              "hex": "06000000"
+            },
+            {
+              "field": "name",
+              "offset": 4560,
+              "size": 6,
+              "value": "single",
+              "hex": "73696e676c65"
+            },
+            {
+              "field": "name.padding",
+              "offset": 4566,
+              "size": 2,
+              "hex": "0000"
+            },
+            {
+              "field": "case_tag.length",
+              "offset": 4568,
+              "size": 4,
+              "value": 6,
+              "hex": "06000000"
+            },
+            {
+              "field": "case_tag",
+              "offset": 4572,
+              "size": 6,
+              "value": "single",
+              "hex": "73696e676c65"
+            },
+            {
+              "field": "case_tag.padding",
+              "offset": 4578,
+              "size": 2,
+              "hex": "0000"
+            },
+            {
+              "field": "first.rid",
+              "offset": 4580,
+              "size": 8,
+              "value": 6441160360502231040,
+              "hex": "0000109d38996359"
+            },
+            {
+              "field": "second.rid",
+              "offset": 4588,
+              "size": 8,
+              "value": -2,
+              "hex": "feffffffffffffff"
+            },
+            {
+              "field": "items.count",
+              "offset": 4596,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "items.padding",
+              "offset": 4600,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.version",
+              "offset": 4600,
+              "size": 4,
+              "value": 2,
+              "hex": "02000000"
+            },
+            {
+              "field": "registry.count",
+              "offset": 4604,
+              "size": 4,
+              "value": 2,
+              "hex": "02000000"
+            },
+            {
+              "field": "registry.rid",
+              "offset": 4608,
+              "size": 8,
+              "value": -2,
+              "hex": "feffffffffffffff"
+            },
+            {
+              "field": "registry.class.length",
+              "offset": 4616,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "registry.class",
+              "offset": 4620,
+              "size": 0,
+              "value": "",
+              "hex": ""
+            },
+            {
+              "field": "registry.class.padding",
+              "offset": 4620,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.namespace.length",
+              "offset": 4620,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "registry.namespace",
+              "offset": 4624,
+              "size": 0,
+              "value": "",
+              "hex": ""
+            },
+            {
+              "field": "registry.namespace.padding",
+              "offset": 4624,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.assembly.length",
+              "offset": 4624,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "registry.assembly",
+              "offset": 4628,
+              "size": 0,
+              "value": "",
+              "hex": ""
+            },
+            {
+              "field": "registry.assembly.padding",
+              "offset": 4628,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.rid",
+              "offset": 4628,
+              "size": 8,
+              "value": 6441160360502231040,
+              "hex": "0000109d38996359"
+            },
+            {
+              "field": "registry.class.length",
+              "offset": 4636,
+              "size": 4,
+              "value": 7,
+              "hex": "07000000"
+            },
+            {
+              "field": "registry.class",
+              "offset": 4640,
+              "size": 7,
+              "value": "Payload",
+              "hex": "5061796c6f6164"
+            },
+            {
+              "field": "registry.class.padding",
+              "offset": 4647,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "registry.namespace.length",
+              "offset": 4648,
+              "size": 4,
+              "value": 32,
+              "hex": "20000000"
+            },
+            {
+              "field": "registry.namespace",
+              "offset": 4652,
+              "size": 32,
+              "value": "UnityRecoverManagedFixture.Alpha",
+              "hex": "556e6974795265636f7665724d616e61676564466978747572652e416c706861"
+            },
+            {
+              "field": "registry.namespace.padding",
+              "offset": 4684,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.assembly.length",
+              "offset": 4684,
+              "size": 4,
+              "value": 15,
+              "hex": "0f000000"
+            },
+            {
+              "field": "registry.assembly",
+              "offset": 4688,
+              "size": 15,
+              "value": "Assembly-CSharp",
+              "hex": "417373656d626c792d435368617270"
+            },
+            {
+              "field": "registry.assembly.padding",
+              "offset": 4703,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "payload.marker",
+              "offset": 4704,
+              "size": 4,
+              "value": 1011,
+              "hex": "f3030000"
+            },
+            {
+              "field": "payload.label.length",
+              "offset": 4708,
+              "size": 4,
+              "value": 13,
+              "hex": "0d000000"
+            },
+            {
+              "field": "payload.label",
+              "offset": 4712,
+              "size": 13,
+              "value": "alpha payload",
+              "hex": "616c706861207061796c6f6164"
+            },
+            {
+              "field": "payload.label.padding",
+              "offset": 4725,
+              "size": 3,
+              "hex": "000000"
+            },
+            {
+              "field": "payload.next.rid",
+              "offset": 4728,
+              "size": 8,
+              "value": -2,
+              "hex": "feffffffffffffff"
+            },
+            {
+              "field": "registry.padding",
+              "offset": 4736,
+              "size": 0,
+              "hex": ""
+            }
+          ]
+        },
+        {
+          "path_id": 1005,
+          "offset": 4736,
+          "size": 232,
+          "case": "shared",
+          "first_id": 101,
+          "second_id": 101,
+          "item_ids": [
+            101,
+            -2,
+            101
+          ],
+          "registry_offset": 4832,
+          "registry_size": 136,
+          "registry_version": 2,
+          "registry": [
+            {
+              "ordinal": 0,
+              "offset": 4840,
+              "rid": -2,
+              "identity": [
+                "",
+                "",
+                ""
+              ],
+              "payload_offset": 4860,
+              "selection": "null",
+              "payload_size": 0,
+              "size": 20
+            },
+            {
+              "ordinal": 1,
+              "offset": 4860,
+              "rid": 101,
+              "identity": [
+                "Payload",
+                "UnityRecoverManagedFixture.Alpha",
+                "Assembly-CSharp"
+              ],
+              "payload_offset": 4936,
+              "selection": "unique_reference_row",
+              "reference_type_ordinal": 0,
+              "marker": 1011,
+              "label": "alpha payload",
+              "next_id": -2,
+              "payload_size": 32,
+              "size": 108
+            }
+          ],
+          "fields": [
+            {
+              "field": "game_object.file_id",
+              "offset": 4736,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "game_object.path_id",
+              "offset": 4740,
+              "size": 8,
+              "value": 0,
+              "hex": "0000000000000000"
+            },
+            {
+              "field": "enabled",
+              "offset": 4748,
+              "size": 1,
+              "value": 1,
+              "hex": "01"
+            },
+            {
+              "field": "enabled.padding",
+              "offset": 4749,
+              "size": 3,
+              "hex": "000000"
+            },
+            {
+              "field": "script.file_id",
+              "offset": 4752,
+              "size": 4,
+              "value": 1,
+              "hex": "01000000"
+            },
+            {
+              "field": "script.path_id",
+              "offset": 4756,
+              "size": 8,
+              "value": 9001,
+              "hex": "2923000000000000"
+            },
+            {
+              "field": "name.length",
+              "offset": 4764,
+              "size": 4,
+              "value": 6,
+              "hex": "06000000"
+            },
+            {
+              "field": "name",
+              "offset": 4768,
+              "size": 6,
+              "value": "shared",
+              "hex": "736861726564"
+            },
+            {
+              "field": "name.padding",
+              "offset": 4774,
+              "size": 2,
+              "hex": "0000"
+            },
+            {
+              "field": "case_tag.length",
+              "offset": 4776,
+              "size": 4,
+              "value": 6,
+              "hex": "06000000"
+            },
+            {
+              "field": "case_tag",
+              "offset": 4780,
+              "size": 6,
+              "value": "shared",
+              "hex": "736861726564"
+            },
+            {
+              "field": "case_tag.padding",
+              "offset": 4786,
+              "size": 2,
+              "hex": "0000"
+            },
+            {
+              "field": "first.rid",
+              "offset": 4788,
+              "size": 8,
+              "value": 101,
+              "hex": "6500000000000000"
+            },
+            {
+              "field": "second.rid",
+              "offset": 4796,
+              "size": 8,
+              "value": 101,
+              "hex": "6500000000000000"
+            },
+            {
+              "field": "items.count",
+              "offset": 4804,
+              "size": 4,
+              "value": 3,
+              "hex": "03000000"
+            },
+            {
+              "field": "items.rid",
+              "offset": 4808,
+              "size": 8,
+              "value": 101,
+              "hex": "6500000000000000"
+            },
+            {
+              "field": "items.rid",
+              "offset": 4816,
+              "size": 8,
+              "value": -2,
+              "hex": "feffffffffffffff"
+            },
+            {
+              "field": "items.rid",
+              "offset": 4824,
+              "size": 8,
+              "value": 101,
+              "hex": "6500000000000000"
+            },
+            {
+              "field": "items.padding",
+              "offset": 4832,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.version",
+              "offset": 4832,
+              "size": 4,
+              "value": 2,
+              "hex": "02000000"
+            },
+            {
+              "field": "registry.count",
+              "offset": 4836,
+              "size": 4,
+              "value": 2,
+              "hex": "02000000"
+            },
+            {
+              "field": "registry.rid",
+              "offset": 4840,
+              "size": 8,
+              "value": -2,
+              "hex": "feffffffffffffff"
+            },
+            {
+              "field": "registry.class.length",
+              "offset": 4848,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "registry.class",
+              "offset": 4852,
+              "size": 0,
+              "value": "",
+              "hex": ""
+            },
+            {
+              "field": "registry.class.padding",
+              "offset": 4852,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.namespace.length",
+              "offset": 4852,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "registry.namespace",
+              "offset": 4856,
+              "size": 0,
+              "value": "",
+              "hex": ""
+            },
+            {
+              "field": "registry.namespace.padding",
+              "offset": 4856,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.assembly.length",
+              "offset": 4856,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "registry.assembly",
+              "offset": 4860,
+              "size": 0,
+              "value": "",
+              "hex": ""
+            },
+            {
+              "field": "registry.assembly.padding",
+              "offset": 4860,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.rid",
+              "offset": 4860,
+              "size": 8,
+              "value": 101,
+              "hex": "6500000000000000"
+            },
+            {
+              "field": "registry.class.length",
+              "offset": 4868,
+              "size": 4,
+              "value": 7,
+              "hex": "07000000"
+            },
+            {
+              "field": "registry.class",
+              "offset": 4872,
+              "size": 7,
+              "value": "Payload",
+              "hex": "5061796c6f6164"
+            },
+            {
+              "field": "registry.class.padding",
+              "offset": 4879,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "registry.namespace.length",
+              "offset": 4880,
+              "size": 4,
+              "value": 32,
+              "hex": "20000000"
+            },
+            {
+              "field": "registry.namespace",
+              "offset": 4884,
+              "size": 32,
+              "value": "UnityRecoverManagedFixture.Alpha",
+              "hex": "556e6974795265636f7665724d616e61676564466978747572652e416c706861"
+            },
+            {
+              "field": "registry.namespace.padding",
+              "offset": 4916,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.assembly.length",
+              "offset": 4916,
+              "size": 4,
+              "value": 15,
+              "hex": "0f000000"
+            },
+            {
+              "field": "registry.assembly",
+              "offset": 4920,
+              "size": 15,
+              "value": "Assembly-CSharp",
+              "hex": "417373656d626c792d435368617270"
+            },
+            {
+              "field": "registry.assembly.padding",
+              "offset": 4935,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "payload.marker",
+              "offset": 4936,
+              "size": 4,
+              "value": 1011,
+              "hex": "f3030000"
+            },
+            {
+              "field": "payload.label.length",
+              "offset": 4940,
+              "size": 4,
+              "value": 13,
+              "hex": "0d000000"
+            },
+            {
+              "field": "payload.label",
+              "offset": 4944,
+              "size": 13,
+              "value": "alpha payload",
+              "hex": "616c706861207061796c6f6164"
+            },
+            {
+              "field": "payload.label.padding",
+              "offset": 4957,
+              "size": 3,
+              "hex": "000000"
+            },
+            {
+              "field": "payload.next.rid",
+              "offset": 4960,
+              "size": 8,
+              "value": -2,
+              "hex": "feffffffffffffff"
+            },
+            {
+              "field": "registry.padding",
+              "offset": 4968,
+              "size": 0,
+              "hex": ""
+            }
+          ]
+        },
+        {
+          "path_id": 1007,
+          "offset": 4968,
+          "size": 324,
+          "case": "two-types",
+          "first_id": 101,
+          "second_id": 202,
+          "item_ids": [
+            202,
+            101
+          ],
+          "registry_offset": 5064,
+          "registry_size": 228,
+          "registry_version": 2,
+          "registry": [
+            {
+              "ordinal": 0,
+              "offset": 5072,
+              "rid": -2,
+              "identity": [
+                "",
+                "",
+                ""
+              ],
+              "payload_offset": 5092,
+              "selection": "null",
+              "payload_size": 0,
+              "size": 20
+            },
+            {
+              "ordinal": 1,
+              "offset": 5092,
+              "rid": 101,
+              "identity": [
+                "Payload",
+                "UnityRecoverManagedFixture.Alpha",
+                "Assembly-CSharp"
+              ],
+              "payload_offset": 5168,
+              "selection": "unique_reference_row",
+              "reference_type_ordinal": 0,
+              "marker": 1011,
+              "label": "alpha payload",
+              "next_id": -2,
+              "payload_size": 32,
+              "size": 108
+            },
+            {
+              "ordinal": 2,
+              "offset": 5200,
+              "rid": 202,
+              "identity": [
+                "Payload",
+                "UnityRecoverManagedFixture.Beta",
+                "Assembly-CSharp"
+              ],
+              "payload_offset": 5276,
+              "selection": "unique_reference_row",
+              "reference_type_ordinal": 1,
+              "marker": 2022,
+              "amount": 1.25,
+              "next_id": -2,
+              "payload_size": 16,
+              "size": 92
+            }
+          ],
+          "fields": [
+            {
+              "field": "game_object.file_id",
+              "offset": 4968,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "game_object.path_id",
+              "offset": 4972,
+              "size": 8,
+              "value": 0,
+              "hex": "0000000000000000"
+            },
+            {
+              "field": "enabled",
+              "offset": 4980,
+              "size": 1,
+              "value": 1,
+              "hex": "01"
+            },
+            {
+              "field": "enabled.padding",
+              "offset": 4981,
+              "size": 3,
+              "hex": "000000"
+            },
+            {
+              "field": "script.file_id",
+              "offset": 4984,
+              "size": 4,
+              "value": 1,
+              "hex": "01000000"
+            },
+            {
+              "field": "script.path_id",
+              "offset": 4988,
+              "size": 8,
+              "value": 9001,
+              "hex": "2923000000000000"
+            },
+            {
+              "field": "name.length",
+              "offset": 4996,
+              "size": 4,
+              "value": 9,
+              "hex": "09000000"
+            },
+            {
+              "field": "name",
+              "offset": 5000,
+              "size": 9,
+              "value": "two-types",
+              "hex": "74776f2d7479706573"
+            },
+            {
+              "field": "name.padding",
+              "offset": 5009,
+              "size": 3,
+              "hex": "000000"
+            },
+            {
+              "field": "case_tag.length",
+              "offset": 5012,
+              "size": 4,
+              "value": 9,
+              "hex": "09000000"
+            },
+            {
+              "field": "case_tag",
+              "offset": 5016,
+              "size": 9,
+              "value": "two-types",
+              "hex": "74776f2d7479706573"
+            },
+            {
+              "field": "case_tag.padding",
+              "offset": 5025,
+              "size": 3,
+              "hex": "000000"
+            },
+            {
+              "field": "first.rid",
+              "offset": 5028,
+              "size": 8,
+              "value": 101,
+              "hex": "6500000000000000"
+            },
+            {
+              "field": "second.rid",
+              "offset": 5036,
+              "size": 8,
+              "value": 202,
+              "hex": "ca00000000000000"
+            },
+            {
+              "field": "items.count",
+              "offset": 5044,
+              "size": 4,
+              "value": 2,
+              "hex": "02000000"
+            },
+            {
+              "field": "items.rid",
+              "offset": 5048,
+              "size": 8,
+              "value": 202,
+              "hex": "ca00000000000000"
+            },
+            {
+              "field": "items.rid",
+              "offset": 5056,
+              "size": 8,
+              "value": 101,
+              "hex": "6500000000000000"
+            },
+            {
+              "field": "items.padding",
+              "offset": 5064,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.version",
+              "offset": 5064,
+              "size": 4,
+              "value": 2,
+              "hex": "02000000"
+            },
+            {
+              "field": "registry.count",
+              "offset": 5068,
+              "size": 4,
+              "value": 3,
+              "hex": "03000000"
+            },
+            {
+              "field": "registry.rid",
+              "offset": 5072,
+              "size": 8,
+              "value": -2,
+              "hex": "feffffffffffffff"
+            },
+            {
+              "field": "registry.class.length",
+              "offset": 5080,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "registry.class",
+              "offset": 5084,
+              "size": 0,
+              "value": "",
+              "hex": ""
+            },
+            {
+              "field": "registry.class.padding",
+              "offset": 5084,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.namespace.length",
+              "offset": 5084,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "registry.namespace",
+              "offset": 5088,
+              "size": 0,
+              "value": "",
+              "hex": ""
+            },
+            {
+              "field": "registry.namespace.padding",
+              "offset": 5088,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.assembly.length",
+              "offset": 5088,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "registry.assembly",
+              "offset": 5092,
+              "size": 0,
+              "value": "",
+              "hex": ""
+            },
+            {
+              "field": "registry.assembly.padding",
+              "offset": 5092,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.rid",
+              "offset": 5092,
+              "size": 8,
+              "value": 101,
+              "hex": "6500000000000000"
+            },
+            {
+              "field": "registry.class.length",
+              "offset": 5100,
+              "size": 4,
+              "value": 7,
+              "hex": "07000000"
+            },
+            {
+              "field": "registry.class",
+              "offset": 5104,
+              "size": 7,
+              "value": "Payload",
+              "hex": "5061796c6f6164"
+            },
+            {
+              "field": "registry.class.padding",
+              "offset": 5111,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "registry.namespace.length",
+              "offset": 5112,
+              "size": 4,
+              "value": 32,
+              "hex": "20000000"
+            },
+            {
+              "field": "registry.namespace",
+              "offset": 5116,
+              "size": 32,
+              "value": "UnityRecoverManagedFixture.Alpha",
+              "hex": "556e6974795265636f7665724d616e61676564466978747572652e416c706861"
+            },
+            {
+              "field": "registry.namespace.padding",
+              "offset": 5148,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.assembly.length",
+              "offset": 5148,
+              "size": 4,
+              "value": 15,
+              "hex": "0f000000"
+            },
+            {
+              "field": "registry.assembly",
+              "offset": 5152,
+              "size": 15,
+              "value": "Assembly-CSharp",
+              "hex": "417373656d626c792d435368617270"
+            },
+            {
+              "field": "registry.assembly.padding",
+              "offset": 5167,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "payload.marker",
+              "offset": 5168,
+              "size": 4,
+              "value": 1011,
+              "hex": "f3030000"
+            },
+            {
+              "field": "payload.label.length",
+              "offset": 5172,
+              "size": 4,
+              "value": 13,
+              "hex": "0d000000"
+            },
+            {
+              "field": "payload.label",
+              "offset": 5176,
+              "size": 13,
+              "value": "alpha payload",
+              "hex": "616c706861207061796c6f6164"
+            },
+            {
+              "field": "payload.label.padding",
+              "offset": 5189,
+              "size": 3,
+              "hex": "000000"
+            },
+            {
+              "field": "payload.next.rid",
+              "offset": 5192,
+              "size": 8,
+              "value": -2,
+              "hex": "feffffffffffffff"
+            },
+            {
+              "field": "registry.rid",
+              "offset": 5200,
+              "size": 8,
+              "value": 202,
+              "hex": "ca00000000000000"
+            },
+            {
+              "field": "registry.class.length",
+              "offset": 5208,
+              "size": 4,
+              "value": 7,
+              "hex": "07000000"
+            },
+            {
+              "field": "registry.class",
+              "offset": 5212,
+              "size": 7,
+              "value": "Payload",
+              "hex": "5061796c6f6164"
+            },
+            {
+              "field": "registry.class.padding",
+              "offset": 5219,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "registry.namespace.length",
+              "offset": 5220,
+              "size": 4,
+              "value": 31,
+              "hex": "1f000000"
+            },
+            {
+              "field": "registry.namespace",
+              "offset": 5224,
+              "size": 31,
+              "value": "UnityRecoverManagedFixture.Beta",
+              "hex": "556e6974795265636f7665724d616e61676564466978747572652e42657461"
+            },
+            {
+              "field": "registry.namespace.padding",
+              "offset": 5255,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "registry.assembly.length",
+              "offset": 5256,
+              "size": 4,
+              "value": 15,
+              "hex": "0f000000"
+            },
+            {
+              "field": "registry.assembly",
+              "offset": 5260,
+              "size": 15,
+              "value": "Assembly-CSharp",
+              "hex": "417373656d626c792d435368617270"
+            },
+            {
+              "field": "registry.assembly.padding",
+              "offset": 5275,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "payload.marker",
+              "offset": 5276,
+              "size": 4,
+              "value": 2022,
+              "hex": "e6070000"
+            },
+            {
+              "field": "payload.amount",
+              "offset": 5280,
+              "size": 4,
+              "value": 1.25,
+              "hex": "0000a03f"
+            },
+            {
+              "field": "payload.next.rid",
+              "offset": 5284,
+              "size": 8,
+              "value": -2,
+              "hex": "feffffffffffffff"
+            },
+            {
+              "field": "registry.padding",
+              "offset": 5292,
+              "size": 0,
+              "hex": ""
+            }
+          ]
+        },
+        {
+          "path_id": 1009,
+          "offset": 5296,
+          "size": 300,
+          "case": "nested",
+          "first_id": 101,
+          "second_id": -2,
+          "item_ids": [],
+          "registry_offset": 5368,
+          "registry_size": 228,
+          "registry_version": 2,
+          "registry": [
+            {
+              "ordinal": 0,
+              "offset": 5376,
+              "rid": -2,
+              "identity": [
+                "",
+                "",
+                ""
+              ],
+              "payload_offset": 5396,
+              "selection": "null",
+              "payload_size": 0,
+              "size": 20
+            },
+            {
+              "ordinal": 1,
+              "offset": 5396,
+              "rid": 101,
+              "identity": [
+                "Payload",
+                "UnityRecoverManagedFixture.Alpha",
+                "Assembly-CSharp"
+              ],
+              "payload_offset": 5472,
+              "selection": "unique_reference_row",
+              "reference_type_ordinal": 0,
+              "marker": 1011,
+              "label": "alpha payload",
+              "next_id": 202,
+              "payload_size": 32,
+              "size": 108
+            },
+            {
+              "ordinal": 2,
+              "offset": 5504,
+              "rid": 202,
+              "identity": [
+                "Payload",
+                "UnityRecoverManagedFixture.Beta",
+                "Assembly-CSharp"
+              ],
+              "payload_offset": 5580,
+              "selection": "unique_reference_row",
+              "reference_type_ordinal": 1,
+              "marker": 2022,
+              "amount": 1.25,
+              "next_id": -2,
+              "payload_size": 16,
+              "size": 92
+            }
+          ],
+          "fields": [
+            {
+              "field": "game_object.file_id",
+              "offset": 5296,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "game_object.path_id",
+              "offset": 5300,
+              "size": 8,
+              "value": 0,
+              "hex": "0000000000000000"
+            },
+            {
+              "field": "enabled",
+              "offset": 5308,
+              "size": 1,
+              "value": 1,
+              "hex": "01"
+            },
+            {
+              "field": "enabled.padding",
+              "offset": 5309,
+              "size": 3,
+              "hex": "000000"
+            },
+            {
+              "field": "script.file_id",
+              "offset": 5312,
+              "size": 4,
+              "value": 1,
+              "hex": "01000000"
+            },
+            {
+              "field": "script.path_id",
+              "offset": 5316,
+              "size": 8,
+              "value": 9001,
+              "hex": "2923000000000000"
+            },
+            {
+              "field": "name.length",
+              "offset": 5324,
+              "size": 4,
+              "value": 6,
+              "hex": "06000000"
+            },
+            {
+              "field": "name",
+              "offset": 5328,
+              "size": 6,
+              "value": "nested",
+              "hex": "6e6573746564"
+            },
+            {
+              "field": "name.padding",
+              "offset": 5334,
+              "size": 2,
+              "hex": "0000"
+            },
+            {
+              "field": "case_tag.length",
+              "offset": 5336,
+              "size": 4,
+              "value": 6,
+              "hex": "06000000"
+            },
+            {
+              "field": "case_tag",
+              "offset": 5340,
+              "size": 6,
+              "value": "nested",
+              "hex": "6e6573746564"
+            },
+            {
+              "field": "case_tag.padding",
+              "offset": 5346,
+              "size": 2,
+              "hex": "0000"
+            },
+            {
+              "field": "first.rid",
+              "offset": 5348,
+              "size": 8,
+              "value": 101,
+              "hex": "6500000000000000"
+            },
+            {
+              "field": "second.rid",
+              "offset": 5356,
+              "size": 8,
+              "value": -2,
+              "hex": "feffffffffffffff"
+            },
+            {
+              "field": "items.count",
+              "offset": 5364,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "items.padding",
+              "offset": 5368,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.version",
+              "offset": 5368,
+              "size": 4,
+              "value": 2,
+              "hex": "02000000"
+            },
+            {
+              "field": "registry.count",
+              "offset": 5372,
+              "size": 4,
+              "value": 3,
+              "hex": "03000000"
+            },
+            {
+              "field": "registry.rid",
+              "offset": 5376,
+              "size": 8,
+              "value": -2,
+              "hex": "feffffffffffffff"
+            },
+            {
+              "field": "registry.class.length",
+              "offset": 5384,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "registry.class",
+              "offset": 5388,
+              "size": 0,
+              "value": "",
+              "hex": ""
+            },
+            {
+              "field": "registry.class.padding",
+              "offset": 5388,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.namespace.length",
+              "offset": 5388,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "registry.namespace",
+              "offset": 5392,
+              "size": 0,
+              "value": "",
+              "hex": ""
+            },
+            {
+              "field": "registry.namespace.padding",
+              "offset": 5392,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.assembly.length",
+              "offset": 5392,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "registry.assembly",
+              "offset": 5396,
+              "size": 0,
+              "value": "",
+              "hex": ""
+            },
+            {
+              "field": "registry.assembly.padding",
+              "offset": 5396,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.rid",
+              "offset": 5396,
+              "size": 8,
+              "value": 101,
+              "hex": "6500000000000000"
+            },
+            {
+              "field": "registry.class.length",
+              "offset": 5404,
+              "size": 4,
+              "value": 7,
+              "hex": "07000000"
+            },
+            {
+              "field": "registry.class",
+              "offset": 5408,
+              "size": 7,
+              "value": "Payload",
+              "hex": "5061796c6f6164"
+            },
+            {
+              "field": "registry.class.padding",
+              "offset": 5415,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "registry.namespace.length",
+              "offset": 5416,
+              "size": 4,
+              "value": 32,
+              "hex": "20000000"
+            },
+            {
+              "field": "registry.namespace",
+              "offset": 5420,
+              "size": 32,
+              "value": "UnityRecoverManagedFixture.Alpha",
+              "hex": "556e6974795265636f7665724d616e61676564466978747572652e416c706861"
+            },
+            {
+              "field": "registry.namespace.padding",
+              "offset": 5452,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.assembly.length",
+              "offset": 5452,
+              "size": 4,
+              "value": 15,
+              "hex": "0f000000"
+            },
+            {
+              "field": "registry.assembly",
+              "offset": 5456,
+              "size": 15,
+              "value": "Assembly-CSharp",
+              "hex": "417373656d626c792d435368617270"
+            },
+            {
+              "field": "registry.assembly.padding",
+              "offset": 5471,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "payload.marker",
+              "offset": 5472,
+              "size": 4,
+              "value": 1011,
+              "hex": "f3030000"
+            },
+            {
+              "field": "payload.label.length",
+              "offset": 5476,
+              "size": 4,
+              "value": 13,
+              "hex": "0d000000"
+            },
+            {
+              "field": "payload.label",
+              "offset": 5480,
+              "size": 13,
+              "value": "alpha payload",
+              "hex": "616c706861207061796c6f6164"
+            },
+            {
+              "field": "payload.label.padding",
+              "offset": 5493,
+              "size": 3,
+              "hex": "000000"
+            },
+            {
+              "field": "payload.next.rid",
+              "offset": 5496,
+              "size": 8,
+              "value": 202,
+              "hex": "ca00000000000000"
+            },
+            {
+              "field": "registry.rid",
+              "offset": 5504,
+              "size": 8,
+              "value": 202,
+              "hex": "ca00000000000000"
+            },
+            {
+              "field": "registry.class.length",
+              "offset": 5512,
+              "size": 4,
+              "value": 7,
+              "hex": "07000000"
+            },
+            {
+              "field": "registry.class",
+              "offset": 5516,
+              "size": 7,
+              "value": "Payload",
+              "hex": "5061796c6f6164"
+            },
+            {
+              "field": "registry.class.padding",
+              "offset": 5523,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "registry.namespace.length",
+              "offset": 5524,
+              "size": 4,
+              "value": 31,
+              "hex": "1f000000"
+            },
+            {
+              "field": "registry.namespace",
+              "offset": 5528,
+              "size": 31,
+              "value": "UnityRecoverManagedFixture.Beta",
+              "hex": "556e6974795265636f7665724d616e61676564466978747572652e42657461"
+            },
+            {
+              "field": "registry.namespace.padding",
+              "offset": 5559,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "registry.assembly.length",
+              "offset": 5560,
+              "size": 4,
+              "value": 15,
+              "hex": "0f000000"
+            },
+            {
+              "field": "registry.assembly",
+              "offset": 5564,
+              "size": 15,
+              "value": "Assembly-CSharp",
+              "hex": "417373656d626c792d435368617270"
+            },
+            {
+              "field": "registry.assembly.padding",
+              "offset": 5579,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "payload.marker",
+              "offset": 5580,
+              "size": 4,
+              "value": 2022,
+              "hex": "e6070000"
+            },
+            {
+              "field": "payload.amount",
+              "offset": 5584,
+              "size": 4,
+              "value": 1.25,
+              "hex": "0000a03f"
+            },
+            {
+              "field": "payload.next.rid",
+              "offset": 5588,
+              "size": 8,
+              "value": -2,
+              "hex": "feffffffffffffff"
+            },
+            {
+              "field": "registry.padding",
+              "offset": 5596,
+              "size": 0,
+              "hex": ""
+            }
+          ]
+        },
+        {
+          "path_id": 1011,
+          "offset": 5600,
+          "size": 216,
+          "case": "self-cycle",
+          "first_id": 101,
+          "second_id": -2,
+          "item_ids": [],
+          "registry_offset": 5680,
+          "registry_size": 136,
+          "registry_version": 2,
+          "registry": [
+            {
+              "ordinal": 0,
+              "offset": 5688,
+              "rid": -2,
+              "identity": [
+                "",
+                "",
+                ""
+              ],
+              "payload_offset": 5708,
+              "selection": "null",
+              "payload_size": 0,
+              "size": 20
+            },
+            {
+              "ordinal": 1,
+              "offset": 5708,
+              "rid": 101,
+              "identity": [
+                "Payload",
+                "UnityRecoverManagedFixture.Alpha",
+                "Assembly-CSharp"
+              ],
+              "payload_offset": 5784,
+              "selection": "unique_reference_row",
+              "reference_type_ordinal": 0,
+              "marker": 1011,
+              "label": "alpha payload",
+              "next_id": 101,
+              "payload_size": 32,
+              "size": 108
+            }
+          ],
+          "fields": [
+            {
+              "field": "game_object.file_id",
+              "offset": 5600,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "game_object.path_id",
+              "offset": 5604,
+              "size": 8,
+              "value": 0,
+              "hex": "0000000000000000"
+            },
+            {
+              "field": "enabled",
+              "offset": 5612,
+              "size": 1,
+              "value": 1,
+              "hex": "01"
+            },
+            {
+              "field": "enabled.padding",
+              "offset": 5613,
+              "size": 3,
+              "hex": "000000"
+            },
+            {
+              "field": "script.file_id",
+              "offset": 5616,
+              "size": 4,
+              "value": 1,
+              "hex": "01000000"
+            },
+            {
+              "field": "script.path_id",
+              "offset": 5620,
+              "size": 8,
+              "value": 9001,
+              "hex": "2923000000000000"
+            },
+            {
+              "field": "name.length",
+              "offset": 5628,
+              "size": 4,
+              "value": 10,
+              "hex": "0a000000"
+            },
+            {
+              "field": "name",
+              "offset": 5632,
+              "size": 10,
+              "value": "self-cycle",
+              "hex": "73656c662d6379636c65"
+            },
+            {
+              "field": "name.padding",
+              "offset": 5642,
+              "size": 2,
+              "hex": "0000"
+            },
+            {
+              "field": "case_tag.length",
+              "offset": 5644,
+              "size": 4,
+              "value": 10,
+              "hex": "0a000000"
+            },
+            {
+              "field": "case_tag",
+              "offset": 5648,
+              "size": 10,
+              "value": "self-cycle",
+              "hex": "73656c662d6379636c65"
+            },
+            {
+              "field": "case_tag.padding",
+              "offset": 5658,
+              "size": 2,
+              "hex": "0000"
+            },
+            {
+              "field": "first.rid",
+              "offset": 5660,
+              "size": 8,
+              "value": 101,
+              "hex": "6500000000000000"
+            },
+            {
+              "field": "second.rid",
+              "offset": 5668,
+              "size": 8,
+              "value": -2,
+              "hex": "feffffffffffffff"
+            },
+            {
+              "field": "items.count",
+              "offset": 5676,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "items.padding",
+              "offset": 5680,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.version",
+              "offset": 5680,
+              "size": 4,
+              "value": 2,
+              "hex": "02000000"
+            },
+            {
+              "field": "registry.count",
+              "offset": 5684,
+              "size": 4,
+              "value": 2,
+              "hex": "02000000"
+            },
+            {
+              "field": "registry.rid",
+              "offset": 5688,
+              "size": 8,
+              "value": -2,
+              "hex": "feffffffffffffff"
+            },
+            {
+              "field": "registry.class.length",
+              "offset": 5696,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "registry.class",
+              "offset": 5700,
+              "size": 0,
+              "value": "",
+              "hex": ""
+            },
+            {
+              "field": "registry.class.padding",
+              "offset": 5700,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.namespace.length",
+              "offset": 5700,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "registry.namespace",
+              "offset": 5704,
+              "size": 0,
+              "value": "",
+              "hex": ""
+            },
+            {
+              "field": "registry.namespace.padding",
+              "offset": 5704,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.assembly.length",
+              "offset": 5704,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "registry.assembly",
+              "offset": 5708,
+              "size": 0,
+              "value": "",
+              "hex": ""
+            },
+            {
+              "field": "registry.assembly.padding",
+              "offset": 5708,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.rid",
+              "offset": 5708,
+              "size": 8,
+              "value": 101,
+              "hex": "6500000000000000"
+            },
+            {
+              "field": "registry.class.length",
+              "offset": 5716,
+              "size": 4,
+              "value": 7,
+              "hex": "07000000"
+            },
+            {
+              "field": "registry.class",
+              "offset": 5720,
+              "size": 7,
+              "value": "Payload",
+              "hex": "5061796c6f6164"
+            },
+            {
+              "field": "registry.class.padding",
+              "offset": 5727,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "registry.namespace.length",
+              "offset": 5728,
+              "size": 4,
+              "value": 32,
+              "hex": "20000000"
+            },
+            {
+              "field": "registry.namespace",
+              "offset": 5732,
+              "size": 32,
+              "value": "UnityRecoverManagedFixture.Alpha",
+              "hex": "556e6974795265636f7665724d616e61676564466978747572652e416c706861"
+            },
+            {
+              "field": "registry.namespace.padding",
+              "offset": 5764,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.assembly.length",
+              "offset": 5764,
+              "size": 4,
+              "value": 15,
+              "hex": "0f000000"
+            },
+            {
+              "field": "registry.assembly",
+              "offset": 5768,
+              "size": 15,
+              "value": "Assembly-CSharp",
+              "hex": "417373656d626c792d435368617270"
+            },
+            {
+              "field": "registry.assembly.padding",
+              "offset": 5783,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "payload.marker",
+              "offset": 5784,
+              "size": 4,
+              "value": 1011,
+              "hex": "f3030000"
+            },
+            {
+              "field": "payload.label.length",
+              "offset": 5788,
+              "size": 4,
+              "value": 13,
+              "hex": "0d000000"
+            },
+            {
+              "field": "payload.label",
+              "offset": 5792,
+              "size": 13,
+              "value": "alpha payload",
+              "hex": "616c706861207061796c6f6164"
+            },
+            {
+              "field": "payload.label.padding",
+              "offset": 5805,
+              "size": 3,
+              "hex": "000000"
+            },
+            {
+              "field": "payload.next.rid",
+              "offset": 5808,
+              "size": 8,
+              "value": 101,
+              "hex": "6500000000000000"
+            },
+            {
+              "field": "registry.padding",
+              "offset": 5816,
+              "size": 0,
+              "hex": ""
+            }
+          ]
+        },
+        {
+          "path_id": 1013,
+          "offset": 5816,
+          "size": 288,
+          "case": "two-cycle",
+          "first_id": 101,
+          "second_id": 202,
+          "item_ids": [],
+          "registry_offset": 5896,
+          "registry_size": 208,
+          "registry_version": 2,
+          "registry": [
+            {
+              "ordinal": 0,
+              "offset": 5904,
+              "rid": 101,
+              "identity": [
+                "Payload",
+                "UnityRecoverManagedFixture.Alpha",
+                "Assembly-CSharp"
+              ],
+              "payload_offset": 5980,
+              "selection": "unique_reference_row",
+              "reference_type_ordinal": 0,
+              "marker": 1011,
+              "label": "alpha payload",
+              "next_id": 202,
+              "payload_size": 32,
+              "size": 108
+            },
+            {
+              "ordinal": 1,
+              "offset": 6012,
+              "rid": 202,
+              "identity": [
+                "Payload",
+                "UnityRecoverManagedFixture.Beta",
+                "Assembly-CSharp"
+              ],
+              "payload_offset": 6088,
+              "selection": "unique_reference_row",
+              "reference_type_ordinal": 1,
+              "marker": 2022,
+              "amount": 1.25,
+              "next_id": 101,
+              "payload_size": 16,
+              "size": 92
+            }
+          ],
+          "fields": [
+            {
+              "field": "game_object.file_id",
+              "offset": 5816,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "game_object.path_id",
+              "offset": 5820,
+              "size": 8,
+              "value": 0,
+              "hex": "0000000000000000"
+            },
+            {
+              "field": "enabled",
+              "offset": 5828,
+              "size": 1,
+              "value": 1,
+              "hex": "01"
+            },
+            {
+              "field": "enabled.padding",
+              "offset": 5829,
+              "size": 3,
+              "hex": "000000"
+            },
+            {
+              "field": "script.file_id",
+              "offset": 5832,
+              "size": 4,
+              "value": 1,
+              "hex": "01000000"
+            },
+            {
+              "field": "script.path_id",
+              "offset": 5836,
+              "size": 8,
+              "value": 9001,
+              "hex": "2923000000000000"
+            },
+            {
+              "field": "name.length",
+              "offset": 5844,
+              "size": 4,
+              "value": 9,
+              "hex": "09000000"
+            },
+            {
+              "field": "name",
+              "offset": 5848,
+              "size": 9,
+              "value": "two-cycle",
+              "hex": "74776f2d6379636c65"
+            },
+            {
+              "field": "name.padding",
+              "offset": 5857,
+              "size": 3,
+              "hex": "000000"
+            },
+            {
+              "field": "case_tag.length",
+              "offset": 5860,
+              "size": 4,
+              "value": 9,
+              "hex": "09000000"
+            },
+            {
+              "field": "case_tag",
+              "offset": 5864,
+              "size": 9,
+              "value": "two-cycle",
+              "hex": "74776f2d6379636c65"
+            },
+            {
+              "field": "case_tag.padding",
+              "offset": 5873,
+              "size": 3,
+              "hex": "000000"
+            },
+            {
+              "field": "first.rid",
+              "offset": 5876,
+              "size": 8,
+              "value": 101,
+              "hex": "6500000000000000"
+            },
+            {
+              "field": "second.rid",
+              "offset": 5884,
+              "size": 8,
+              "value": 202,
+              "hex": "ca00000000000000"
+            },
+            {
+              "field": "items.count",
+              "offset": 5892,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "items.padding",
+              "offset": 5896,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.version",
+              "offset": 5896,
+              "size": 4,
+              "value": 2,
+              "hex": "02000000"
+            },
+            {
+              "field": "registry.count",
+              "offset": 5900,
+              "size": 4,
+              "value": 2,
+              "hex": "02000000"
+            },
+            {
+              "field": "registry.rid",
+              "offset": 5904,
+              "size": 8,
+              "value": 101,
+              "hex": "6500000000000000"
+            },
+            {
+              "field": "registry.class.length",
+              "offset": 5912,
+              "size": 4,
+              "value": 7,
+              "hex": "07000000"
+            },
+            {
+              "field": "registry.class",
+              "offset": 5916,
+              "size": 7,
+              "value": "Payload",
+              "hex": "5061796c6f6164"
+            },
+            {
+              "field": "registry.class.padding",
+              "offset": 5923,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "registry.namespace.length",
+              "offset": 5924,
+              "size": 4,
+              "value": 32,
+              "hex": "20000000"
+            },
+            {
+              "field": "registry.namespace",
+              "offset": 5928,
+              "size": 32,
+              "value": "UnityRecoverManagedFixture.Alpha",
+              "hex": "556e6974795265636f7665724d616e61676564466978747572652e416c706861"
+            },
+            {
+              "field": "registry.namespace.padding",
+              "offset": 5960,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.assembly.length",
+              "offset": 5960,
+              "size": 4,
+              "value": 15,
+              "hex": "0f000000"
+            },
+            {
+              "field": "registry.assembly",
+              "offset": 5964,
+              "size": 15,
+              "value": "Assembly-CSharp",
+              "hex": "417373656d626c792d435368617270"
+            },
+            {
+              "field": "registry.assembly.padding",
+              "offset": 5979,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "payload.marker",
+              "offset": 5980,
+              "size": 4,
+              "value": 1011,
+              "hex": "f3030000"
+            },
+            {
+              "field": "payload.label.length",
+              "offset": 5984,
+              "size": 4,
+              "value": 13,
+              "hex": "0d000000"
+            },
+            {
+              "field": "payload.label",
+              "offset": 5988,
+              "size": 13,
+              "value": "alpha payload",
+              "hex": "616c706861207061796c6f6164"
+            },
+            {
+              "field": "payload.label.padding",
+              "offset": 6001,
+              "size": 3,
+              "hex": "000000"
+            },
+            {
+              "field": "payload.next.rid",
+              "offset": 6004,
+              "size": 8,
+              "value": 202,
+              "hex": "ca00000000000000"
+            },
+            {
+              "field": "registry.rid",
+              "offset": 6012,
+              "size": 8,
+              "value": 202,
+              "hex": "ca00000000000000"
+            },
+            {
+              "field": "registry.class.length",
+              "offset": 6020,
+              "size": 4,
+              "value": 7,
+              "hex": "07000000"
+            },
+            {
+              "field": "registry.class",
+              "offset": 6024,
+              "size": 7,
+              "value": "Payload",
+              "hex": "5061796c6f6164"
+            },
+            {
+              "field": "registry.class.padding",
+              "offset": 6031,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "registry.namespace.length",
+              "offset": 6032,
+              "size": 4,
+              "value": 31,
+              "hex": "1f000000"
+            },
+            {
+              "field": "registry.namespace",
+              "offset": 6036,
+              "size": 31,
+              "value": "UnityRecoverManagedFixture.Beta",
+              "hex": "556e6974795265636f7665724d616e61676564466978747572652e42657461"
+            },
+            {
+              "field": "registry.namespace.padding",
+              "offset": 6067,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "registry.assembly.length",
+              "offset": 6068,
+              "size": 4,
+              "value": 15,
+              "hex": "0f000000"
+            },
+            {
+              "field": "registry.assembly",
+              "offset": 6072,
+              "size": 15,
+              "value": "Assembly-CSharp",
+              "hex": "417373656d626c792d435368617270"
+            },
+            {
+              "field": "registry.assembly.padding",
+              "offset": 6087,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "payload.marker",
+              "offset": 6088,
+              "size": 4,
+              "value": 2022,
+              "hex": "e6070000"
+            },
+            {
+              "field": "payload.amount",
+              "offset": 6092,
+              "size": 4,
+              "value": 1.25,
+              "hex": "0000a03f"
+            },
+            {
+              "field": "payload.next.rid",
+              "offset": 6096,
+              "size": 8,
+              "value": 101,
+              "hex": "6500000000000000"
+            },
+            {
+              "field": "registry.padding",
+              "offset": 6104,
+              "size": 0,
+              "hex": ""
+            }
+          ]
+        },
+        {
+          "path_id": 1015,
+          "offset": 6104,
+          "size": 220,
+          "case": "host-alpha",
+          "first_id": 101,
+          "second_id": -2,
+          "item_ids": [],
+          "registry_offset": 6184,
+          "registry_size": 140,
+          "registry_version": 2,
+          "registry": [
+            {
+              "ordinal": 0,
+              "offset": 6192,
+              "rid": -2,
+              "identity": [
+                "",
+                "",
+                ""
+              ],
+              "payload_offset": 6212,
+              "selection": "null",
+              "payload_size": 0,
+              "size": 20
+            },
+            {
+              "ordinal": 1,
+              "offset": 6212,
+              "rid": 101,
+              "identity": [
+                "Payload",
+                "UnityRecoverManagedFixture.Alpha",
+                "Assembly-CSharp"
+              ],
+              "payload_offset": 6288,
+              "selection": "unique_reference_row",
+              "reference_type_ordinal": 0,
+              "marker": 3033,
+              "label": "same id host alpha",
+              "next_id": -2,
+              "payload_size": 36,
+              "size": 112
+            }
+          ],
+          "fields": [
+            {
+              "field": "game_object.file_id",
+              "offset": 6104,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "game_object.path_id",
+              "offset": 6108,
+              "size": 8,
+              "value": 0,
+              "hex": "0000000000000000"
+            },
+            {
+              "field": "enabled",
+              "offset": 6116,
+              "size": 1,
+              "value": 1,
+              "hex": "01"
+            },
+            {
+              "field": "enabled.padding",
+              "offset": 6117,
+              "size": 3,
+              "hex": "000000"
+            },
+            {
+              "field": "script.file_id",
+              "offset": 6120,
+              "size": 4,
+              "value": 1,
+              "hex": "01000000"
+            },
+            {
+              "field": "script.path_id",
+              "offset": 6124,
+              "size": 8,
+              "value": 9001,
+              "hex": "2923000000000000"
+            },
+            {
+              "field": "name.length",
+              "offset": 6132,
+              "size": 4,
+              "value": 10,
+              "hex": "0a000000"
+            },
+            {
+              "field": "name",
+              "offset": 6136,
+              "size": 10,
+              "value": "host-alpha",
+              "hex": "686f73742d616c706861"
+            },
+            {
+              "field": "name.padding",
+              "offset": 6146,
+              "size": 2,
+              "hex": "0000"
+            },
+            {
+              "field": "case_tag.length",
+              "offset": 6148,
+              "size": 4,
+              "value": 10,
+              "hex": "0a000000"
+            },
+            {
+              "field": "case_tag",
+              "offset": 6152,
+              "size": 10,
+              "value": "host-alpha",
+              "hex": "686f73742d616c706861"
+            },
+            {
+              "field": "case_tag.padding",
+              "offset": 6162,
+              "size": 2,
+              "hex": "0000"
+            },
+            {
+              "field": "first.rid",
+              "offset": 6164,
+              "size": 8,
+              "value": 101,
+              "hex": "6500000000000000"
+            },
+            {
+              "field": "second.rid",
+              "offset": 6172,
+              "size": 8,
+              "value": -2,
+              "hex": "feffffffffffffff"
+            },
+            {
+              "field": "items.count",
+              "offset": 6180,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "items.padding",
+              "offset": 6184,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.version",
+              "offset": 6184,
+              "size": 4,
+              "value": 2,
+              "hex": "02000000"
+            },
+            {
+              "field": "registry.count",
+              "offset": 6188,
+              "size": 4,
+              "value": 2,
+              "hex": "02000000"
+            },
+            {
+              "field": "registry.rid",
+              "offset": 6192,
+              "size": 8,
+              "value": -2,
+              "hex": "feffffffffffffff"
+            },
+            {
+              "field": "registry.class.length",
+              "offset": 6200,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "registry.class",
+              "offset": 6204,
+              "size": 0,
+              "value": "",
+              "hex": ""
+            },
+            {
+              "field": "registry.class.padding",
+              "offset": 6204,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.namespace.length",
+              "offset": 6204,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "registry.namespace",
+              "offset": 6208,
+              "size": 0,
+              "value": "",
+              "hex": ""
+            },
+            {
+              "field": "registry.namespace.padding",
+              "offset": 6208,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.assembly.length",
+              "offset": 6208,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "registry.assembly",
+              "offset": 6212,
+              "size": 0,
+              "value": "",
+              "hex": ""
+            },
+            {
+              "field": "registry.assembly.padding",
+              "offset": 6212,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.rid",
+              "offset": 6212,
+              "size": 8,
+              "value": 101,
+              "hex": "6500000000000000"
+            },
+            {
+              "field": "registry.class.length",
+              "offset": 6220,
+              "size": 4,
+              "value": 7,
+              "hex": "07000000"
+            },
+            {
+              "field": "registry.class",
+              "offset": 6224,
+              "size": 7,
+              "value": "Payload",
+              "hex": "5061796c6f6164"
+            },
+            {
+              "field": "registry.class.padding",
+              "offset": 6231,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "registry.namespace.length",
+              "offset": 6232,
+              "size": 4,
+              "value": 32,
+              "hex": "20000000"
+            },
+            {
+              "field": "registry.namespace",
+              "offset": 6236,
+              "size": 32,
+              "value": "UnityRecoverManagedFixture.Alpha",
+              "hex": "556e6974795265636f7665724d616e61676564466978747572652e416c706861"
+            },
+            {
+              "field": "registry.namespace.padding",
+              "offset": 6268,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.assembly.length",
+              "offset": 6268,
+              "size": 4,
+              "value": 15,
+              "hex": "0f000000"
+            },
+            {
+              "field": "registry.assembly",
+              "offset": 6272,
+              "size": 15,
+              "value": "Assembly-CSharp",
+              "hex": "417373656d626c792d435368617270"
+            },
+            {
+              "field": "registry.assembly.padding",
+              "offset": 6287,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "payload.marker",
+              "offset": 6288,
+              "size": 4,
+              "value": 3033,
+              "hex": "d90b0000"
+            },
+            {
+              "field": "payload.label.length",
+              "offset": 6292,
+              "size": 4,
+              "value": 18,
+              "hex": "12000000"
+            },
+            {
+              "field": "payload.label",
+              "offset": 6296,
+              "size": 18,
+              "value": "same id host alpha",
+              "hex": "73616d6520696420686f737420616c706861"
+            },
+            {
+              "field": "payload.label.padding",
+              "offset": 6314,
+              "size": 2,
+              "hex": "0000"
+            },
+            {
+              "field": "payload.next.rid",
+              "offset": 6316,
+              "size": 8,
+              "value": -2,
+              "hex": "feffffffffffffff"
+            },
+            {
+              "field": "registry.padding",
+              "offset": 6324,
+              "size": 0,
+              "hex": ""
+            }
+          ]
+        },
+        {
+          "path_id": 1017,
+          "offset": 6328,
+          "size": 200,
+          "case": "host-beta",
+          "first_id": 101,
+          "second_id": -2,
+          "item_ids": [],
+          "registry_offset": 6408,
+          "registry_size": 120,
+          "registry_version": 2,
+          "registry": [
+            {
+              "ordinal": 0,
+              "offset": 6416,
+              "rid": -2,
+              "identity": [
+                "",
+                "",
+                ""
+              ],
+              "payload_offset": 6436,
+              "selection": "null",
+              "payload_size": 0,
+              "size": 20
+            },
+            {
+              "ordinal": 1,
+              "offset": 6436,
+              "rid": 101,
+              "identity": [
+                "Payload",
+                "UnityRecoverManagedFixture.Beta",
+                "Assembly-CSharp"
+              ],
+              "payload_offset": 6512,
+              "selection": "unique_reference_row",
+              "reference_type_ordinal": 1,
+              "marker": 4044,
+              "amount": -2.5,
+              "next_id": -2,
+              "payload_size": 16,
+              "size": 92
+            }
+          ],
+          "fields": [
+            {
+              "field": "game_object.file_id",
+              "offset": 6328,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "game_object.path_id",
+              "offset": 6332,
+              "size": 8,
+              "value": 0,
+              "hex": "0000000000000000"
+            },
+            {
+              "field": "enabled",
+              "offset": 6340,
+              "size": 1,
+              "value": 1,
+              "hex": "01"
+            },
+            {
+              "field": "enabled.padding",
+              "offset": 6341,
+              "size": 3,
+              "hex": "000000"
+            },
+            {
+              "field": "script.file_id",
+              "offset": 6344,
+              "size": 4,
+              "value": 1,
+              "hex": "01000000"
+            },
+            {
+              "field": "script.path_id",
+              "offset": 6348,
+              "size": 8,
+              "value": 9001,
+              "hex": "2923000000000000"
+            },
+            {
+              "field": "name.length",
+              "offset": 6356,
+              "size": 4,
+              "value": 9,
+              "hex": "09000000"
+            },
+            {
+              "field": "name",
+              "offset": 6360,
+              "size": 9,
+              "value": "host-beta",
+              "hex": "686f73742d62657461"
+            },
+            {
+              "field": "name.padding",
+              "offset": 6369,
+              "size": 3,
+              "hex": "000000"
+            },
+            {
+              "field": "case_tag.length",
+              "offset": 6372,
+              "size": 4,
+              "value": 9,
+              "hex": "09000000"
+            },
+            {
+              "field": "case_tag",
+              "offset": 6376,
+              "size": 9,
+              "value": "host-beta",
+              "hex": "686f73742d62657461"
+            },
+            {
+              "field": "case_tag.padding",
+              "offset": 6385,
+              "size": 3,
+              "hex": "000000"
+            },
+            {
+              "field": "first.rid",
+              "offset": 6388,
+              "size": 8,
+              "value": 101,
+              "hex": "6500000000000000"
+            },
+            {
+              "field": "second.rid",
+              "offset": 6396,
+              "size": 8,
+              "value": -2,
+              "hex": "feffffffffffffff"
+            },
+            {
+              "field": "items.count",
+              "offset": 6404,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "items.padding",
+              "offset": 6408,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.version",
+              "offset": 6408,
+              "size": 4,
+              "value": 2,
+              "hex": "02000000"
+            },
+            {
+              "field": "registry.count",
+              "offset": 6412,
+              "size": 4,
+              "value": 2,
+              "hex": "02000000"
+            },
+            {
+              "field": "registry.rid",
+              "offset": 6416,
+              "size": 8,
+              "value": -2,
+              "hex": "feffffffffffffff"
+            },
+            {
+              "field": "registry.class.length",
+              "offset": 6424,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "registry.class",
+              "offset": 6428,
+              "size": 0,
+              "value": "",
+              "hex": ""
+            },
+            {
+              "field": "registry.class.padding",
+              "offset": 6428,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.namespace.length",
+              "offset": 6428,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "registry.namespace",
+              "offset": 6432,
+              "size": 0,
+              "value": "",
+              "hex": ""
+            },
+            {
+              "field": "registry.namespace.padding",
+              "offset": 6432,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.assembly.length",
+              "offset": 6432,
+              "size": 4,
+              "value": 0,
+              "hex": "00000000"
+            },
+            {
+              "field": "registry.assembly",
+              "offset": 6436,
+              "size": 0,
+              "value": "",
+              "hex": ""
+            },
+            {
+              "field": "registry.assembly.padding",
+              "offset": 6436,
+              "size": 0,
+              "hex": ""
+            },
+            {
+              "field": "registry.rid",
+              "offset": 6436,
+              "size": 8,
+              "value": 101,
+              "hex": "6500000000000000"
+            },
+            {
+              "field": "registry.class.length",
+              "offset": 6444,
+              "size": 4,
+              "value": 7,
+              "hex": "07000000"
+            },
+            {
+              "field": "registry.class",
+              "offset": 6448,
+              "size": 7,
+              "value": "Payload",
+              "hex": "5061796c6f6164"
+            },
+            {
+              "field": "registry.class.padding",
+              "offset": 6455,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "registry.namespace.length",
+              "offset": 6456,
+              "size": 4,
+              "value": 31,
+              "hex": "1f000000"
+            },
+            {
+              "field": "registry.namespace",
+              "offset": 6460,
+              "size": 31,
+              "value": "UnityRecoverManagedFixture.Beta",
+              "hex": "556e6974795265636f7665724d616e61676564466978747572652e42657461"
+            },
+            {
+              "field": "registry.namespace.padding",
+              "offset": 6491,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "registry.assembly.length",
+              "offset": 6492,
+              "size": 4,
+              "value": 15,
+              "hex": "0f000000"
+            },
+            {
+              "field": "registry.assembly",
+              "offset": 6496,
+              "size": 15,
+              "value": "Assembly-CSharp",
+              "hex": "417373656d626c792d435368617270"
+            },
+            {
+              "field": "registry.assembly.padding",
+              "offset": 6511,
+              "size": 1,
+              "hex": "00"
+            },
+            {
+              "field": "payload.marker",
+              "offset": 6512,
+              "size": 4,
+              "value": 4044,
+              "hex": "cc0f0000"
+            },
+            {
+              "field": "payload.amount",
+              "offset": 6516,
+              "size": 4,
+              "value": -2.5,
+              "hex": "000020c0"
+            },
+            {
+              "field": "payload.next.rid",
+              "offset": 6520,
+              "size": 8,
+              "value": -2,
+              "hex": "feffffffffffffff"
+            },
+            {
+              "field": "registry.padding",
+              "offset": 6528,
+              "size": 0,
+              "hex": ""
+            }
+          ]
+        }
+      ],
+      "official_api_and_write_result_match": true
+    },
+    {
+      "metadata_size": 437,
+      "data_origin": 4096,
+      "tree_flag": 0,
+      "ordinary_types": [
+        {
+          "ordinal": 0,
+          "offset": 69,
+          "class_id": 114,
+          "stripped": 0,
+          "script_index": 0,
+          "script_hash": "986307c8e04a70d102a89dff2301a26a",
+          "type_hash": "867493dafb6a59026061d71f4f5894df",
+          "nodes": [],
+          "size": 39
+        }
+      ],
+      "reference_types": [
+        {
+          "ordinal": 0,
+          "offset": 406,
+          "class_id": -1,
+          "stripped": 0,
+          "script_index": 0,
+          "script_hash": "00000000000000000000000000000000",
+          "type_hash": "00000000000000000000000000000000",
+          "nodes": [],
+          "size": 39
+        },
+        {
+          "ordinal": 1,
+          "offset": 445,
+          "class_id": -1,
+          "stripped": 0,
+          "script_index": 1,
+          "script_hash": "00000000000000000000000000000000",
+          "type_hash": "00000000000000000000000000000000",
+          "nodes": [],
+          "size": 39
+        }
+      ],
+      "objects": [
+        {
+          "ordinal": 0,
+          "source_offset": 112,
+          "path_id": 1001,
+          "offset": 4096,
+          "size": 92,
+          "type_ordinal": 0
+        },
+        {
+          "ordinal": 1,
+          "source_offset": 136,
+          "path_id": 1003,
+          "offset": 4192,
+          "size": 208,
+          "type_ordinal": 0
+        },
+        {
+          "ordinal": 2,
+          "source_offset": 160,
+          "path_id": 1005,
+          "offset": 4400,
+          "size": 232,
+          "type_ordinal": 0
+        },
+        {
+          "ordinal": 3,
+          "source_offset": 184,
+          "path_id": 1007,
+          "offset": 4632,
+          "size": 324,
+          "type_ordinal": 0
+        },
+        {
+          "ordinal": 4,
+          "source_offset": 208,
+          "path_id": 1009,
+          "offset": 4960,
+          "size": 300,
+          "type_ordinal": 0
+        },
+        {
+          "ordinal": 5,
+          "source_offset": 232,
+          "path_id": 1011,
+          "offset": 5264,
+          "size": 216,
+          "type_ordinal": 0
+        },
+        {
+          "ordinal": 6,
+          "source_offset": 256,
+          "path_id": 1013,
+          "offset": 5480,
+          "size": 288,
+          "type_ordinal": 0
+        },
+        {
+          "ordinal": 7,
+          "source_offset": 280,
+          "path_id": 1015,
+          "offset": 5768,
+          "size": 220,
+          "type_ordinal": 0
+        },
+        {
+          "ordinal": 8,
+          "source_offset": 304,
+          "path_id": 1017,
+          "offset": 5992,
+          "size": 200,
+          "type_ordinal": 0
+        }
+      ],
+      "metadata_fields": [
+        {
+          "field": "engine_version",
+          "offset": 48,
+          "size": 12,
+          "value": "2021.3.35f1",
+          "hex": "323032312e332e3335663100"
+        },
+        {
+          "field": "target",
+          "offset": 60,
+          "size": 4,
+          "value": 19,
+          "hex": "13000000"
+        },
+        {
+          "field": "tree_flag",
+          "offset": 64,
+          "size": 1,
+          "value": 0,
+          "hex": "00"
+        },
+        {
+          "field": "type_count",
+          "offset": 65,
+          "size": 4,
+          "value": 1,
+          "hex": "01000000"
+        },
+        {
+          "field": "class_id",
+          "offset": 69,
+          "size": 4,
+          "value": 114,
+          "hex": "72000000"
+        },
+        {
+          "field": "stripped",
+          "offset": 73,
+          "size": 1,
+          "value": 0,
+          "hex": "00"
+        },
+        {
+          "field": "script_index",
+          "offset": 74,
+          "size": 2,
+          "value": 0,
+          "hex": "0000"
+        },
+        {
+          "field": "object_count",
+          "offset": 108,
+          "size": 4,
+          "value": 9,
+          "hex": "09000000"
+        },
+        {
+          "field": "object_alignment",
+          "offset": 112,
+          "size": 0,
+          "hex": ""
+        },
+        {
+          "field": "path_id",
+          "offset": 112,
+          "size": 8,
+          "value": 1001,
+          "hex": "e903000000000000"
+        },
+        {
+          "field": "relative_offset",
+          "offset": 120,
+          "size": 8,
+          "value": 0,
+          "hex": "0000000000000000"
+        },
+        {
+          "field": "object_size",
+          "offset": 128,
+          "size": 4,
+          "value": 92,
+          "hex": "5c000000"
+        },
+        {
+          "field": "type_ordinal",
+          "offset": 132,
+          "size": 4,
+          "value": 0,
+          "hex": "00000000"
+        },
+        {
+          "field": "object_alignment",
+          "offset": 136,
+          "size": 0,
+          "hex": ""
+        },
+        {
+          "field": "path_id",
+          "offset": 136,
+          "size": 8,
+          "value": 1003,
+          "hex": "eb03000000000000"
+        },
+        {
+          "field": "relative_offset",
+          "offset": 144,
+          "size": 8,
+          "value": 96,
+          "hex": "6000000000000000"
+        },
+        {
+          "field": "object_size",
+          "offset": 152,
+          "size": 4,
+          "value": 208,
+          "hex": "d0000000"
+        },
+        {
+          "field": "type_ordinal",
+          "offset": 156,
+          "size": 4,
+          "value": 0,
+          "hex": "00000000"
+        },
+        {
+          "field": "object_alignment",
+          "offset": 160,
+          "size": 0,
+          "hex": ""
+        },
+        {
+          "field": "path_id",
+          "offset": 160,
+          "size": 8,
+          "value": 1005,
+          "hex": "ed03000000000000"
+        },
+        {
+          "field": "relative_offset",
+          "offset": 168,
+          "size": 8,
+          "value": 304,
+          "hex": "3001000000000000"
+        },
+        {
+          "field": "object_size",
+          "offset": 176,
+          "size": 4,
+          "value": 232,
+          "hex": "e8000000"
+        },
+        {
+          "field": "type_ordinal",
+          "offset": 180,
+          "size": 4,
+          "value": 0,
+          "hex": "00000000"
+        },
+        {
+          "field": "object_alignment",
+          "offset": 184,
+          "size": 0,
+          "hex": ""
+        },
+        {
+          "field": "path_id",
+          "offset": 184,
+          "size": 8,
+          "value": 1007,
+          "hex": "ef03000000000000"
+        },
+        {
+          "field": "relative_offset",
+          "offset": 192,
+          "size": 8,
+          "value": 536,
+          "hex": "1802000000000000"
+        },
+        {
+          "field": "object_size",
+          "offset": 200,
+          "size": 4,
+          "value": 324,
+          "hex": "44010000"
+        },
+        {
+          "field": "type_ordinal",
+          "offset": 204,
+          "size": 4,
+          "value": 0,
+          "hex": "00000000"
+        },
+        {
+          "field": "object_alignment",
+          "offset": 208,
+          "size": 0,
+          "hex": ""
+        },
+        {
+          "field": "path_id",
+          "offset": 208,
+          "size": 8,
+          "value": 1009,
+          "hex": "f103000000000000"
+        },
+        {
+          "field": "relative_offset",
+          "offset": 216,
+          "size": 8,
+          "value": 864,
+          "hex": "6003000000000000"
+        },
+        {
+          "field": "object_size",
+          "offset": 224,
+          "size": 4,
+          "value": 300,
+          "hex": "2c010000"
+        },
+        {
+          "field": "type_ordinal",
+          "offset": 228,
+          "size": 4,
+          "value": 0,
+          "hex": "00000000"
+        },
+        {
+          "field": "object_alignment",
+          "offset": 232,
+          "size": 0,
+          "hex": ""
+        },
+        {
+          "field": "path_id",
+          "offset": 232,
+          "size": 8,
+          "value": 1011,
+          "hex": "f303000000000000"
+        },
+        {
+          "field": "relative_offset",
+          "offset": 240,
+          "size": 8,
+          "value": 1168,
+          "hex": "9004000000000000"
+        },
+        {
+          "field": "object_size",
+          "offset": 248,
+          "size": 4,
+          "value": 216,
+          "hex": "d8000000"
+        },
+        {
+          "field": "type_ordinal",
+          "offset": 252,
+          "size": 4,
+          "value": 0,
+          "hex": "00000000"
+        },
+        {
+          "field": "object_alignment",
+          "offset": 256,
+          "size": 0,
+          "hex": ""
+        },
+        {
+          "field": "path_id",
+          "offset": 256,
+          "size": 8,
+          "value": 1013,
+          "hex": "f503000000000000"
+        },
+        {
+          "field": "relative_offset",
+          "offset": 264,
+          "size": 8,
+          "value": 1384,
+          "hex": "6805000000000000"
+        },
+        {
+          "field": "object_size",
+          "offset": 272,
+          "size": 4,
+          "value": 288,
+          "hex": "20010000"
+        },
+        {
+          "field": "type_ordinal",
+          "offset": 276,
+          "size": 4,
+          "value": 0,
+          "hex": "00000000"
+        },
+        {
+          "field": "object_alignment",
+          "offset": 280,
+          "size": 0,
+          "hex": ""
+        },
+        {
+          "field": "path_id",
+          "offset": 280,
+          "size": 8,
+          "value": 1015,
+          "hex": "f703000000000000"
+        },
+        {
+          "field": "relative_offset",
+          "offset": 288,
+          "size": 8,
+          "value": 1672,
+          "hex": "8806000000000000"
+        },
+        {
+          "field": "object_size",
+          "offset": 296,
+          "size": 4,
+          "value": 220,
+          "hex": "dc000000"
+        },
+        {
+          "field": "type_ordinal",
+          "offset": 300,
+          "size": 4,
+          "value": 0,
+          "hex": "00000000"
+        },
+        {
+          "field": "object_alignment",
+          "offset": 304,
+          "size": 0,
+          "hex": ""
+        },
+        {
+          "field": "path_id",
+          "offset": 304,
+          "size": 8,
+          "value": 1017,
+          "hex": "f903000000000000"
+        },
+        {
+          "field": "relative_offset",
+          "offset": 312,
+          "size": 8,
+          "value": 1896,
+          "hex": "6807000000000000"
+        },
+        {
+          "field": "object_size",
+          "offset": 320,
+          "size": 4,
+          "value": 200,
+          "hex": "c8000000"
+        },
+        {
+          "field": "type_ordinal",
+          "offset": 324,
+          "size": 4,
+          "value": 0,
+          "hex": "00000000"
+        },
+        {
+          "field": "script_count",
+          "offset": 328,
+          "size": 4,
+          "value": 1,
+          "hex": "01000000"
+        },
+        {
+          "field": "script_file",
+          "offset": 332,
+          "size": 4,
+          "value": 1,
+          "hex": "01000000"
+        },
+        {
+          "field": "script_alignment",
+          "offset": 336,
+          "size": 0,
+          "hex": ""
+        },
+        {
+          "field": "script_path",
+          "offset": 336,
+          "size": 8,
+          "value": 9001,
+          "hex": "2923000000000000"
+        },
+        {
+          "field": "external_count",
+          "offset": 344,
+          "size": 4,
+          "value": 1,
+          "hex": "01000000"
+        },
+        {
+          "field": "external_leading",
+          "offset": 348,
+          "size": 1,
+          "value": "",
+          "hex": "00"
+        },
+        {
+          "field": "external_type",
+          "offset": 365,
+          "size": 4,
+          "value": 0,
+          "hex": "00000000"
+        },
+        {
+          "field": "external_path",
+          "offset": 369,
+          "size": 33,
+          "value": "managed-reference-scripts.assets",
+          "hex": "6d616e616765642d7265666572656e63652d736372697074732e61737365747300"
+        },
+        {
+          "field": "reference_type_count",
+          "offset": 402,
+          "size": 4,
+          "value": 2,
+          "hex": "02000000"
+        },
+        {
+          "field": "class_id",
+          "offset": 406,
+          "size": 4,
+          "value": -1,
+          "hex": "ffffffff"
+        },
+        {
+          "field": "stripped",
+          "offset": 410,
+          "size": 1,
+          "value": 0,
+          "hex": "00"
+        },
+        {
+          "field": "script_index",
+          "offset": 411,
+          "size": 2,
+          "value": 0,
+          "hex": "0000"
+        },
+        {
+          "field": "class_id",
+          "offset": 445,
+          "size": 4,
+          "value": -1,
+          "hex": "ffffffff"
+        },
+        {
+          "field": "stripped",
+          "offset": 449,
+          "size": 1,
+          "value": 0,
+          "hex": "00"
+        },
+        {
+          "field": "script_index",
+          "offset": 450,
+          "size": 2,
+          "value": 1,
+          "hex": "0100"
+        },
+        {
+          "field": "user_information",
+          "offset": 484,
+          "size": 1,
+          "value": "",
+          "hex": "00"
+        }
+      ],
+      "variant": "without-tree",
+      "bytes": 6192,
+      "sha256": "d65b64b67b5f78f34a4e1729724a0b6d94ad76a1e38cafb5fea4d61b6e789b4f",
+      "payload_comparisons_to_tree_bearing_file": [
+        {
+          "path_id": 1001,
+          "bytes": 92,
+          "sha256": "6dc6e2de01ce6c3d9d279fcf76db48cb231e16aa60ad544a2b1204d6dc3ea4ae",
+          "byte_equal": true
+        },
+        {
+          "path_id": 1003,
+          "bytes": 208,
+          "sha256": "603f9c0349250e010da205ffe8c0481959513ada8d20d2de39ecf92888d07ecc",
+          "byte_equal": true
+        },
+        {
+          "path_id": 1005,
+          "bytes": 232,
+          "sha256": "b89b0cd9e92466b597f75c4b40846615cfabbec6dbec0760fa42c5805433d68e",
+          "byte_equal": true
+        },
+        {
+          "path_id": 1007,
+          "bytes": 324,
+          "sha256": "f6152f30f1bf1383a8607a376709e92b5d605ee5f98740ec9828a1d5182fc4c4",
+          "byte_equal": true
+        },
+        {
+          "path_id": 1009,
+          "bytes": 300,
+          "sha256": "5a0a876f4eff356a1b664dc3b54eb19364db0161f3cfc060bea0efec6cb7f204",
+          "byte_equal": true
+        },
+        {
+          "path_id": 1011,
+          "bytes": 216,
+          "sha256": "1eb2a78aa9defe71fa696a0ff425fdf4eff400ee81d1057aecfe7ffcc5fc3d8d",
+          "byte_equal": true
+        },
+        {
+          "path_id": 1013,
+          "bytes": 288,
+          "sha256": "740a25d7d4191c357016bd904d12e71423c7001981d002b9cb0af86aa7a3b1e1",
+          "byte_equal": true
+        },
+        {
+          "path_id": 1015,
+          "bytes": 220,
+          "sha256": "82fde981e5c256920ac3c0a53ce7dfc3af24aaca49a3226741957039d9c6e36e",
+          "byte_equal": true
+        },
+        {
+          "path_id": 1017,
+          "bytes": 200,
+          "sha256": "7af1fbb80727ee9645c6ac2e17dcc66f7e265150b4178243bec51c56f71f646d",
+          "byte_equal": true
+        }
+      ],
+      "schema_scope": "Reference trees/names are absent; payload equality does not resolve schemas"
+    }
+  ]
+}

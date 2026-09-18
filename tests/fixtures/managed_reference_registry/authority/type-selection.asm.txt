@@ -1,0 +1,110 @@
+symbol=__ZeqRKN14SerializedFile14SerializedTypeERK20SimpleRefManagedType
+range=0x10000bfbc..0x10000c16c (exclusive end)
+10000bfbc:     	add	x1, x0, #0x58
+10000bfc0:     	strb	w9, [sp, #0x20]
+10000bfc4:     	add	x0, sp, #0x50
+10000bfc8:     	bl	0x100003d04 <__ZN4core20StringStorageDefaultIcE6assignERKS1_>
+10000bfcc:     	add	x1, x20, #0x80
+10000bfd0:     	add	x0, sp, #0x28
+10000bfd4:     	bl	0x100003d04 <__ZN4core20StringStorageDefaultIcE6assignERKS1_>
+10000bfd8:     	add	x1, x20, #0xa8
+10000bfdc:     	mov	x0, sp
+10000bfe0:     	bl	0x100003d04 <__ZN4core20StringStorageDefaultIcE6assignERKS1_>
+10000bfe4:     	mov	w20, #0x0               ; =0
+10000bfe8:     	ldrb	w9, [x19, #0x20]
+10000bfec:     	ldrsb	x8, [x19, #0x18]
+10000bff0:     	sub	x8, x21, x8
+10000bff4:     	ldr	x10, [x19, #0x10]
+10000bff8:     	cmp	w9, #0x1
+10000bffc:     	csel	x8, x8, x10, eq
+10000c000:     	ldrb	w10, [sp, #0x70]
+10000c004:     	ldrsb	x11, [sp, #0x68]
+10000c008:     	sub	x11, x21, x11
+10000c00c:     	ldr	x12, [sp, #0x60]
+10000c010:     	cmp	w10, #0x1
+10000c014:     	csel	x11, x11, x12, eq
+10000c018:     	cmp	x8, x11
+10000c01c:     	b.ne	0x10000c16c <__ZeqRKN14SerializedFile14SerializedTypeERK20SimpleRefManagedType+0x214>
+10000c020:     	cbz	x8, 0x10000c060 <__ZeqRKN14SerializedFile14SerializedTypeERK20SimpleRefManagedType+0x108>
+10000c024:     	ldr	x11, [sp, #0x50]
+10000c028:     	cmp	w10, #0x1
+10000c02c:     	add	x10, sp, #0x50
+10000c030:     	csel	x10, x10, x11, eq
+10000c034:     	ldr	x11, [x19]
+10000c038:     	cmp	w9, #0x1
+10000c03c:     	csel	x9, x19, x11, eq
+10000c040:     	ldrb	w11, [x9]
+10000c044:     	ldrb	w12, [x10]
+10000c048:     	cmp	w11, w12
+10000c04c:     	b.ne	0x10000c168 <__ZeqRKN14SerializedFile14SerializedTypeERK20SimpleRefManagedType+0x210>
+10000c050:     	add	x9, x9, #0x1
+10000c054:     	add	x10, x10, #0x1
+10000c058:     	subs	x8, x8, #0x1
+10000c05c:     	b.ne	0x10000c040 <__ZeqRKN14SerializedFile14SerializedTypeERK20SimpleRefManagedType+0xe8>
+10000c060:     	ldrb	w9, [x19, #0x48]
+10000c064:     	ldrsb	x8, [x19, #0x40]
+10000c068:     	mov	w11, #0x18              ; =24
+10000c06c:     	sub	x8, x11, x8
+10000c070:     	ldr	x10, [x19, #0x38]
+10000c074:     	cmp	w9, #0x1
+10000c078:     	csel	x8, x8, x10, eq
+10000c07c:     	ldrb	w10, [sp, #0x48]
+10000c080:     	ldrsb	x12, [sp, #0x40]
+10000c084:     	sub	x11, x11, x12
+10000c088:     	ldr	x12, [sp, #0x38]
+10000c08c:     	cmp	w10, #0x1
+10000c090:     	csel	x11, x11, x12, eq
+10000c094:     	cmp	x8, x11
+10000c098:     	b.ne	0x10000c168 <__ZeqRKN14SerializedFile14SerializedTypeERK20SimpleRefManagedType+0x210>
+10000c09c:     	cbz	x8, 0x10000c0e0 <__ZeqRKN14SerializedFile14SerializedTypeERK20SimpleRefManagedType+0x188>
+10000c0a0:     	add	x11, x19, #0x28
+10000c0a4:     	ldr	x12, [sp, #0x28]
+10000c0a8:     	cmp	w10, #0x1
+10000c0ac:     	add	x10, sp, #0x28
+10000c0b0:     	csel	x10, x10, x12, eq
+10000c0b4:     	ldr	x12, [x11]
+10000c0b8:     	cmp	w9, #0x1
+10000c0bc:     	csel	x9, x11, x12, eq
+10000c0c0:     	ldrb	w11, [x9]
+10000c0c4:     	ldrb	w12, [x10]
+10000c0c8:     	cmp	w11, w12
+10000c0cc:     	b.ne	0x10000c168 <__ZeqRKN14SerializedFile14SerializedTypeERK20SimpleRefManagedType+0x210>
+10000c0d0:     	add	x9, x9, #0x1
+10000c0d4:     	add	x10, x10, #0x1
+10000c0d8:     	subs	x8, x8, #0x1
+10000c0dc:     	b.ne	0x10000c0c0 <__ZeqRKN14SerializedFile14SerializedTypeERK20SimpleRefManagedType+0x168>
+10000c0e0:     	ldrb	w10, [x19, #0x70]
+10000c0e4:     	ldrsb	x8, [x19, #0x68]
+10000c0e8:     	mov	w11, #0x18              ; =24
+10000c0ec:     	sub	x8, x11, x8
+10000c0f0:     	ldr	x9, [x19, #0x60]
+10000c0f4:     	cmp	w10, #0x1
+10000c0f8:     	csel	x8, x8, x9, eq
+10000c0fc:     	ldrb	w9, [sp, #0x20]
+10000c100:     	ldrsb	x12, [sp, #0x18]
+10000c104:     	sub	x11, x11, x12
+10000c108:     	ldr	x12, [sp, #0x10]
+10000c10c:     	cmp	w9, #0x1
+10000c110:     	csel	x11, x11, x12, eq
+10000c114:     	cmp	x8, x11
+10000c118:     	b.ne	0x10000c168 <__ZeqRKN14SerializedFile14SerializedTypeERK20SimpleRefManagedType+0x210>
+10000c11c:     	cbz	x8, 0x10000c1b4 <__ZeqRKN14SerializedFile14SerializedTypeERK20SimpleRefManagedType+0x25c>
+10000c120:     	add	x11, x19, #0x50
+10000c124:     	ldr	x12, [sp]
+10000c128:     	cmp	w9, #0x1
+10000c12c:     	mov	x9, sp
+10000c130:     	csel	x9, x9, x12, eq
+10000c134:     	ldr	x12, [x11]
+10000c138:     	cmp	w10, #0x1
+10000c13c:     	csel	x10, x11, x12, eq
+10000c140:     	mov	w20, #0x1               ; =1
+10000c144:     	ldrb	w11, [x10]
+10000c148:     	ldrb	w12, [x9]
+10000c14c:     	cmp	w11, w12
+10000c150:     	b.ne	0x10000c168 <__ZeqRKN14SerializedFile14SerializedTypeERK20SimpleRefManagedType+0x210>
+10000c154:     	add	x10, x10, #0x1
+10000c158:     	add	x9, x9, #0x1
+10000c15c:     	subs	x8, x8, #0x1
+10000c160:     	b.ne	0x10000c144 <__ZeqRKN14SerializedFile14SerializedTypeERK20SimpleRefManagedType+0x1ec>
+10000c164:     	b	0x10000c16c <__ZeqRKN14SerializedFile14SerializedTypeERK20SimpleRefManagedType+0x214>
+10000c168:     	mov	w20, #0x0               ; =0

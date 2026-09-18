@@ -1,0 +1,200 @@
+symbol=__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi
+range=0x100009e04..0x100009e20 (exclusive end)
+100009e04:     	ldr	x8, [x22]
+100009e08:     	ldr	x9, [x19]
+100009e0c:     	ldr	x8, [x8]
+100009e10:     	add	x8, x8, x9, lsl #5
+100009e14:     	ldrb	w8, [x8, #0x3]
+100009e18:     	tbnz	w8, #0x2, 0x10000a3d0 <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x2120>
+100009e1c:     	str	x22, [sp, #0x50]
+range=0x10000abe0..0x10000ac88 (exclusive end)
+10000abe0:     	mov	w22, #0x0               ; =0
+10000abe4:     	add	w22, w22, #0x1
+10000abe8:     	sub	x8, x29, #0x90
+10000abec:     	add	x0, sp, #0xe0
+10000abf0:     	bl	0x10000c3e4 <__ZNK16TypeTreeIterator4NextEv>
+10000abf4:     	ldr	q0, [x28]
+10000abf8:     	str	q0, [sp, #0xe0]
+10000abfc:     	ldur	x8, [x29, #-0x80]
+10000ac00:     	str	x8, [sp, #0xf0]
+10000ac04:     	ldr	x8, [sp, #0xe8]
+10000ac08:     	cbnz	x8, 0x10000abe4 <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x2934>
+10000ac0c:     	b	0x10000b38c <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x30dc>
+10000ac10:     	mov	w28, #0x2               ; =2
+10000ac14:     	ldr	x21, [sp, #0x60]
+10000ac18:     	mov	w8, #-0x1               ; =-1
+10000ac1c:     	str	w8, [sp, #0x4]
+10000ac20:     	strb	w23, [sp]
+10000ac24:     	add	x0, sp, #0x90
+10000ac28:     	mov	x1, x26
+10000ac2c:     	mov	x2, x22
+10000ac30:     	mov	x3, x21
+10000ac34:     	mov	x4, x27
+10000ac38:     	mov	x5, x20
+10000ac3c:     	mov	x6, x24
+10000ac40:     	mov	w7, #0x0                ; =0
+10000ac44:     	bl	0x1000082b0 <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi>
+10000ac48:     	add	x8, sp, #0xe0
+10000ac4c:     	add	x0, sp, #0x90
+10000ac50:     	bl	0x10000c3e4 <__ZNK16TypeTreeIterator4NextEv>
+10000ac54:     	ldr	q0, [sp, #0xe0]
+10000ac58:     	str	q0, [sp, #0x90]
+10000ac5c:     	ldr	x8, [sp, #0xf0]
+10000ac60:     	str	x8, [sp, #0xa0]
+10000ac64:     	mov	w19, #0x1               ; =1
+10000ac68:     	add	x0, sp, #0x90
+10000ac6c:     	mov	x1, x28
+10000ac70:     	mov	x2, x22
+10000ac74:     	mov	x3, x21
+10000ac78:     	mov	w4, #0x1                ; =1
+10000ac7c:     	bl	0x100011b04 <__ZN15TypeTreeQueries35ReadReferenceRegistrySizeFromBufferER16TypeTreeIteratoriPKhPib>
+10000ac80:     	str	w0, [sp, #0x58]
+10000ac84:     	ldr	x8, [sp, #0x98]
+range=0x10000a4d4..0x10000a518 (exclusive end)
+10000a4d4:     	add	x8, sp, #0xe0
+10000a4d8:     	mov	x0, x21
+10000a4dc:     	bl	0x10000c2f0 <__ZNK16TypeTreeIterator8ChildrenEv>
+10000a4e0:     	ldr	x8, [sp, #0xe8]
+10000a4e4:     	ldp	x27, x19, [sp, #0x60]
+10000a4e8:     	ldr	x22, [sp, #0x50]
+10000a4ec:     	cbz	x8, 0x100009724 <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x1474>
+10000a4f0:     	add	w27, w25, #0x1
+10000a4f4:     	add	x8, sp, #0x90
+10000a4f8:     	mov	x0, x21
+10000a4fc:     	bl	0x10000c2f0 <__ZNK16TypeTreeIterator8ChildrenEv>
+10000a500:     	ldr	x22, [sp, #0x70]
+10000a504:     	cbz	x22, 0x10000ac10 <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x2960>
+10000a508:     	ldr	x21, [sp, #0x60]
+10000a50c:     	ldrsw	x8, [x21]
+10000a510:     	ldr	w28, [x22, x8]
+10000a514:     	b	0x10000ac18 <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x2968>
+range=0x10000ae14..0x10000ae98 (exclusive end)
+10000ae14:     	add	x0, sp, #0xe0
+10000ae18:     	add	x1, sp, #0x90
+10000ae1c:     	ldr	w2, [sp, #0x48]
+10000ae20:     	mov	x3, x28
+10000ae24:     	mov	x4, x27
+10000ae28:     	mov	x5, x23
+10000ae2c:     	bl	0x100012c60 <__ZN20SimpleRefManagedTypeC2ERK16TypeTreeIteratoriPKhPib>
+10000ae30:     	ldr	x28, [x26]
+10000ae34:     	ldr	x8, [x26, #0x10]
+10000ae38:     	cbz	x8, 0x10000ae6c <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x2bbc>
+10000ae3c:     	mov	w9, #0xd0               ; =208
+10000ae40:     	madd	x19, x8, x9, x28
+10000ae44:     	mul	x21, x8, x9
+10000ae48:     	add	x1, sp, #0xe0
+10000ae4c:     	mov	x0, x28
+10000ae50:     	bl	0x10000bf58 <__ZeqRKN14SerializedFile14SerializedTypeERK20SimpleRefManagedType>
+10000ae54:     	tbnz	w0, #0x0, 0x10000ae68 <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x2bb8>
+10000ae58:     	add	x28, x28, #0xd0
+10000ae5c:     	subs	x21, x21, #0xd0
+10000ae60:     	b.ne	0x10000ae48 <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x2b98>
+10000ae64:     	mov	x28, x19
+10000ae68:     	ldr	x19, [sp, #0x68]
+10000ae6c:     	add	x0, sp, #0xe0
+10000ae70:     	bl	0x10000d028 <__ZN20SimpleRefManagedType12IsTerminatorEv>
+10000ae74:     	tbz	w0, #0x0, 0x10000ae84 <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x2bd4>
+10000ae78:     	mov	w21, #0x1               ; =1
+10000ae7c:     	ldr	x28, [sp, #0x70]
+10000ae80:     	b	0x10000b2f0 <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x3040>
+10000ae84:     	ldr	x8, [sp, #0x158]
+10000ae88:     	ldr	w9, [sp, #0x48]
+10000ae8c:     	cmp	w9, #0x1
+10000ae90:     	ldr	x9, [sp, #0x40]
+10000ae94:     	csel	x21, x8, x9, gt
+range=0x10000b020..0x10000b048 (exclusive end)
+10000b020:     	ldr	x8, [x26]
+10000b024:     	ldr	x9, [x26, #0x10]
+10000b028:     	mov	w10, #0xd0              ; =208
+10000b02c:     	madd	x8, x9, x10, x8
+10000b030:     	cmp	x28, x8
+10000b034:     	ldp	x27, x19, [sp, #0x60]
+10000b038:     	b.eq	0x10000b2c8 <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x3018>
+10000b03c:     	ldr	x28, [x28, #0x30]
+10000b040:     	cbz	x28, 0x10000b2c8 <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x3018>
+10000b044:     	ldr	x19, [x28]
+range=0x10000b1a0..0x10000b2f0 (exclusive end)
+10000b1a0:     	ldr	x27, [sp, #0x60]
+10000b1a4:     	mov	w21, #0x0               ; =0
+10000b1a8:     	b.lt	0x10000b2d4 <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x3024>
+10000b1ac:     	ldr	x8, [x19]
+10000b1b0:     	ldrb	w9, [x8, #0x22]
+10000b1b4:     	ldrb	w10, [x8, #0x2]
+10000b1b8:     	add	w10, w10, #0x1
+10000b1bc:     	cmp	w10, w9
+10000b1c0:     	b.ne	0x10000b2d4 <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x3024>
+10000b1c4:     	cbz	x19, 0x10000b2d4 <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x3024>
+10000b1c8:     	ldr	x9, [x19, #0x10]
+10000b1cc:     	cbnz	x9, 0x10000b1f8 <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x2f48>
+10000b1d0:     	mov	w0, #0x0                ; =0
+10000b1d4:     	adr	x1, 0x100022caf <dyld_stub_binder+0x100022caf>
+10000b1d8:     	nop
+10000b1dc:     	mov	w2, #0xd2               ; =210
+10000b1e0:     	mov	w3, #-0x1               ; =-1
+10000b1e4:     	adr	x4, 0x100022cfc <dyld_stub_binder+0x100022cfc>
+10000b1e8:     	nop
+10000b1ec:     	bl	0x100019ea8 <__Z20AssertImplementationiPKciiS0_>
+10000b1f0:     	ldr	x9, [x19, #0x10]
+10000b1f4:     	ldr	x8, [x19]
+10000b1f8:     	cmp	x9, #0x2
+10000b1fc:     	ldr	w21, [sp, #0x18]
+10000b200:     	b.lt	0x10000b2dc <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x302c>
+10000b204:     	ldrb	w9, [x8, #0x22]
+10000b208:     	ldrb	w8, [x8, #0x2]
+10000b20c:     	add	w8, w8, #0x1
+10000b210:     	cmp	w8, w9
+10000b214:     	b.ne	0x10000b2dc <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x302c>
+10000b218:     	stp	x28, x19, [sp, #0xb0]
+10000b21c:     	mov	w8, #0x1                ; =1
+10000b220:     	mov	w9, #0x1                ; =1
+10000b224:     	str	x9, [sp, #0xc0]
+10000b228:     	ldr	x28, [sp, #0x70]
+10000b22c:     	ldr	x9, [x19, #0x10]
+10000b230:     	cmp	x8, x9
+10000b234:     	b.lo	0x10000b25c <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x2fac>
+10000b238:     	mov	w0, #0x0                ; =0
+10000b23c:     	adr	x1, 0x100022caf <dyld_stub_binder+0x100022caf>
+10000b240:     	nop
+10000b244:     	mov	w2, #0xd2               ; =210
+10000b248:     	mov	w3, #-0x1               ; =-1
+10000b24c:     	adr	x4, 0x100022cfc <dyld_stub_binder+0x100022cfc>
+10000b250:     	nop
+10000b254:     	bl	0x100019ea8 <__Z20AssertImplementationiPKciiS0_>
+10000b258:     	ldp	x19, x8, [sp, #0xb8]
+10000b25c:     	ldr	x9, [x19]
+10000b260:     	add	x8, x9, x8, lsl #5
+10000b264:     	ldrb	w8, [x8, #0x3]
+10000b268:     	tbnz	w8, #0x2, 0x10000b2e8 <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x3038>
+10000b26c:     	mov	w8, #-0x1               ; =-1
+10000b270:     	str	w8, [sp, #0x4]
+10000b274:     	strb	w23, [sp]
+10000b278:     	add	x0, sp, #0xb0
+10000b27c:     	mov	x1, x26
+10000b280:     	mov	x2, x28
+10000b284:     	mov	x3, x27
+10000b288:     	mov	x4, x21
+10000b28c:     	mov	x5, x20
+10000b290:     	mov	x6, x24
+10000b294:     	mov	w7, #0x0                ; =0
+10000b298:     	bl	0x1000082b0 <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi>
+10000b29c:     	add	x8, sp, #0x78
+10000b2a0:     	add	x0, sp, #0xb0
+10000b2a4:     	bl	0x10000c3e4 <__ZNK16TypeTreeIterator4NextEv>
+10000b2a8:     	ldur	q0, [sp, #0x78]
+10000b2ac:     	str	q0, [sp, #0xb0]
+10000b2b0:     	ldr	x8, [sp, #0x88]
+10000b2b4:     	str	x8, [sp, #0xc0]
+10000b2b8:     	ldr	x19, [sp, #0xb8]
+10000b2bc:     	cbz	x19, 0x10000b2e8 <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x3038>
+10000b2c0:     	ldr	x8, [sp, #0xc0]
+10000b2c4:     	b	0x10000b22c <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x2f7c>
+10000b2c8:     	mov	w21, #0x0               ; =0
+10000b2cc:     	ldr	x28, [sp, #0x70]
+10000b2d0:     	b	0x10000b2f0 <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x3040>
+10000b2d4:     	ldp	x19, x28, [sp, #0x68]
+10000b2d8:     	b	0x10000b2f0 <__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi+0x3040>
+10000b2dc:     	stp	xzr, xzr, [sp, #0xb0]
+10000b2e0:     	str	xzr, [sp, #0xc0]
+10000b2e4:     	ldr	x28, [sp, #0x70]
+10000b2e8:     	mov	w21, #0x0               ; =0
+10000b2ec:     	ldr	x19, [sp, #0x68]

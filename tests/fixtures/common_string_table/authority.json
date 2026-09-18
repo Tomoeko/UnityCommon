@@ -1,0 +1,111 @@
+{
+  "scope": "Pinned exact35 converter buffer observation; no Unity execution or product parser imports",
+  "source": {
+    "path": "binary2text",
+    "bytes": 311672,
+    "sha256": "d9a9938a39a81d476c42e5dd0a4b5532b43572f63f6e3471236ea791a26b2f22"
+  },
+  "named_boundaries": [
+    {
+      "symbol": "__ZN5Unity12CommonString11BufferBeginE",
+      "address": "0x1000244c8",
+      "file_offset": 148680,
+      "pointer_hex": "8c12020001000000",
+      "pointer": "0x10002128c"
+    },
+    {
+      "symbol": "__ZN5Unity12CommonString9BufferEndE",
+      "address": "0x1000244d0",
+      "file_offset": 148688,
+      "pointer_hex": "1e17020001000000",
+      "pointer": "0x10002171e"
+    }
+  ],
+  "buffer": {
+    "symbol": "__ZN5Unity12CommonStringL13gStringBufferE",
+    "begin": "0x10002128c",
+    "end": "0x10002171e",
+    "file_offset": 135820,
+    "bytes": 1170,
+    "sha256": "4a6ece766a82003fcb86398159b54e5ae84de95b33752950c89b34ea6465444e",
+    "string_starts_including_final_empty": 110,
+    "final_empty_offset": 1169
+  },
+  "constructor": {
+    "symbol": "__ZN17CommonStringTableC2E10MemLabelId",
+    "address": "0x100006c28",
+    "instructions": [
+      {
+        "address": "0x100006dac",
+        "file_offset": 28076,
+        "bytes_hex": "14270d10",
+        "assembly": "adr x20, 0x10002128c"
+      },
+      {
+        "address": "0x100006dbc",
+        "file_offset": 28092,
+        "bytes_hex": "e00314aa",
+        "assembly": "mov x0, x20"
+      },
+      {
+        "address": "0x100006dc0",
+        "file_offset": 28096,
+        "bytes_hex": "7d660094",
+        "assembly": "bl 0x1000207b4"
+      },
+      {
+        "address": "0x100006e74",
+        "file_offset": 28276,
+        "bytes_hex": "140500f9",
+        "assembly": "str x20, [x8, #0x8]"
+      },
+      {
+        "address": "0x100006e78",
+        "file_offset": 28280,
+        "bytes_hex": "e802148b",
+        "assembly": "add x8, x23, x20"
+      },
+      {
+        "address": "0x100006e7c",
+        "file_offset": 28284,
+        "bytes_hex": "14050091",
+        "assembly": "add x20, x8, #0x1"
+      },
+      {
+        "address": "0x100006e80",
+        "file_offset": 28288,
+        "bytes_hex": "e8440d50",
+        "assembly": "adr x8, 0x10002171e"
+      },
+      {
+        "address": "0x100006e88",
+        "file_offset": 28296,
+        "bytes_hex": "9f0208eb",
+        "assembly": "cmp x20, x8"
+      },
+      {
+        "address": "0x100006e8c",
+        "file_offset": 28300,
+        "bytes_hex": "83f9ff54",
+        "assembly": "b.lo 0x100006dbc"
+      }
+    ]
+  },
+  "fixture": {
+    "file": "exact35.bin",
+    "bytes": 1170,
+    "sha256": "4a6ece766a82003fcb86398159b54e5ae84de95b33752950c89b34ea6465444e",
+    "complete_buffer_equal": true
+  },
+  "extractor": {
+    "file": "extract_verify.py",
+    "sha256": "958166ac62fa48f08b402d536b95b5b0e31740fa0f90b71a04fe9a5d94c28f14"
+  },
+  "limits": {
+    "source_bytes": 1048576,
+    "fixture_bytes": 1170,
+    "receipt_bytes": 16384,
+    "scratch_bytes": 0
+  },
+  "binary_ninja": "Existing addressed observation was closed; this script opens no view or database"
+}

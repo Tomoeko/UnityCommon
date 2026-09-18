@@ -1,0 +1,489 @@
+{
+    "engineVersion": "2021.3.35f1",
+    "target": "StandaloneWindows64",
+    "nullId": -2,
+    "unknownId": -1,
+    "observationsAfterAssetReload": true,
+    "status": "success",
+    "error": "",
+    "hosts": [
+        {
+            "caseName": "null",
+            "guid": "d36ae9e98ae4c001f2e125c59351ac6a",
+            "pathId": 1001,
+            "firstId": -2,
+            "secondId": -2,
+            "itemIds": [],
+            "firstAndSecondSame": true,
+            "idsResolveToOriginalInstances": true,
+            "unknownUntrackedObjectId": -1,
+            "references": [
+                {
+                    "id": -2,
+                    "isNull": true,
+                    "className": "",
+                    "namespaceName": "",
+                    "assemblyName": "",
+                    "marker": 0,
+                    "label": "",
+                    "amount": 0.0,
+                    "nextId": 0,
+                    "nextResolvesToSameInstance": false
+                }
+            ]
+        },
+        {
+            "caseName": "single",
+            "guid": "2c9830c5af2678ef03e07b8b54081c4b",
+            "pathId": 1003,
+            "firstId": 6441160360502231040,
+            "secondId": -2,
+            "itemIds": [],
+            "firstAndSecondSame": false,
+            "idsResolveToOriginalInstances": true,
+            "unknownUntrackedObjectId": -1,
+            "references": [
+                {
+                    "id": -2,
+                    "isNull": true,
+                    "className": "",
+                    "namespaceName": "",
+                    "assemblyName": "",
+                    "marker": 0,
+                    "label": "",
+                    "amount": 0.0,
+                    "nextId": 0,
+                    "nextResolvesToSameInstance": false
+                },
+                {
+                    "id": 6441160360502231040,
+                    "isNull": false,
+                    "className": "Payload",
+                    "namespaceName": "UnityRecoverManagedFixture.Alpha",
+                    "assemblyName": "Assembly-CSharp",
+                    "marker": 1011,
+                    "label": "alpha payload",
+                    "amount": 0.0,
+                    "nextId": -2,
+                    "nextResolvesToSameInstance": true
+                }
+            ]
+        },
+        {
+            "caseName": "shared",
+            "guid": "2ec8fea955795bffd2662261e0fc0841",
+            "pathId": 1005,
+            "firstId": 101,
+            "secondId": 101,
+            "itemIds": [
+                101,
+                -2,
+                101
+            ],
+            "firstAndSecondSame": true,
+            "idsResolveToOriginalInstances": true,
+            "unknownUntrackedObjectId": -1,
+            "references": [
+                {
+                    "id": -2,
+                    "isNull": true,
+                    "className": "",
+                    "namespaceName": "",
+                    "assemblyName": "",
+                    "marker": 0,
+                    "label": "",
+                    "amount": 0.0,
+                    "nextId": 0,
+                    "nextResolvesToSameInstance": false
+                },
+                {
+                    "id": 101,
+                    "isNull": false,
+                    "className": "Payload",
+                    "namespaceName": "UnityRecoverManagedFixture.Alpha",
+                    "assemblyName": "Assembly-CSharp",
+                    "marker": 1011,
+                    "label": "alpha payload",
+                    "amount": 0.0,
+                    "nextId": -2,
+                    "nextResolvesToSameInstance": true
+                }
+            ]
+        },
+        {
+            "caseName": "two-types",
+            "guid": "312c8087b4c263eb878cfc4f165605f5",
+            "pathId": 1007,
+            "firstId": 101,
+            "secondId": 202,
+            "itemIds": [
+                202,
+                101
+            ],
+            "firstAndSecondSame": false,
+            "idsResolveToOriginalInstances": true,
+            "unknownUntrackedObjectId": -1,
+            "references": [
+                {
+                    "id": -2,
+                    "isNull": true,
+                    "className": "",
+                    "namespaceName": "",
+                    "assemblyName": "",
+                    "marker": 0,
+                    "label": "",
+                    "amount": 0.0,
+                    "nextId": 0,
+                    "nextResolvesToSameInstance": false
+                },
+                {
+                    "id": 101,
+                    "isNull": false,
+                    "className": "Payload",
+                    "namespaceName": "UnityRecoverManagedFixture.Alpha",
+                    "assemblyName": "Assembly-CSharp",
+                    "marker": 1011,
+                    "label": "alpha payload",
+                    "amount": 0.0,
+                    "nextId": -2,
+                    "nextResolvesToSameInstance": true
+                },
+                {
+                    "id": 202,
+                    "isNull": false,
+                    "className": "Payload",
+                    "namespaceName": "UnityRecoverManagedFixture.Beta",
+                    "assemblyName": "Assembly-CSharp",
+                    "marker": 2022,
+                    "label": "",
+                    "amount": 1.25,
+                    "nextId": -2,
+                    "nextResolvesToSameInstance": true
+                }
+            ]
+        },
+        {
+            "caseName": "nested",
+            "guid": "c4c618f6cdec6dcb6ac74840b5fc5ab0",
+            "pathId": 1009,
+            "firstId": 101,
+            "secondId": -2,
+            "itemIds": [],
+            "firstAndSecondSame": false,
+            "idsResolveToOriginalInstances": true,
+            "unknownUntrackedObjectId": -1,
+            "references": [
+                {
+                    "id": -2,
+                    "isNull": true,
+                    "className": "",
+                    "namespaceName": "",
+                    "assemblyName": "",
+                    "marker": 0,
+                    "label": "",
+                    "amount": 0.0,
+                    "nextId": 0,
+                    "nextResolvesToSameInstance": false
+                },
+                {
+                    "id": 101,
+                    "isNull": false,
+                    "className": "Payload",
+                    "namespaceName": "UnityRecoverManagedFixture.Alpha",
+                    "assemblyName": "Assembly-CSharp",
+                    "marker": 1011,
+                    "label": "alpha payload",
+                    "amount": 0.0,
+                    "nextId": 202,
+                    "nextResolvesToSameInstance": true
+                },
+                {
+                    "id": 202,
+                    "isNull": false,
+                    "className": "Payload",
+                    "namespaceName": "UnityRecoverManagedFixture.Beta",
+                    "assemblyName": "Assembly-CSharp",
+                    "marker": 2022,
+                    "label": "",
+                    "amount": 1.25,
+                    "nextId": -2,
+                    "nextResolvesToSameInstance": true
+                }
+            ]
+        },
+        {
+            "caseName": "self-cycle",
+            "guid": "2c3065f7031e9c9019d147f2dda797be",
+            "pathId": 1011,
+            "firstId": 101,
+            "secondId": -2,
+            "itemIds": [],
+            "firstAndSecondSame": false,
+            "idsResolveToOriginalInstances": true,
+            "unknownUntrackedObjectId": -1,
+            "references": [
+                {
+                    "id": -2,
+                    "isNull": true,
+                    "className": "",
+                    "namespaceName": "",
+                    "assemblyName": "",
+                    "marker": 0,
+                    "label": "",
+                    "amount": 0.0,
+                    "nextId": 0,
+                    "nextResolvesToSameInstance": false
+                },
+                {
+                    "id": 101,
+                    "isNull": false,
+                    "className": "Payload",
+                    "namespaceName": "UnityRecoverManagedFixture.Alpha",
+                    "assemblyName": "Assembly-CSharp",
+                    "marker": 1011,
+                    "label": "alpha payload",
+                    "amount": 0.0,
+                    "nextId": 101,
+                    "nextResolvesToSameInstance": true
+                }
+            ]
+        },
+        {
+            "caseName": "two-cycle",
+            "guid": "2ff17efee66020273dbce94976eee35d",
+            "pathId": 1013,
+            "firstId": 101,
+            "secondId": 202,
+            "itemIds": [],
+            "firstAndSecondSame": false,
+            "idsResolveToOriginalInstances": true,
+            "unknownUntrackedObjectId": -1,
+            "references": [
+                {
+                    "id": 101,
+                    "isNull": false,
+                    "className": "Payload",
+                    "namespaceName": "UnityRecoverManagedFixture.Alpha",
+                    "assemblyName": "Assembly-CSharp",
+                    "marker": 1011,
+                    "label": "alpha payload",
+                    "amount": 0.0,
+                    "nextId": 202,
+                    "nextResolvesToSameInstance": true
+                },
+                {
+                    "id": 202,
+                    "isNull": false,
+                    "className": "Payload",
+                    "namespaceName": "UnityRecoverManagedFixture.Beta",
+                    "assemblyName": "Assembly-CSharp",
+                    "marker": 2022,
+                    "label": "",
+                    "amount": 1.25,
+                    "nextId": 101,
+                    "nextResolvesToSameInstance": true
+                }
+            ]
+        },
+        {
+            "caseName": "host-alpha",
+            "guid": "887895c3a198d44ec0fbdd2292069085",
+            "pathId": 1015,
+            "firstId": 101,
+            "secondId": -2,
+            "itemIds": [],
+            "firstAndSecondSame": false,
+            "idsResolveToOriginalInstances": true,
+            "unknownUntrackedObjectId": -1,
+            "references": [
+                {
+                    "id": -2,
+                    "isNull": true,
+                    "className": "",
+                    "namespaceName": "",
+                    "assemblyName": "",
+                    "marker": 0,
+                    "label": "",
+                    "amount": 0.0,
+                    "nextId": 0,
+                    "nextResolvesToSameInstance": false
+                },
+                {
+                    "id": 101,
+                    "isNull": false,
+                    "className": "Payload",
+                    "namespaceName": "UnityRecoverManagedFixture.Alpha",
+                    "assemblyName": "Assembly-CSharp",
+                    "marker": 3033,
+                    "label": "same id host alpha",
+                    "amount": 0.0,
+                    "nextId": -2,
+                    "nextResolvesToSameInstance": true
+                }
+            ]
+        },
+        {
+            "caseName": "host-beta",
+            "guid": "47074211a4fc9c0779ac524dc6427a90",
+            "pathId": 1017,
+            "firstId": 101,
+            "secondId": -2,
+            "itemIds": [],
+            "firstAndSecondSame": false,
+            "idsResolveToOriginalInstances": true,
+            "unknownUntrackedObjectId": -1,
+            "references": [
+                {
+                    "id": -2,
+                    "isNull": true,
+                    "className": "",
+                    "namespaceName": "",
+                    "assemblyName": "",
+                    "marker": 0,
+                    "label": "",
+                    "amount": 0.0,
+                    "nextId": 0,
+                    "nextResolvesToSameInstance": false
+                },
+                {
+                    "id": 101,
+                    "isNull": false,
+                    "className": "Payload",
+                    "namespaceName": "UnityRecoverManagedFixture.Beta",
+                    "assemblyName": "Assembly-CSharp",
+                    "marker": 4044,
+                    "label": "",
+                    "amount": -2.5,
+                    "nextId": -2,
+                    "nextResolvesToSameInstance": true
+                }
+            ]
+        }
+    ],
+    "variants": [
+        {
+            "flags": "None",
+            "objects": [
+                {
+                    "guid": "d36ae9e98ae4c001f2e125c59351ac6a",
+                    "pathId": 1001,
+                    "offset": 4432,
+                    "size": 92
+                },
+                {
+                    "guid": "2c9830c5af2678ef03e07b8b54081c4b",
+                    "pathId": 1003,
+                    "offset": 4528,
+                    "size": 208
+                },
+                {
+                    "guid": "2ec8fea955795bffd2662261e0fc0841",
+                    "pathId": 1005,
+                    "offset": 4736,
+                    "size": 232
+                },
+                {
+                    "guid": "312c8087b4c263eb878cfc4f165605f5",
+                    "pathId": 1007,
+                    "offset": 4968,
+                    "size": 324
+                },
+                {
+                    "guid": "c4c618f6cdec6dcb6ac74840b5fc5ab0",
+                    "pathId": 1009,
+                    "offset": 5296,
+                    "size": 300
+                },
+                {
+                    "guid": "2c3065f7031e9c9019d147f2dda797be",
+                    "pathId": 1011,
+                    "offset": 5600,
+                    "size": 216
+                },
+                {
+                    "guid": "2ff17efee66020273dbce94976eee35d",
+                    "pathId": 1013,
+                    "offset": 5816,
+                    "size": 288
+                },
+                {
+                    "guid": "887895c3a198d44ec0fbdd2292069085",
+                    "pathId": 1015,
+                    "offset": 6104,
+                    "size": 220
+                },
+                {
+                    "guid": "47074211a4fc9c0779ac524dc6427a90",
+                    "pathId": 1017,
+                    "offset": 6328,
+                    "size": 200
+                }
+            ],
+            "includedTypes": [
+                "RegistryFixtureHost, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            ]
+        },
+        {
+            "flags": "DisableWriteTypeTree",
+            "objects": [
+                {
+                    "guid": "d36ae9e98ae4c001f2e125c59351ac6a",
+                    "pathId": 1001,
+                    "offset": 4096,
+                    "size": 92
+                },
+                {
+                    "guid": "2c9830c5af2678ef03e07b8b54081c4b",
+                    "pathId": 1003,
+                    "offset": 4192,
+                    "size": 208
+                },
+                {
+                    "guid": "2ec8fea955795bffd2662261e0fc0841",
+                    "pathId": 1005,
+                    "offset": 4400,
+                    "size": 232
+                },
+                {
+                    "guid": "312c8087b4c263eb878cfc4f165605f5",
+                    "pathId": 1007,
+                    "offset": 4632,
+                    "size": 324
+                },
+                {
+                    "guid": "c4c618f6cdec6dcb6ac74840b5fc5ab0",
+                    "pathId": 1009,
+                    "offset": 4960,
+                    "size": 300
+                },
+                {
+                    "guid": "2c3065f7031e9c9019d147f2dda797be",
+                    "pathId": 1011,
+                    "offset": 5264,
+                    "size": 216
+                },
+                {
+                    "guid": "2ff17efee66020273dbce94976eee35d",
+                    "pathId": 1013,
+                    "offset": 5480,
+                    "size": 288
+                },
+                {
+                    "guid": "887895c3a198d44ec0fbdd2292069085",
+                    "pathId": 1015,
+                    "offset": 5768,
+                    "size": 220
+                },
+                {
+                    "guid": "47074211a4fc9c0779ac524dc6427a90",
+                    "pathId": 1017,
+                    "offset": 5992,
+                    "size": 200
+                }
+            ],
+            "includedTypes": [
+                "RegistryFixtureHost, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            ]
+        }
+    ]
+}

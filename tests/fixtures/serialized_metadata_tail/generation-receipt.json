@@ -1,0 +1,105 @@
+{
+  "scope": "Controlled Unity 2021.3.35f1 fixtures; regenerated with the selected private Editor",
+  "editor_sha256": "1357f39e3093f035142b9aa743ce607a69807a9bf1058c7f03f8f8d028c32837",
+  "target": "StandaloneWindows64",
+  "reproduction": "python3 tests/fixtures/serialized_metadata_tail/run_fixture.py --unity /path/to/Unity --output NEW_OUTPUT",
+  "runner": {
+    "path": "tests/fixtures/unity_fixture_runner.py",
+    "bytes": 6431,
+    "sha256": "209d241c30127389ee605b7154c1863cffb7edc528c971c9c0f6b6ed4b0990fd"
+  },
+  "wrapper": {
+    "path": "tests/fixtures/serialized_metadata_tail/run_fixture.py",
+    "bytes": 384,
+    "sha256": "daba32588a58345a0e175221a22688f11cdee33276be506bbddb1274de11686c"
+  },
+  "inputs": [
+    {
+      "path": "tests/fixtures/serialized_metadata_tail/inputs/Assets/DirectoryFixture.txt",
+      "bytes": 25,
+      "sha256": "86659301a1155e9823074fb352724698c1695a1758576443b40f87fe0ee2393f"
+    },
+    {
+      "path": "tests/fixtures/serialized_metadata_tail/inputs/Assets/DirectoryFixture.txt.meta",
+      "bytes": 158,
+      "sha256": "e20785a35550aec2784c986b0e40a99779ef744f2e3c64a686c2bf98b6059943"
+    },
+    {
+      "path": "tests/fixtures/serialized_metadata_tail/inputs/Assets/DirectoryFixtureA.asset",
+      "bytes": 768,
+      "sha256": "10ab339beb3cac3bf69ce9f792c5d66c1974299415ffd4ae491c81935fc9b8b7"
+    },
+    {
+      "path": "tests/fixtures/serialized_metadata_tail/inputs/Assets/DirectoryFixtureA.asset.meta",
+      "bytes": 189,
+      "sha256": "45605d10ef4a5ddfa4bfba0223004e19e2c5edc5621149130a3e3257302466e7"
+    },
+    {
+      "path": "tests/fixtures/serialized_metadata_tail/inputs/Assets/DirectoryFixtureA.cs",
+      "bytes": 192,
+      "sha256": "85f3b19411988c24b6045549e4d3fdf09186d24a1952ef39850d11e0fd6a45e9"
+    },
+    {
+      "path": "tests/fixtures/serialized_metadata_tail/inputs/Assets/DirectoryFixtureA.cs.meta",
+      "bytes": 243,
+      "sha256": "03e6ecd212cd2bc8ea9dede2dbb70cbffd8fdbe15b01beec145931ca3b8080e9"
+    },
+    {
+      "path": "tests/fixtures/serialized_metadata_tail/inputs/Assets/DirectoryFixtureB.asset",
+      "bytes": 423,
+      "sha256": "459d1839cdf8a926d788d915a75d1f950394a15b0f2c02106e5d10e3b19e01d8"
+    },
+    {
+      "path": "tests/fixtures/serialized_metadata_tail/inputs/Assets/DirectoryFixtureB.asset.meta",
+      "bytes": 189,
+      "sha256": "fea089b5727d66b8c950bae986bbca74bd0d4652cb22a4fa3cc4219203915aca"
+    },
+    {
+      "path": "tests/fixtures/serialized_metadata_tail/inputs/Assets/DirectoryFixtureB.cs",
+      "bytes": 104,
+      "sha256": "dffc0c2a06353dfb4ae0ab11d2769af39cf256e3dab0c508ae442fd6c329fd35"
+    },
+    {
+      "path": "tests/fixtures/serialized_metadata_tail/inputs/Assets/DirectoryFixtureB.cs.meta",
+      "bytes": 243,
+      "sha256": "3a9b7db5163d097542afbc5a93a6baec5ba3c62d5b8816d28fed3068db349769"
+    },
+    {
+      "path": "tests/fixtures/serialized_metadata_tail/inputs/Assets/Editor/DirectoryFixtureBuilder.cs",
+      "bytes": 12390,
+      "sha256": "55854eddbccc06ecc9f96f91b06c0e25a8019a3108d64724db4b77e533c65ccf"
+    },
+    {
+      "path": "tests/fixtures/serialized_metadata_tail/inputs/Assets/Editor.meta",
+      "bytes": 172,
+      "sha256": "6730ae4c686a74df736d1863451b79c49d7a2b3684188ae6151cc6a536f6c25b"
+    },
+    {
+      "path": "tests/fixtures/serialized_metadata_tail/inputs/Assets/TailPayload.cs",
+      "bytes": 176,
+      "sha256": "29d634601cc7a5f4d9d5b4bf62a381d1637129220fbe0cadc1cc521430544925"
+    },
+    {
+      "path": "tests/fixtures/serialized_metadata_tail/inputs/Assets/TailPayload.cs.meta",
+      "bytes": 243,
+      "sha256": "79e92dccb89e689ab5422b32d054279d245dc7dbe1320e652bb1c1743853f865"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "tests/fixtures/serialized_metadata_tail/with-tree.assets",
+      "bytes": 4336,
+      "sha256": "0a2dbcb88979c18afb5331524fe5184f44af13c847279f9cefb514d6f585fea0"
+    },
+    {
+      "path": "tests/fixtures/serialized_metadata_tail/without-tree.assets",
+      "bytes": 4336,
+      "sha256": "8e462110aa97dd2979c10ea20834e16ceb4c7fa35b41210ce913e86fca942e2e"
+    }
+  ],
+  "checks": {
+    "exit_code": 0,
+    "complete_output_byte_equality": true,
+    "scratch_removed": true
+  }
+}

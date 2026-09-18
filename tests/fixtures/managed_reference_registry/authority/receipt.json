@@ -1,0 +1,79 @@
+{
+  "scope": "Read-only symbol disassembly; addresses are preferred arm64 Mach-O VAs",
+  "converter": {
+    "path": "binary2text",
+    "bytes": 311672,
+    "sha256": "d9a9938a39a81d476c42e5dd0a4b5532b43572f63f6e3471236ea791a26b2f22"
+  },
+  "objdump": {
+    "path": "llvm-objdump",
+    "bytes": 747728,
+    "sha256": "33e0200e4795c42f4b6ea1dc8e8a4c2c1830bb4069635344d1afa1c093c9d745"
+  },
+  "selections": [
+    {
+      "name": "registry-count",
+      "command": [
+        "llvm-objdump",
+        "--disassemble-symbols=__ZN15TypeTreeQueries35ReadReferenceRegistrySizeFromBufferER16TypeTreeIteratoriPKhPib",
+        "--no-show-raw-insn",
+        "binary2text"
+      ],
+      "full_symbol_disassembly_bytes": 5402,
+      "full_symbol_disassembly_sha256": "bfa02b8fbb3b7c506230ca9683cdce1b0c93ccc330d23a842faa98bec53848f0",
+      "retained": {
+        "file": "registry-count.asm.txt",
+        "bytes": 2464,
+        "sha256": "da4e6172875d6a1cbd4176f44212735c4e93c882c9447b6543559745cafc0ca2"
+      }
+    },
+    {
+      "name": "reference-id",
+      "command": [
+        "llvm-objdump",
+        "--disassemble-symbols=__ZN20SimpleRefManagedTypeC2ERK16TypeTreeIteratoriPKhPib",
+        "--no-show-raw-insn",
+        "binary2text"
+      ],
+      "full_symbol_disassembly_bytes": 4627,
+      "full_symbol_disassembly_sha256": "63d8a4735537191714fa1fc8e0321ac5ea2ba979662f70f66dd915816e8a0355",
+      "retained": {
+        "file": "reference-id.asm.txt",
+        "bytes": 1732,
+        "sha256": "d3e776c64076a0f15c53c4b4b2b0a60547cc4e7665e3ecf080e5f106c3431b4e"
+      }
+    },
+    {
+      "name": "type-selection",
+      "command": [
+        "llvm-objdump",
+        "--disassemble-symbols=__ZeqRKN14SerializedFile14SerializedTypeERK20SimpleRefManagedType",
+        "--no-show-raw-insn",
+        "binary2text"
+      ],
+      "full_symbol_disassembly_bytes": 8465,
+      "full_symbol_disassembly_sha256": "3f56c7df1f10a591daa38e54fd54cb47327e741dc9b9fa1abd16e79272261c94",
+      "retained": {
+        "file": "type-selection.asm.txt",
+        "bytes": 4969,
+        "sha256": "d6532ae8349d2517b7dfbb097446478ebdffc326b3e10a739c71b59414560809"
+      }
+    },
+    {
+      "name": "registry-dispatch",
+      "command": [
+        "llvm-objdump",
+        "--disassemble-symbols=__Z15RecursiveOutputRK16TypeTreeIteratorRK13dynamic_arrayIN14SerializedFile14SerializedTypeELm0EEPKhPiiRNSt3__113basic_ostreamIcNSB_11char_traitsIcEEEE9DumpFlagsibi",
+        "--no-show-raw-insn",
+        "binary2text"
+      ],
+      "full_symbol_disassembly_bytes": 196181,
+      "full_symbol_disassembly_sha256": "e0cbb9bfa41e1ea18340f4b6589dc1cf37cb725b54b1569515cc50397f0f5b40",
+      "retained": {
+        "file": "registry-dispatch.asm.txt",
+        "bytes": 12600,
+        "sha256": "f033f875b69af3e9454e35acc8f748551aad9ee01d49b93ee94eae9c58d4cf41"
+      }
+    }
+  ]
+}

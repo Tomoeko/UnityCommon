@@ -1,0 +1,160 @@
+{
+  "scope": "Controlled Unity 2021.3.35f1 fixtures; regenerated with the selected private Editor",
+  "editor_sha256": "1357f39e3093f035142b9aa743ce607a69807a9bf1058c7f03f8f8d028c32837",
+  "target": "StandaloneWindows64",
+  "reproduction": "python3 tests/fixtures/managed_reference_registry/run_fixture.py --unity /path/to/Unity --output NEW_OUTPUT",
+  "runner": {
+    "path": "tests/fixtures/unity_fixture_runner.py",
+    "bytes": 6431,
+    "sha256": "209d241c30127389ee605b7154c1863cffb7edc528c971c9c0f6b6ed4b0990fd"
+  },
+  "wrapper": {
+    "path": "tests/fixtures/managed_reference_registry/run_fixture.py",
+    "bytes": 387,
+    "sha256": "7ab128a0a2760c92e208d40f26489e74381bb902b829944a3ada8a27b5848858"
+  },
+  "inputs": [
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/Editor/DirectoryFixtureBuilder.cs",
+      "bytes": 16323,
+      "sha256": "49b6f47f1b1d3d08cbb958286cd34e6bb2a0ee3383fb818bc4a21d058cc393e2"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/Editor/DirectoryFixtureBuilder.cs.meta",
+      "bytes": 243,
+      "sha256": "89092e7d848f81afcd9b314e7b6dc09835c71e5b7ebd59396f9a61797984d4e4"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/Editor.meta",
+      "bytes": 172,
+      "sha256": "83b477265029abfffde439ee16a8a68dc9e5a67bc20ddc5865c27599c4bd0024"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/RegistryFixtureHost.cs",
+      "bytes": 251,
+      "sha256": "c83571d67337f4461f9a41abad1daba86d9bb45e46bf6c92c15a9095a0d164c5"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/RegistryFixtureHost.cs.meta",
+      "bytes": 243,
+      "sha256": "8447b335e5062c4696534e2de4dacf8643cdbb3c32300cb390d9fe29e102196a"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/RegistryPayloads.cs",
+      "bytes": 464,
+      "sha256": "b88e93111f42d599db326046d299c626143c73befd0a22ec40146960a9b6867b"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/RegistryPayloads.cs.meta",
+      "bytes": 243,
+      "sha256": "1151bb6698ff99dc53305be8074771d3bd3911472747c478ba0924e3f11e27c6"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/host-alpha.asset",
+      "bytes": 770,
+      "sha256": "8cd8518654d6a202a7ba49012d53ae4a83b763450297885dc3e128cc73e72011"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/host-alpha.asset.meta",
+      "bytes": 189,
+      "sha256": "44df7f223e1b6e961ce4b8f1708a52d1bfff26344591b55a42c9d1bc7fca15d6"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/host-beta.asset",
+      "bytes": 754,
+      "sha256": "c32f89462d802e6180c26031d7777b13651af18685bf04a79ef09106f4c676d4"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/host-beta.asset.meta",
+      "bytes": 189,
+      "sha256": "c44123937b1a56ec619d5a4bf7e1b7c94b4a25a1a35eef12d911b2faf564d31f"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/nested.asset",
+      "bytes": 947,
+      "sha256": "1bf51f7b99b21c364631c7e9e58f211dc1609ed32300d896cbe3abf34394f756"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/nested.asset.meta",
+      "bytes": 189,
+      "sha256": "c5d5ae6971a881ab7a5cf9bf15c25c5917543b4e10d3bd5e85e159ea61da3319"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/null.asset",
+      "bytes": 554,
+      "sha256": "977036b6a3c4bdca47f796d3c1d6582d734e2871052d8c08a95763e0e845d086"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/null.asset.meta",
+      "bytes": 189,
+      "sha256": "14e0454a12cd98578099a5c7bb65aaec0c8516efea3e3aee1a7bc83612662186"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/self-cycle.asset",
+      "bytes": 766,
+      "sha256": "c4c22d7046ec572fa9990ed63a510ae46e9b954d53bcf989338bb18c86f0b1e7"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/self-cycle.asset.meta",
+      "bytes": 189,
+      "sha256": "a658cd88bdd7dc936308c0b430c2f32cb26c536eab8ce54309b7a732b8521a50"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/shared.asset",
+      "bytes": 793,
+      "sha256": "ccc5f6a137269edf91aaafcc55d27d5c4cd616d46d835dd303adf5e5d17f3abd"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/shared.asset.meta",
+      "bytes": 189,
+      "sha256": "c0b51a3b0d9996af9eb87c12ae934242430549f45c466b0f1c07bd9aae71d859"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/single.asset",
+      "bytes": 789,
+      "sha256": "a4ba49c1956310fe0a4beefe441db4c9d6959cc4c2af763f7972ee8404cdbe1f"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/single.asset.meta",
+      "bytes": 189,
+      "sha256": "c6be238ffb91b755666fe57484bc9b53558cd3f24c5d5b4f99e7200c70d4c2cf"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/two-cycle.asset",
+      "bytes": 906,
+      "sha256": "10f631fc7b1489a8b4b83796f4c2e151e37c04d0ff88496af794aaca9167664b"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/two-cycle.asset.meta",
+      "bytes": 189,
+      "sha256": "fd820ed4de5ca061f54e2597f164d31cd3abfec0cfebc611b62728b4ad471912"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/two-types.asset",
+      "bytes": 976,
+      "sha256": "5af8e9ca0917026ad6be74cab0b3a30de93c63bb79ce28683c000c58f2073e90"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/inputs/Assets/two-types.asset.meta",
+      "bytes": 189,
+      "sha256": "6f34308115ff36ded1d9ae5ab2fd7019cd18a2c258990d24553b4c87bbd3a703"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "tests/fixtures/managed_reference_registry/with-tree.assets",
+      "bytes": 6528,
+      "sha256": "0165c78b5ad8bbc458db995641964ae915adc61fa29e2de83709f29c9094d191"
+    },
+    {
+      "path": "tests/fixtures/managed_reference_registry/without-tree.assets",
+      "bytes": 6192,
+      "sha256": "d65b64b67b5f78f34a4e1729724a0b6d94ad76a1e38cafb5fea4d61b6e789b4f"
+    }
+  ],
+  "checks": {
+    "exit_code": 0,
+    "complete_output_byte_equality": true,
+    "scratch_removed": true
+  }
+}

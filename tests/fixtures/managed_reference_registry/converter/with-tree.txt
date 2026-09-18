@@ -1,0 +1,277 @@
+External References
+path(1): "managed-reference-scripts.assets" GUID: 00000000000000000000000000000000 Type: 0
+
+
+ID: 1001 (ClassID: 114)     0: MonoBehaviour [size: 94, children: 9 pathID: 1001]
+    1: 	m_GameObject  (PPtr<GameObject>) [size: 12, children: 2]
+    2: 		m_FileID 0 (int)
+    3: 		m_PathID 0 (SInt64)
+    4: 	m_Enabled 1 (UInt8)
+    5: 	m_Script  (PPtr<MonoScript>) [size: 12, children: 2]
+    6: 		m_FileID 1 (int)
+    7: 		m_PathID 9001 (SInt64)
+    8: 	m_Name "null" (string)
+   12: 	caseTag "null" (string)
+   16: 	first  (managedReference) [size: 8, children: 1]
+   17: 		rid -2 (SInt64)
+   18: 	second  (managedReference) [size: 8, children: 1]
+   19: 		rid -2 (SInt64)
+   20: 	items  (Object) [size: 12, children: 1]
+   22: 		size 0 (int)
+
+   25: 	references  (ManagedReferencesRegistry)
+   26: 		version 2 (int)
+		rid -2 (class: , ns: , asm: )
+
+
+ID: 1003 (ClassID: 114)     0: MonoBehaviour [size: 94, children: 9 pathID: 1003]
+    1: 	m_GameObject  (PPtr<GameObject>) [size: 12, children: 2]
+    2: 		m_FileID 0 (int)
+    3: 		m_PathID 0 (SInt64)
+    4: 	m_Enabled 1 (UInt8)
+    5: 	m_Script  (PPtr<MonoScript>) [size: 12, children: 2]
+    6: 		m_FileID 1 (int)
+    7: 		m_PathID 9001 (SInt64)
+    8: 	m_Name "single" (string)
+   12: 	caseTag "single" (string)
+   16: 	first  (managedReference) [size: 8, children: 1]
+   17: 		rid 6441160360502231040 (SInt64)
+   18: 	second  (managedReference) [size: 8, children: 1]
+   19: 		rid -2 (SInt64)
+   20: 	items  (Object) [size: 12, children: 1]
+   22: 		size 0 (int)
+
+   25: 	references  (ManagedReferencesRegistry)
+   26: 		version 2 (int)
+		rid -2 (class: , ns: , asm: )
+		rid 6441160360502231040 (class: Payload, ns: UnityRecoverManagedFixture.Alpha, asm: Assembly-CSharp)
+			Payload
+    1: 				marker 1011 (int)
+    2: 				label "alpha payload" (string)
+    6: 				next  (managedReference) [size: 8, children: 1]
+    7: 					rid -2 (SInt64)
+
+
+ID: 1005 (ClassID: 114)     0: MonoBehaviour [size: 94, children: 9 pathID: 1005]
+    1: 	m_GameObject  (PPtr<GameObject>) [size: 12, children: 2]
+    2: 		m_FileID 0 (int)
+    3: 		m_PathID 0 (SInt64)
+    4: 	m_Enabled 1 (UInt8)
+    5: 	m_Script  (PPtr<MonoScript>) [size: 12, children: 2]
+    6: 		m_FileID 1 (int)
+    7: 		m_PathID 9001 (SInt64)
+    8: 	m_Name "shared" (string)
+   12: 	caseTag "shared" (string)
+   16: 	first  (managedReference) [size: 8, children: 1]
+   17: 		rid 101 (SInt64)
+   18: 	second  (managedReference) [size: 8, children: 1]
+   19: 		rid 101 (SInt64)
+   20: 	items  (Object) [size: 12, children: 1]
+   22: 		size 3 (int)
+		data  (managedRefArrayItem) [size: 8, children: 1]
+   24: 			rid 101 (SInt64)
+		data  (managedRefArrayItem) [size: 8, children: 1]
+   24: 			rid -2 (SInt64)
+		data  (managedRefArrayItem) [size: 8, children: 1]
+   24: 			rid 101 (SInt64)
+
+   25: 	references  (ManagedReferencesRegistry)
+   26: 		version 2 (int)
+		rid -2 (class: , ns: , asm: )
+		rid 101 (class: Payload, ns: UnityRecoverManagedFixture.Alpha, asm: Assembly-CSharp)
+			Payload
+    1: 				marker 1011 (int)
+    2: 				label "alpha payload" (string)
+    6: 				next  (managedReference) [size: 8, children: 1]
+    7: 					rid -2 (SInt64)
+
+
+ID: 1007 (ClassID: 114)     0: MonoBehaviour [size: 94, children: 9 pathID: 1007]
+    1: 	m_GameObject  (PPtr<GameObject>) [size: 12, children: 2]
+    2: 		m_FileID 0 (int)
+    3: 		m_PathID 0 (SInt64)
+    4: 	m_Enabled 1 (UInt8)
+    5: 	m_Script  (PPtr<MonoScript>) [size: 12, children: 2]
+    6: 		m_FileID 1 (int)
+    7: 		m_PathID 9001 (SInt64)
+    8: 	m_Name "two-types" (string)
+   12: 	caseTag "two-types" (string)
+   16: 	first  (managedReference) [size: 8, children: 1]
+   17: 		rid 101 (SInt64)
+   18: 	second  (managedReference) [size: 8, children: 1]
+   19: 		rid 202 (SInt64)
+   20: 	items  (Object) [size: 12, children: 1]
+   22: 		size 2 (int)
+		data  (managedRefArrayItem) [size: 8, children: 1]
+   24: 			rid 202 (SInt64)
+		data  (managedRefArrayItem) [size: 8, children: 1]
+   24: 			rid 101 (SInt64)
+
+   25: 	references  (ManagedReferencesRegistry)
+   26: 		version 2 (int)
+		rid -2 (class: , ns: , asm: )
+		rid 101 (class: Payload, ns: UnityRecoverManagedFixture.Alpha, asm: Assembly-CSharp)
+			Payload
+    1: 				marker 1011 (int)
+    2: 				label "alpha payload" (string)
+    6: 				next  (managedReference) [size: 8, children: 1]
+    7: 					rid -2 (SInt64)
+		rid 202 (class: Payload, ns: UnityRecoverManagedFixture.Beta, asm: Assembly-CSharp)
+			Payload
+    1: 				marker 2022 (int)
+    2: 				amount 1.25 (float)
+    3: 				next  (managedReference) [size: 8, children: 1]
+    4: 					rid -2 (SInt64)
+
+
+ID: 1009 (ClassID: 114)     0: MonoBehaviour [size: 94, children: 9 pathID: 1009]
+    1: 	m_GameObject  (PPtr<GameObject>) [size: 12, children: 2]
+    2: 		m_FileID 0 (int)
+    3: 		m_PathID 0 (SInt64)
+    4: 	m_Enabled 1 (UInt8)
+    5: 	m_Script  (PPtr<MonoScript>) [size: 12, children: 2]
+    6: 		m_FileID 1 (int)
+    7: 		m_PathID 9001 (SInt64)
+    8: 	m_Name "nested" (string)
+   12: 	caseTag "nested" (string)
+   16: 	first  (managedReference) [size: 8, children: 1]
+   17: 		rid 101 (SInt64)
+   18: 	second  (managedReference) [size: 8, children: 1]
+   19: 		rid -2 (SInt64)
+   20: 	items  (Object) [size: 12, children: 1]
+   22: 		size 0 (int)
+
+   25: 	references  (ManagedReferencesRegistry)
+   26: 		version 2 (int)
+		rid -2 (class: , ns: , asm: )
+		rid 101 (class: Payload, ns: UnityRecoverManagedFixture.Alpha, asm: Assembly-CSharp)
+			Payload
+    1: 				marker 1011 (int)
+    2: 				label "alpha payload" (string)
+    6: 				next  (managedReference) [size: 8, children: 1]
+    7: 					rid 202 (SInt64)
+		rid 202 (class: Payload, ns: UnityRecoverManagedFixture.Beta, asm: Assembly-CSharp)
+			Payload
+    1: 				marker 2022 (int)
+    2: 				amount 1.25 (float)
+    3: 				next  (managedReference) [size: 8, children: 1]
+    4: 					rid -2 (SInt64)
+
+
+ID: 1011 (ClassID: 114)     0: MonoBehaviour [size: 94, children: 9 pathID: 1011]
+    1: 	m_GameObject  (PPtr<GameObject>) [size: 12, children: 2]
+    2: 		m_FileID 0 (int)
+    3: 		m_PathID 0 (SInt64)
+    4: 	m_Enabled 1 (UInt8)
+    5: 	m_Script  (PPtr<MonoScript>) [size: 12, children: 2]
+    6: 		m_FileID 1 (int)
+    7: 		m_PathID 9001 (SInt64)
+    8: 	m_Name "self-cycle" (string)
+   12: 	caseTag "self-cycle" (string)
+   16: 	first  (managedReference) [size: 8, children: 1]
+   17: 		rid 101 (SInt64)
+   18: 	second  (managedReference) [size: 8, children: 1]
+   19: 		rid -2 (SInt64)
+   20: 	items  (Object) [size: 12, children: 1]
+   22: 		size 0 (int)
+
+   25: 	references  (ManagedReferencesRegistry)
+   26: 		version 2 (int)
+		rid -2 (class: , ns: , asm: )
+		rid 101 (class: Payload, ns: UnityRecoverManagedFixture.Alpha, asm: Assembly-CSharp)
+			Payload
+    1: 				marker 1011 (int)
+    2: 				label "alpha payload" (string)
+    6: 				next  (managedReference) [size: 8, children: 1]
+    7: 					rid 101 (SInt64)
+
+
+ID: 1013 (ClassID: 114)     0: MonoBehaviour [size: 94, children: 9 pathID: 1013]
+    1: 	m_GameObject  (PPtr<GameObject>) [size: 12, children: 2]
+    2: 		m_FileID 0 (int)
+    3: 		m_PathID 0 (SInt64)
+    4: 	m_Enabled 1 (UInt8)
+    5: 	m_Script  (PPtr<MonoScript>) [size: 12, children: 2]
+    6: 		m_FileID 1 (int)
+    7: 		m_PathID 9001 (SInt64)
+    8: 	m_Name "two-cycle" (string)
+   12: 	caseTag "two-cycle" (string)
+   16: 	first  (managedReference) [size: 8, children: 1]
+   17: 		rid 101 (SInt64)
+   18: 	second  (managedReference) [size: 8, children: 1]
+   19: 		rid 202 (SInt64)
+   20: 	items  (Object) [size: 12, children: 1]
+   22: 		size 0 (int)
+
+   25: 	references  (ManagedReferencesRegistry)
+   26: 		version 2 (int)
+		rid 101 (class: Payload, ns: UnityRecoverManagedFixture.Alpha, asm: Assembly-CSharp)
+			Payload
+    1: 				marker 1011 (int)
+    2: 				label "alpha payload" (string)
+    6: 				next  (managedReference) [size: 8, children: 1]
+    7: 					rid 202 (SInt64)
+		rid 202 (class: Payload, ns: UnityRecoverManagedFixture.Beta, asm: Assembly-CSharp)
+			Payload
+    1: 				marker 2022 (int)
+    2: 				amount 1.25 (float)
+    3: 				next  (managedReference) [size: 8, children: 1]
+    4: 					rid 101 (SInt64)
+
+
+ID: 1015 (ClassID: 114)     0: MonoBehaviour [size: 94, children: 9 pathID: 1015]
+    1: 	m_GameObject  (PPtr<GameObject>) [size: 12, children: 2]
+    2: 		m_FileID 0 (int)
+    3: 		m_PathID 0 (SInt64)
+    4: 	m_Enabled 1 (UInt8)
+    5: 	m_Script  (PPtr<MonoScript>) [size: 12, children: 2]
+    6: 		m_FileID 1 (int)
+    7: 		m_PathID 9001 (SInt64)
+    8: 	m_Name "host-alpha" (string)
+   12: 	caseTag "host-alpha" (string)
+   16: 	first  (managedReference) [size: 8, children: 1]
+   17: 		rid 101 (SInt64)
+   18: 	second  (managedReference) [size: 8, children: 1]
+   19: 		rid -2 (SInt64)
+   20: 	items  (Object) [size: 12, children: 1]
+   22: 		size 0 (int)
+
+   25: 	references  (ManagedReferencesRegistry)
+   26: 		version 2 (int)
+		rid -2 (class: , ns: , asm: )
+		rid 101 (class: Payload, ns: UnityRecoverManagedFixture.Alpha, asm: Assembly-CSharp)
+			Payload
+    1: 				marker 3033 (int)
+    2: 				label "same id host alpha" (string)
+    6: 				next  (managedReference) [size: 8, children: 1]
+    7: 					rid -2 (SInt64)
+
+
+ID: 1017 (ClassID: 114)     0: MonoBehaviour [size: 94, children: 9 pathID: 1017]
+    1: 	m_GameObject  (PPtr<GameObject>) [size: 12, children: 2]
+    2: 		m_FileID 0 (int)
+    3: 		m_PathID 0 (SInt64)
+    4: 	m_Enabled 1 (UInt8)
+    5: 	m_Script  (PPtr<MonoScript>) [size: 12, children: 2]
+    6: 		m_FileID 1 (int)
+    7: 		m_PathID 9001 (SInt64)
+    8: 	m_Name "host-beta" (string)
+   12: 	caseTag "host-beta" (string)
+   16: 	first  (managedReference) [size: 8, children: 1]
+   17: 		rid 101 (SInt64)
+   18: 	second  (managedReference) [size: 8, children: 1]
+   19: 		rid -2 (SInt64)
+   20: 	items  (Object) [size: 12, children: 1]
+   22: 		size 0 (int)
+
+   25: 	references  (ManagedReferencesRegistry)
+   26: 		version 2 (int)
+		rid -2 (class: , ns: , asm: )
+		rid 101 (class: Payload, ns: UnityRecoverManagedFixture.Beta, asm: Assembly-CSharp)
+			Payload
+    1: 				marker 4044 (int)
+    2: 				amount -2.5 (float)
+    3: 				next  (managedReference) [size: 8, children: 1]
+    4: 					rid -2 (SInt64)
+
+

@@ -1,0 +1,47 @@
+symbol=__ZN15TypeTreeQueries35ReadReferenceRegistrySizeFromBufferER16TypeTreeIteratoriPKhPib
+range=0x100011b04..0x100011b28 (exclusive end)
+100011b04:     	sub	sp, sp, #0x90
+100011b08:     	stp	x26, x25, [sp, #0x40]
+100011b0c:     	stp	x24, x23, [sp, #0x50]
+100011b10:     	stp	x22, x21, [sp, #0x60]
+100011b14:     	stp	x20, x19, [sp, #0x70]
+100011b18:     	stp	x29, x30, [sp, #0x80]
+100011b1c:     	add	x29, sp, #0x80
+100011b20:     	cmp	w1, #0x2
+100011b24:     	b.lt	0x100011c2c <__ZN15TypeTreeQueries35ReadReferenceRegistrySizeFromBufferER16TypeTreeIteratoriPKhPib+0x128>
+range=0x100011c14..0x100011ca0 (exclusive end)
+100011c14:     	add	x8, x24, #0x2
+100011c18:     	stp	x23, x8, [sp, #0x28]
+100011c1c:     	cbz	x21, 0x100011c60 <__ZN15TypeTreeQueries35ReadReferenceRegistrySizeFromBufferER16TypeTreeIteratoriPKhPib+0x15c>
+100011c20:     	ldrsw	x8, [x20]
+100011c24:     	ldr	w23, [x21, x8]
+100011c28:     	b	0x100011c64 <__ZN15TypeTreeQueries35ReadReferenceRegistrySizeFromBufferER16TypeTreeIteratoriPKhPib+0x160>
+100011c2c:     	mov	w23, #-0x1              ; =-1
+100011c30:     	b	0x100011c40 <__ZN15TypeTreeQueries35ReadReferenceRegistrySizeFromBufferER16TypeTreeIteratoriPKhPib+0x13c>
+100011c34:     	stp	xzr, xzr, [sp, #0x20]
+100011c38:     	mov	w23, #-0x1              ; =-1
+100011c3c:     	str	xzr, [sp, #0x30]
+100011c40:     	mov	x0, x23
+100011c44:     	ldp	x29, x30, [sp, #0x80]
+100011c48:     	ldp	x20, x19, [sp, #0x70]
+100011c4c:     	ldp	x22, x21, [sp, #0x60]
+100011c50:     	ldp	x24, x23, [sp, #0x50]
+100011c54:     	ldp	x26, x25, [sp, #0x40]
+100011c58:     	add	sp, sp, #0x90
+100011c5c:     	ret
+100011c60:     	mov	w23, #-0x1              ; =-1
+100011c64:     	cbz	w22, 0x100011c40 <__ZN15TypeTreeQueries35ReadReferenceRegistrySizeFromBufferER16TypeTreeIteratoriPKhPib+0x13c>
+100011c68:     	add	x0, sp, #0x20
+100011c6c:     	mov	x1, x21
+100011c70:     	mov	x2, x20
+100011c74:     	mov	w3, #0x1                ; =1
+100011c78:     	mov	w4, #0x0                ; =0
+100011c7c:     	bl	0x100012354 <__ZL20WalkTypeTreeInternalRK16TypeTreeIteratorPKhPiib>
+100011c80:     	add	x8, sp, #0x8
+100011c84:     	add	x0, sp, #0x20
+100011c88:     	bl	0x10000c3e4 <__ZNK16TypeTreeIterator4NextEv>
+100011c8c:     	ldur	q0, [sp, #0x8]
+100011c90:     	ldr	x8, [sp, #0x18]
+100011c94:     	str	x8, [x19, #0x10]
+100011c98:     	str	q0, [x19]
+100011c9c:     	b	0x100011c40 <__ZN15TypeTreeQueries35ReadReferenceRegistrySizeFromBufferER16TypeTreeIteratoriPKhPib+0x13c>

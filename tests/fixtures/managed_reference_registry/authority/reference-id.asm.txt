@@ -1,0 +1,37 @@
+symbol=__ZN20SimpleRefManagedTypeC2ERK16TypeTreeIteratoriPKhPib
+range=0x100012cc8..0x100012d34 (exclusive end)
+100012cc8:     	mov	x24, #-0x1              ; =-1
+100012ccc:     	str	x24, [x0, #0x78]
+100012cd0:     	ldr	q0, [x1]
+100012cd4:     	ldr	x8, [x1, #0x10]
+100012cd8:     	str	x8, [sp, #0x10]
+100012cdc:     	str	q0, [sp]
+100012ce0:     	cmp	w2, #0x2
+100012ce4:     	b.lt	0x100012d30 <__ZN20SimpleRefManagedTypeC2ERK16TypeTreeIteratoriPKhPib+0xd0>
+100012ce8:     	cbz	x21, 0x100012cf8 <__ZN20SimpleRefManagedTypeC2ERK16TypeTreeIteratoriPKhPib+0x98>
+100012cec:     	ldrsw	x8, [x20]
+100012cf0:     	ldr	x24, [x21, x8]
+100012cf4:     	b	0x100012cfc <__ZN20SimpleRefManagedTypeC2ERK16TypeTreeIteratoriPKhPib+0x9c>
+100012cf8:     	mov	x24, #-0x1              ; =-1
+100012cfc:     	mov	x0, sp
+100012d00:     	mov	x1, x21
+100012d04:     	mov	x2, x20
+100012d08:     	mov	w3, #0x1                ; =1
+100012d0c:     	mov	w4, #0x0                ; =0
+100012d10:     	bl	0x100012354 <__ZL20WalkTypeTreeInternalRK16TypeTreeIteratorPKhPiib>
+100012d14:     	add	x8, sp, #0x18
+100012d18:     	mov	x0, sp
+100012d1c:     	bl	0x10000c3e4 <__ZNK16TypeTreeIterator4NextEv>
+100012d20:     	ldur	q0, [sp, #0x18]
+100012d24:     	str	q0, [sp]
+100012d28:     	ldr	x8, [sp, #0x28]
+100012d2c:     	str	x8, [sp, #0x10]
+100012d30:     	str	x24, [x19, #0x78]
+range=0x100012dbc..0x100012dd8 (exclusive end)
+100012dbc:     	add	x0, sp, #0x18
+100012dc0:     	mov	x1, x21
+100012dc4:     	mov	x2, x20
+100012dc8:     	mov	x3, x19
+100012dcc:     	mov	x4, x22
+100012dd0:     	mov	x5, x23
+100012dd4:     	bl	0x100011ca0 <__ZN15TypeTreeQueries32ReadTypeNameFromBufferAndAdvanceERK16TypeTreeIteratorPKhPiRN4core12basic_stringIcNS6_20StringStorageDefaultIcEEEESB_SB_>
