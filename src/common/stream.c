@@ -3,8 +3,8 @@
 #include "common/stream.h"
 
 // Define global memory tracking variables
-atomic_size_t g_allocated_bytes = ATOMIC_VAR_INIT(0);
-atomic_size_t g_allocations_count = ATOMIC_VAR_INIT(0);
+atomic_size_t g_allocated_bytes = 0;
+atomic_size_t g_allocations_count = 0;
 
 void stream_init(ByteStream* stream, const uint8_t* data, size_t size) {
     stream->data = data;

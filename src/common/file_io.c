@@ -493,7 +493,7 @@ CommonFileStatus common_file_view_close(CommonFileView* view) {
     BY_HANDLE_FILE_INFORMATION after;
     FILE_BASIC_INFO after_basic;
     FILE_ID_INFO after_id;
-    FILE_STANDARD_INFO after_standard;
+    FILE_STANDARD_INFO after_standard = {0};
     uint8_t source_digest[COMMON_SHA256_DIGEST_SIZE];
     bool after_valid = windows_regular_file_info(
         implementation->file_handle, &after) &&
