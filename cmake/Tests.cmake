@@ -275,6 +275,9 @@ if(BUILD_TESTING)
     unity_common_add_unit_test(
         unity_common_typetree_schema_registry_units
         test_typetree_schema_registry.c UnityCommon::serialized)
+    unity_common_add_unit_test(
+        unity_common_typetree_value_digest_units
+        test_typetree_value_digest.c UnityCommon::serialized)
     add_executable(unity_common_typetree_common_strings
         tests/test_typetree_common_strings.c)
     target_link_libraries(unity_common_typetree_common_strings PRIVATE

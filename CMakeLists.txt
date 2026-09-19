@@ -62,6 +62,7 @@ add_library(unity_common_serialized STATIC
     src/io/unity_input.c
     src/io/unity_pptr_resolver.c
     src/io/typetree.c
+    src/io/typetree_value_digest.c
     src/io/typetree_schema_profile.c
     src/io/typetree_schema_registry.c
     src/io/serialized_file.c
