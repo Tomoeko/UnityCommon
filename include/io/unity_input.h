@@ -4,6 +4,7 @@
 #define UNITY_INPUT_H
 
 #include "common/common.h"
+#include "common/sha256.h"
 
 typedef enum {
     UNITY_INPUT_KIND_UNRELATED = 0,
@@ -78,6 +79,13 @@ UnityInputStatus unity_input_snapshot_open(
     const char* path, UnityInputSnapshot* snapshot);
 bool unity_input_snapshot_is_open(const UnityInputSnapshot* snapshot);
 const char* unity_input_snapshot_path(const UnityInputSnapshot* snapshot);
+/* SHA-256 of the complete captured outer file (including a bundle's storage
+ * bytes), after revalidating its held file identity, content and pathname.
+ * Works while the mapping is suspended; never substitutes a pathname reopen.
+ * Failure leaves digest unchanged. This does not validate member schemas. */
+UnityInputStatus unity_input_snapshot_digest(
+    const UnityInputSnapshot* snapshot,
+    uint8_t digest[COMMON_SHA256_DIGEST_SIZE]);
 UnityInputStatus unity_input_snapshot_visit(
     UnityInputSnapshot* snapshot, UnitySerializedSourceVisitor visitor,
     void* context, UnityInputVisitStats* out_stats);

@@ -753,6 +753,21 @@ const char* unity_input_snapshot_path(const UnityInputSnapshot* snapshot) {
     return implementation->path;
 }
 
+UnityInputStatus unity_input_snapshot_digest(
+    const UnityInputSnapshot* snapshot,
+    uint8_t digest[COMMON_SHA256_DIGEST_SIZE]) {
+    if (!snapshot || !snapshot->implementation || !digest)
+        return UNITY_INPUT_INVALID_ARGUMENT;
+    const UnityInputSnapshotImplementation* implementation =
+        (const UnityInputSnapshotImplementation*)snapshot->implementation;
+    if (!identity_anchor_validate(
+            &implementation->anchor, implementation->path))
+        return UNITY_INPUT_FILE_ERROR;
+    memcpy(digest, implementation->anchor.snapshot_digest,
+           COMMON_SHA256_DIGEST_SIZE);
+    return UNITY_INPUT_OK;
+}
+
 UnityInputStatus unity_input_snapshot_visit(
     UnityInputSnapshot* snapshot, UnitySerializedSourceVisitor visitor,
     void* context, UnityInputVisitStats* out_stats) {

@@ -247,7 +247,20 @@ int main(void) {
               path, serialized, sizeof(serialized)) == COMMON_FILE_OK);
     UnityInputSnapshot snapshot;
     unity_input_snapshot_init(&snapshot);
+    uint8_t expected_digest[COMMON_SHA256_DIGEST_SIZE];
+    uint8_t captured_digest[COMMON_SHA256_DIGEST_SIZE] = {0};
+    uint8_t zero_digest[COMMON_SHA256_DIGEST_SIZE] = {0};
+    common_sha256(serialized, sizeof(serialized), expected_digest);
+    CHECK(unity_input_snapshot_digest(NULL, captured_digest) ==
+          UNITY_INPUT_INVALID_ARGUMENT);
+    CHECK(unity_input_snapshot_digest(&snapshot, captured_digest) ==
+          UNITY_INPUT_INVALID_ARGUMENT);
+    CHECK(memcmp(captured_digest, zero_digest, sizeof(captured_digest)) == 0);
     CHECK(unity_input_snapshot_open(path, &snapshot) == UNITY_INPUT_OK);
+    CHECK(unity_input_snapshot_digest(&snapshot, NULL) ==
+          UNITY_INPUT_INVALID_ARGUMENT);
+    CHECK(unity_input_snapshot_digest(&snapshot, captured_digest) == UNITY_INPUT_OK);
+    CHECK(memcmp(captured_digest, expected_digest, sizeof(captured_digest)) == 0);
     CHECK(unity_input_snapshot_is_open(&snapshot));
     CHECK(unity_input_snapshot_path(&snapshot) != NULL);
     CHECK(strstr(unity_input_snapshot_path(&snapshot), path) != NULL);
@@ -259,11 +272,17 @@ int main(void) {
     CHECK(unity_input_snapshot_suspend_mapping(&snapshot) ==
           UNITY_INPUT_OK);
     CHECK(unity_input_snapshot_is_open(&snapshot));
+    memset(captured_digest, 0, sizeof(captured_digest));
+    CHECK(unity_input_snapshot_digest(&snapshot, captured_digest) == UNITY_INPUT_OK);
+    CHECK(memcmp(captured_digest, expected_digest, sizeof(captured_digest)) == 0);
     CHECK(unity_input_snapshot_visit(
               &snapshot, count_visitor, &visited, &stats) ==
           UNITY_INPUT_OK);
     CHECK(visited == 2U && stats.serialized_files == 1U);
     CHECK(test_replace_regular_file(path, serialized, sizeof(serialized)));
+    memset(captured_digest, 0, sizeof(captured_digest));
+    CHECK(unity_input_snapshot_digest(&snapshot, captured_digest) == UNITY_INPUT_FILE_ERROR);
+    CHECK(memcmp(captured_digest, zero_digest, sizeof(captured_digest)) == 0);
     CHECK(unity_input_snapshot_close(&snapshot) ==
           UNITY_INPUT_FILE_ERROR);
     CHECK(!unity_input_snapshot_is_open(&snapshot));
@@ -286,6 +305,8 @@ int main(void) {
     CHECK(unity_input_snapshot_open(path, &snapshot) == UNITY_INPUT_OK);
     CHECK(unity_input_snapshot_suspend_mapping(&snapshot) == UNITY_INPUT_OK);
     writer_mapping[63] ^= 0x5aU;
+    CHECK(unity_input_snapshot_digest(&snapshot, captured_digest) == UNITY_INPUT_FILE_ERROR);
+    CHECK(memcmp(captured_digest, zero_digest, sizeof(captured_digest)) == 0);
     visited = 0U;
     CHECK(unity_input_snapshot_visit(
               &snapshot, count_visitor, &visited, &stats) ==
