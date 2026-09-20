@@ -3,6 +3,7 @@
 #define _POSIX_C_SOURCE 200809L
 #endif
 #include "common/process.h"
+#include "common/file_io.h"
 #include "common/windows_utf8.h"
 
 #include <stdio.h>
@@ -48,19 +49,17 @@ static int run_tests(int argc, char **argv) {
             return 29;
         }
         if (strcmp(argv[1], "nested") == 0) {
-            CHECK(argc == 3);
-            const char *nested[] = {argv[0], "grandchild", argv[2], NULL};
+            CHECK(argc == 4);
+            const char *nested[] = {argv[0], "grandchild", argv[2], argv[3], NULL};
             int code;
             CHECK(common_process_run(nested, 0, &code) == COMMON_PROCESS_OK);
             return code;
         }
         if (strcmp(argv[1], "grandchild") == 0) {
-            CHECK(argc == 3);
-            FILE *file = fopen(argv[2], "wb");
-            CHECK(file && fwrite("started", 1, 7, file) == 7 && fclose(file) == 0);
+            CHECK(argc == 4);
+            CHECK(common_file_write_new_atomic(argv[2], "started", 7) == COMMON_FILE_OK);
             pause_ms(2000);
-            file = fopen(argv[2], "ab");
-            CHECK(file && fwrite("survived", 1, 8, file) == 8 && fclose(file) == 0);
+            CHECK(common_file_write_new_atomic(argv[3], "survived", 8) == COMMON_FILE_OK);
             return 0;
         }
 #ifndef _WIN32
@@ -86,21 +85,23 @@ static int run_tests(int argc, char **argv) {
     CHECK(common_process_run(arguments, 0, &code) == COMMON_PROCESS_OK && code == 23);
     const char *wait[] = {argv[0], "wait", NULL};
     CHECK(common_process_run(wait, 50, &code) == COMMON_PROCESS_TIMED_OUT && code == -1);
-    char marker[80];
+    char marker[80], completed[80];
 #ifdef _WIN32
     const unsigned long pid = GetCurrentProcessId();
 #else
     const unsigned long pid = (unsigned long)getpid();
 #endif
     CHECK(snprintf(marker, sizeof(marker), "process-descendant-%lu.tmp", pid) > 0);
-    const char *nested[] = {argv[0], "nested", marker, NULL};
+    CHECK(snprintf(completed, sizeof(completed), "process-descendant-%lu.done", pid) > 0);
+    const char *nested[] = {argv[0], "nested", marker, completed, NULL};
     CHECK(common_process_run(nested, 1000, &code) == COMMON_PROCESS_TIMED_OUT && code == -1);
     pause_ms(1300);
-    FILE *file = fopen(marker, "rb");
-    CHECK(file);
-    char content[16] = {0};
-    CHECK(fread(content, 1, sizeof(content), file) == 7 && strcmp(content, "started") == 0);
-    CHECK(fclose(file) == 0 && remove(marker) == 0);
+    CommonFileBytes content = {0};
+    CHECK(common_file_read_regular(marker, 16, &content) == COMMON_FILE_OK);
+    CHECK(content.size == 7 && memcmp(content.data, "started", 7) == 0);
+    common_file_bytes_dispose(&content);
+    CHECK(common_file_read_regular(completed, 16, &content) == COMMON_FILE_NOT_FOUND);
+    CHECK(remove(marker) == 0);
 #ifndef _WIN32
     const char *signal[] = {argv[0], "signal", NULL};
     CHECK(common_process_run(signal, 3000, &code) == COMMON_PROCESS_OK && code == 128 + SIGTERM);
