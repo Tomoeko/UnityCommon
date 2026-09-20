@@ -32,6 +32,7 @@ set(UNITY_COMMON_BASE_SOURCES
     src/common/file_io.c
     src/common/output_publish.c
     src/common/path_discovery.c
+    src/common/process.c
     src/common/relative_path.c
     src/common/sha256.c
     src/common/stream.c

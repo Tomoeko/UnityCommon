@@ -6,7 +6,7 @@ Portable C11 libraries for reading Unity data and building asset tools.
 
 | CMake target | Provides |
 | --- | --- |
-| `UnityCommon::base` | Bounded file I/O, paths, UTF-8, streams, strings, SHA-256, and atomic output |
+| `UnityCommon::base` | Bounded file I/O and process execution, paths, UTF-8, streams, strings, SHA-256, and atomic output |
 | `UnityCommon::serialized` | UnityFS, LZ4/LZMA, SerializedFile, TypeTrees, schemas, PPtr resolution, and build settings |
 | `UnityCommon::test_support` | Fixture mutation helpers; available with testing enabled |
 

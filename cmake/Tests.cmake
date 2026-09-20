@@ -43,6 +43,13 @@ if(BUILD_TESTING)
         unity_common_file_io_units
         test_file_io_units.c UnityCommon::base)
     unity_common_add_unit_test(
+        unity_common_process_units
+        test_process_units.c UnityCommon::base)
+    if(MINGW)
+        set_property(TARGET unity_common_process_units APPEND_STRING
+            PROPERTY LINK_FLAGS " -municode")
+    endif()
+    unity_common_add_unit_test(
         unity_common_path_discovery_units
         test_path_discovery_units.c UnityCommon::base)
     unity_common_add_unit_test(
