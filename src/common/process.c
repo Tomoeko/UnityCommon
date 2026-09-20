@@ -136,7 +136,10 @@ static CommonProcessStatus run_process(const char *const *arguments, uint32_t ti
     if (!child) {
         if (timeout_ms && setpgid(0, 0) != 0)
             _exit(127);
-        execv(arguments[0], (char *const *)arguments);
+        if (strchr(arguments[0], '/'))
+            execv(arguments[0], (char *const *)arguments);
+        else
+            execvp(arguments[0], (char *const *)arguments);
         _exit(127);
     }
     /* Both sides establish the same group, avoiding a timeout/setup race. */
@@ -199,8 +202,7 @@ CommonProcessStatus common_process_run(const char *const *arguments, uint32_t ti
     if (exit_code)
         *exit_code = -1;
     if (!exit_code || timeout_ms == UINT32_MAX ||
-        !arguments || !arguments[0] || !arguments[0][0] ||
-        (!strchr(arguments[0], '/') && !strchr(arguments[0], '\\')))
+        !arguments || !arguments[0] || !arguments[0][0])
         return COMMON_PROCESS_INVALID_ARGUMENT;
     size_t bytes = 0;
     for (size_t i = 0; arguments[i]; ++i) {

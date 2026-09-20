@@ -106,9 +106,7 @@ static int run_tests(int argc, char **argv) {
     const char *signal[] = {argv[0], "signal", NULL};
     CHECK(common_process_run(signal, 3000, &code) == COMMON_PROCESS_OK && code == 128 + SIGTERM);
 #endif
-    const char *invalid[] = {"no-path-search", NULL};
-    CHECK(common_process_run(invalid, 0, &code) == COMMON_PROCESS_INVALID_ARGUMENT && code == -1);
-    invalid[0] = "";
+    const char *invalid[] = {"", NULL};
     CHECK(common_process_run(invalid, 0, &code) == COMMON_PROCESS_INVALID_ARGUMENT);
     CHECK(common_process_run(NULL, 0, &code) == COMMON_PROCESS_INVALID_ARGUMENT);
     CHECK(common_process_run(arguments, 0, NULL) == COMMON_PROCESS_INVALID_ARGUMENT);

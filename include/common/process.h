@@ -15,7 +15,8 @@ typedef enum {
 
 /* Run an explicit executable with literal UTF-8 arguments; no shell expansion.
  * arguments is NULL-terminated, with at most 256 entries and 65536 total bytes.
- * The executable must contain a path separator (no PATH lookup). Environment,
+ * An executable without a path separator uses the platform's normal executable
+ * search. Callers pinning a tool must supply its captured absolute path. Environment,
  * working directory and standard streams are inherited. Windows preserves the
  * C runtime quoting convention; consumers must decode their command line as
  * Unicode. Inputs remain borrowed until return.
